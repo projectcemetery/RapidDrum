@@ -1,0 +1,683 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://MainScene.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Background.png" type="Texture" id=2]
+[ext_resource path="res://Assets/SimpleButtonNormal.png" type="Texture" id=3]
+[ext_resource path="res://Assets/SimpleButtonPressed.png" type="Texture" id=4]
+[ext_resource path="res://Assets/OpenIcon.png" type="Texture" id=5]
+[ext_resource path="res://Assets/SaveIcon.png" type="Texture" id=6]
+[ext_resource path="res://Assets/PlayButtonNormal.png" type="Texture" id=7]
+[ext_resource path="res://Assets/PlayButtonPressed.png" type="Texture" id=8]
+[ext_resource path="res://Assets/pagebuttongroup.tres" type="ButtonGroup" id=9]
+[ext_resource path="res://Assets/Decor1.png" type="Texture" id=10]
+[ext_resource path="res://Assets/DrumLogo.png" type="Texture" id=11]
+[ext_resource path="res://Scripts/PadControl.gd" type="Script" id=12]
+[ext_resource path="res://Assets/Hip-Hop-Snare-3.wav" type="AudioStream" id=13]
+
+[node name="MainScene" type="Node2D"]
+
+script = ExtResource( 1 )
+
+[node name="MainUI" type="TextureRect" parent="."]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1926.0
+margin_bottom = 1086.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 0
+
+[node name="OpenButton" type="TextureButton" parent="MainUI"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1814.0
+margin_top = 978.0
+margin_right = 1884.0
+margin_bottom = 1048.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="TextureRect" type="TextureRect" parent="MainUI/OpenButton"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 18.0
+margin_top = 15.0
+margin_right = 57.0
+margin_bottom = 52.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 5 )
+expand = true
+stretch_mode = 0
+
+[node name="SaveButton" type="TextureButton" parent="MainUI"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1721.0
+margin_top = 978.0
+margin_right = 1791.0
+margin_bottom = 1048.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+expand = true
+_sections_unfolded = [ "Rect" ]
+
+[node name="TextureRect" type="TextureRect" parent="MainUI/SaveButton"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 17.0
+margin_top = 15.0
+margin_right = 56.0
+margin_bottom = 52.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 6 )
+expand = true
+stretch_mode = 0
+
+[node name="Label1" type="Label" parent="MainUI"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 394.0
+margin_top = 81.0
+margin_right = 434.0
+margin_bottom = 95.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "1"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label2" type="Label" parent="MainUI"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 781.0
+margin_top = 81.0
+margin_right = 821.0
+margin_bottom = 95.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "2"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label3" type="Label" parent="MainUI"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1164.0
+margin_top = 83.0
+margin_right = 1204.0
+margin_bottom = 97.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "3"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label4" type="Label" parent="MainUI"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1543.0
+margin_top = 83.0
+margin_right = 1583.0
+margin_bottom = 97.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "4"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="PlayButton" type="TextureButton" parent="MainUI"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 30.0
+margin_top = 903.0
+margin_right = 213.0
+margin_bottom = 1060.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = true
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 8 )
+expand = true
+_sections_unfolded = [ "Textures" ]
+
+[node name="PageButton1" type="TextureButton" parent="MainUI"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 268.0
+margin_top = 980.0
+margin_right = 338.0
+margin_bottom = 1050.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = true
+pressed = true
+enabled_focus_mode = 2
+shortcut = null
+group = ExtResource( 9 )
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+expand = true
+_sections_unfolded = [ "Margin", "Rect" ]
+
+[node name="Label" type="Label" parent="MainUI/PageButton1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 30.0
+margin_top = 29.0
+margin_right = 61.0
+margin_bottom = 59.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "1"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="PageButton2" type="TextureButton" parent="MainUI"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 357.0
+margin_top = 980.0
+margin_right = 427.0
+margin_bottom = 1050.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = true
+enabled_focus_mode = 2
+shortcut = null
+group = ExtResource( 9 )
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+expand = true
+_sections_unfolded = [ "Rect" ]
+
+[node name="Label" type="Label" parent="MainUI/PageButton2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 32.0
+margin_top = 29.0
+margin_right = 63.0
+margin_bottom = 59.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "2"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="PageButton3" type="TextureButton" parent="MainUI"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 442.0
+margin_top = 980.0
+margin_right = 512.0
+margin_bottom = 1050.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = true
+enabled_focus_mode = 2
+shortcut = null
+group = ExtResource( 9 )
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+expand = true
+_sections_unfolded = [ "Rect" ]
+
+[node name="Label" type="Label" parent="MainUI/PageButton3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 31.0
+margin_top = 28.0
+margin_right = 62.0
+margin_bottom = 58.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "3"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="PageButton4" type="TextureButton" parent="MainUI"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 525.0
+margin_top = 980.0
+margin_right = 595.0
+margin_bottom = 1050.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = true
+enabled_focus_mode = 2
+shortcut = null
+group = ExtResource( 9 )
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+expand = true
+
+[node name="Label" type="Label" parent="MainUI/PageButton4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 33.0
+margin_top = 28.0
+margin_right = 64.0
+margin_bottom = 58.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "4"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Decor1" type="TextureRect" parent="MainUI"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1305.0
+margin_top = 992.0
+margin_right = 1677.0
+margin_bottom = 1040.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 10 )
+expand = true
+stretch_mode = 0
+
+[node name="LogoIcon" type="TextureRect" parent="MainUI"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 29.0
+margin_right = 218.0
+margin_bottom = 133.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 11 )
+expand = true
+stretch_mode = 0
+
+[node name="PadControl" type="TextureRect" parent="."]
+
+editor/display_folded = true
+anchor_left = 1.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 0.0
+margin_left = 304.0
+margin_top = 146.0
+margin_right = 1826.0
+margin_bottom = 901.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+expand = true
+stretch_mode = 0
+script = ExtResource( 12 )
+_sections_unfolded = [ "Anchor", "Margin", "Rect" ]
+
+[node name="PadLabel1" type="Label" parent="PadControl"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -297.0
+margin_top = 26.0
+margin_right = -63.0
+margin_bottom = 76.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Crash"
+align = 1
+valign = 1
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect" ]
+
+[node name="PadLabel2" type="Label" parent="PadControl"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -294.0
+margin_top = 120.0
+margin_right = -60.0
+margin_bottom = 170.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Tom 1"
+align = 1
+valign = 1
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect" ]
+
+[node name="PadLabel3" type="Label" parent="PadControl"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -295.0
+margin_top = 217.0
+margin_right = -61.0
+margin_bottom = 267.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Tom 2"
+align = 1
+valign = 1
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect" ]
+
+[node name="PadLabel4" type="Label" parent="PadControl"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -294.0
+margin_top = 307.0
+margin_right = -60.0
+margin_bottom = 357.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Tom 3"
+align = 1
+valign = 1
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect" ]
+
+[node name="PadLabel5" type="Label" parent="PadControl"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -292.0
+margin_top = 402.0
+margin_right = -58.0
+margin_bottom = 452.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Open hat"
+align = 1
+valign = 1
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect" ]
+
+[node name="PadLabel6" type="Label" parent="PadControl"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -292.0
+margin_top = 499.0
+margin_right = -58.0
+margin_bottom = 549.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Closed hat"
+align = 1
+valign = 1
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect" ]
+
+[node name="PadLabel7" type="Label" parent="PadControl"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -293.0
+margin_top = 592.0
+margin_right = -59.0
+margin_bottom = 642.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Kick"
+align = 1
+valign = 1
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect" ]
+
+[node name="PadLabel8" type="Label" parent="PadControl"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -292.0
+margin_top = 687.0
+margin_right = -58.0
+margin_bottom = 737.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Snare"
+align = 1
+valign = 1
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect" ]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
+stream = ExtResource( 13 )
+volume_db = 0.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="PlayerTimer" type="Timer" parent="."]
+
+process_mode = 0
+wait_time = 0.1
+one_shot = false
+autostart = false
+
+[connection signal="toggled" from="MainUI/PlayButton" to="." method="_on_PlayButton_toggled"]
+
+[connection signal="timeout" from="PlayerTimer" to="." method="_on_PlayerTimer_timeout"]
+
+
