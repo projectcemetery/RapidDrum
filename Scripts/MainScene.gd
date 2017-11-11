@@ -51,3 +51,7 @@ func _on_PlayerTimer_timeout():
 	stepPlay += 1
 	if stepPlay >= constants.PAD_COL_COUNT:
 		stepPlay = 0
+
+# On page changed
+func _on_PageControl_PageChanged(pageNumber):
+	print(pageNumber)
