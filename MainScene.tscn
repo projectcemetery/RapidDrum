@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Scripts/MainScene.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Background.png" type="Texture" id=2]
@@ -6,14 +6,15 @@
 [ext_resource path="res://Assets/SimpleButtonPressed.png" type="Texture" id=4]
 [ext_resource path="res://Assets/OpenIcon.png" type="Texture" id=5]
 [ext_resource path="res://Assets/SaveIcon.png" type="Texture" id=6]
-[ext_resource path="res://Assets/Decor1.png" type="Texture" id=7]
-[ext_resource path="res://Assets/DrumLogo.png" type="Texture" id=8]
-[ext_resource path="res://Assets/PlayButtonNormal.png" type="Texture" id=9]
-[ext_resource path="res://Assets/PlayButtonPressed.png" type="Texture" id=10]
-[ext_resource path="res://Scripts/PageControl.gd" type="Script" id=11]
-[ext_resource path="res://Assets/pagebuttongroup.tres" type="ButtonGroup" id=12]
-[ext_resource path="res://Scripts/PadControl.gd" type="Script" id=13]
-[ext_resource path="res://Assets/Hip-Hop-Snare-3.wav" type="AudioStream" id=14]
+[ext_resource path="res://Assets/MainFont.tres" type="DynamicFont" id=7]
+[ext_resource path="res://Assets/Decor1.png" type="Texture" id=8]
+[ext_resource path="res://Assets/DrumLogo.png" type="Texture" id=9]
+[ext_resource path="res://Assets/PlayButtonNormal.png" type="Texture" id=10]
+[ext_resource path="res://Assets/PlayButtonPressed.png" type="Texture" id=11]
+[ext_resource path="res://Scripts/PageControl.gd" type="Script" id=12]
+[ext_resource path="res://Assets/pagebuttongroup.tres" type="ButtonGroup" id=13]
+[ext_resource path="res://Scripts/PadControl.gd" type="Script" id=14]
+[ext_resource path="res://Assets/Hip-Hop-Snare-3.wav" type="AudioStream" id=15]
 
 [node name="MainScene" type="Node2D"]
 
@@ -25,8 +26,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
+margin_top = -1.0
 margin_right = 1926.0
-margin_bottom = 1086.0
+margin_bottom = 1085.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -130,19 +132,21 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 394.0
-margin_top = 81.0
-margin_right = 434.0
-margin_bottom = 95.0
+margin_left = 392.0
+margin_top = 72.0
+margin_right = 432.0
+margin_bottom = 102.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
+custom_fonts/font = ExtResource( 7 )
 text = "1"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
 
 [node name="Label2" type="Label" parent="MainUI"]
 
@@ -151,18 +155,20 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 781.0
-margin_top = 81.0
+margin_top = 75.0
 margin_right = 821.0
-margin_bottom = 95.0
+margin_bottom = 105.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
+custom_fonts/font = ExtResource( 7 )
 text = "2"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
 
 [node name="Label3" type="Label" parent="MainUI"]
 
@@ -171,18 +177,20 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 1164.0
-margin_top = 83.0
+margin_top = 74.0
 margin_right = 1204.0
-margin_bottom = 97.0
+margin_bottom = 104.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
+custom_fonts/font = ExtResource( 7 )
 text = "3"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
 
 [node name="Label4" type="Label" parent="MainUI"]
 
@@ -191,18 +199,20 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 1543.0
-margin_top = 83.0
+margin_top = 74.0
 margin_right = 1583.0
-margin_bottom = 97.0
+margin_bottom = 104.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
+custom_fonts/font = ExtResource( 7 )
 text = "4"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
 
 [node name="Decor1" type="TextureRect" parent="MainUI"]
 
@@ -219,7 +229,7 @@ rect_clip_content = false
 mouse_filter = 1
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 7 )
+texture = ExtResource( 8 )
 expand = true
 stretch_mode = 0
 
@@ -238,9 +248,53 @@ rect_clip_content = false
 mouse_filter = 1
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 8 )
+texture = ExtResource( 9 )
 expand = true
 stretch_mode = 0
+
+[node name="Label" type="Label" parent="MainUI/LogoIcon"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -47.0
+margin_top = 40.0
+margin_right = 4.0
+margin_bottom = 70.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 7 )
+text = "Rapid"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="Label2" type="Label" parent="MainUI/LogoIcon"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 94.0
+margin_top = 40.0
+margin_right = 146.0
+margin_bottom = 70.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 7 )
+text = "Drum"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts", "custom_styles" ]
 
 [node name="PlayButton" type="TextureButton" parent="MainUI"]
 
@@ -261,13 +315,14 @@ toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 9 )
-texture_pressed = ExtResource( 10 )
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 11 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
 [node name="PageControl" type="Control" parent="MainUI"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -281,11 +336,10 @@ rect_clip_content = false
 mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-script = ExtResource( 11 )
+script = ExtResource( 12 )
 
 [node name="PageButton1" type="TextureButton" parent="MainUI/PageControl"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -302,7 +356,7 @@ toggle_mode = true
 pressed = true
 enabled_focus_mode = 2
 shortcut = null
-group = ExtResource( 12 )
+group = ExtResource( 13 )
 texture_normal = ExtResource( 3 )
 texture_pressed = ExtResource( 4 )
 expand = true
@@ -315,22 +369,23 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 30.0
-margin_top = 29.0
+margin_top = 21.0
 margin_right = 61.0
-margin_bottom = 59.0
+margin_bottom = 51.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
+custom_fonts/font = ExtResource( 7 )
 text = "1"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
 
 [node name="PageButton2" type="TextureButton" parent="MainUI/PageControl"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -347,7 +402,7 @@ size_flags_vertical = 1
 toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
-group = ExtResource( 12 )
+group = ExtResource( 13 )
 texture_normal = ExtResource( 3 )
 texture_pressed = ExtResource( 4 )
 expand = true
@@ -359,23 +414,24 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 32.0
-margin_top = 29.0
-margin_right = 63.0
-margin_bottom = 59.0
+margin_left = 29.0
+margin_top = 21.0
+margin_right = 60.0
+margin_bottom = 51.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
+custom_fonts/font = ExtResource( 7 )
 text = "2"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
 
 [node name="PageButton3" type="TextureButton" parent="MainUI/PageControl"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -392,7 +448,7 @@ size_flags_vertical = 1
 toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
-group = ExtResource( 12 )
+group = ExtResource( 13 )
 texture_normal = ExtResource( 3 )
 texture_pressed = ExtResource( 4 )
 expand = true
@@ -404,23 +460,24 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 31.0
-margin_top = 28.0
-margin_right = 62.0
-margin_bottom = 58.0
+margin_left = 29.0
+margin_top = 20.0
+margin_right = 60.0
+margin_bottom = 50.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
+custom_fonts/font = ExtResource( 7 )
 text = "3"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
 
 [node name="PageButton4" type="TextureButton" parent="MainUI/PageControl"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -437,7 +494,7 @@ size_flags_vertical = 1
 toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
-group = ExtResource( 12 )
+group = ExtResource( 13 )
 texture_normal = ExtResource( 3 )
 texture_pressed = ExtResource( 4 )
 expand = true
@@ -448,19 +505,21 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 33.0
-margin_top = 28.0
-margin_right = 64.0
-margin_bottom = 58.0
+margin_left = 30.0
+margin_top = 20.0
+margin_right = 61.0
+margin_bottom = 50.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
+custom_fonts/font = ExtResource( 7 )
 text = "4"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
 
 [node name="PadControl" type="TextureRect" parent="."]
 
@@ -480,7 +539,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 expand = true
 stretch_mode = 0
-script = ExtResource( 13 )
+script = ExtResource( 14 )
 _sections_unfolded = [ "Anchor", "Margin", "Rect" ]
 
 [node name="PadLabel1" type="Label" parent="PadControl"]
@@ -490,14 +549,15 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = -297.0
-margin_top = 26.0
+margin_top = 18.0
 margin_right = -63.0
-margin_bottom = 76.0
+margin_bottom = 68.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
+custom_fonts/font = ExtResource( 7 )
 text = "Crash"
 align = 1
 valign = 1
@@ -505,7 +565,7 @@ uppercase = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "Rect" ]
+_sections_unfolded = [ "custom_fonts" ]
 
 [node name="PadLabel2" type="Label" parent="PadControl"]
 
@@ -513,15 +573,16 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = -294.0
-margin_top = 120.0
-margin_right = -60.0
-margin_bottom = 170.0
+margin_left = -292.0
+margin_top = 111.0
+margin_right = -58.0
+margin_bottom = 161.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
+custom_fonts/font = ExtResource( 7 )
 text = "Tom 1"
 align = 1
 valign = 1
@@ -529,7 +590,7 @@ uppercase = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "Rect" ]
+_sections_unfolded = [ "custom_fonts" ]
 
 [node name="PadLabel3" type="Label" parent="PadControl"]
 
@@ -537,15 +598,16 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = -295.0
-margin_top = 217.0
-margin_right = -61.0
-margin_bottom = 267.0
+margin_left = -293.0
+margin_top = 206.0
+margin_right = -59.0
+margin_bottom = 256.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
+custom_fonts/font = ExtResource( 7 )
 text = "Tom 2"
 align = 1
 valign = 1
@@ -553,7 +615,7 @@ uppercase = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "Rect" ]
+_sections_unfolded = [ "Rect", "custom_fonts" ]
 
 [node name="PadLabel4" type="Label" parent="PadControl"]
 
@@ -561,15 +623,16 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = -294.0
-margin_top = 307.0
-margin_right = -60.0
-margin_bottom = 357.0
+margin_left = -292.0
+margin_top = 295.0
+margin_right = -58.0
+margin_bottom = 345.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
+custom_fonts/font = ExtResource( 7 )
 text = "Tom 3"
 align = 1
 valign = 1
@@ -577,7 +640,7 @@ uppercase = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "Rect" ]
+_sections_unfolded = [ "Rect", "custom_fonts" ]
 
 [node name="PadLabel5" type="Label" parent="PadControl"]
 
@@ -585,15 +648,16 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = -292.0
-margin_top = 402.0
-margin_right = -58.0
-margin_bottom = 452.0
+margin_left = -294.0
+margin_top = 391.0
+margin_right = -60.0
+margin_bottom = 441.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
+custom_fonts/font = ExtResource( 7 )
 text = "Open hat"
 align = 1
 valign = 1
@@ -601,7 +665,7 @@ uppercase = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "Rect" ]
+_sections_unfolded = [ "Rect", "custom_fonts", "custom_styles" ]
 
 [node name="PadLabel6" type="Label" parent="PadControl"]
 
@@ -610,14 +674,15 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = -292.0
-margin_top = 499.0
+margin_top = 491.0
 margin_right = -58.0
-margin_bottom = 549.0
+margin_bottom = 541.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
+custom_fonts/font = ExtResource( 7 )
 text = "Closed hat"
 align = 1
 valign = 1
@@ -625,7 +690,7 @@ uppercase = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "Rect" ]
+_sections_unfolded = [ "Rect", "custom_fonts" ]
 
 [node name="PadLabel7" type="Label" parent="PadControl"]
 
@@ -633,15 +698,16 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = -293.0
-margin_top = 592.0
-margin_right = -59.0
-margin_bottom = 642.0
+margin_left = -298.0
+margin_top = 584.0
+margin_right = -64.0
+margin_bottom = 634.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
+custom_fonts/font = ExtResource( 7 )
 text = "Kick"
 align = 1
 valign = 1
@@ -649,7 +715,7 @@ uppercase = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "Rect" ]
+_sections_unfolded = [ "Rect", "custom_fonts" ]
 
 [node name="PadLabel8" type="Label" parent="PadControl"]
 
@@ -658,14 +724,15 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = -292.0
-margin_top = 687.0
+margin_top = 681.0
 margin_right = -58.0
-margin_bottom = 737.0
+margin_bottom = 731.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
+custom_fonts/font = ExtResource( 7 )
 text = "Snare"
 align = 1
 valign = 1
@@ -673,12 +740,12 @@ uppercase = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "Rect" ]
+_sections_unfolded = [ "Rect", "custom_fonts" ]
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 
 position = Vector2( -68.4729, 55.5185 )
-stream = ExtResource( 14 )
+stream = ExtResource( 15 )
 volume_db = 0.0
 autoplay = false
 max_distance = 2000.0
