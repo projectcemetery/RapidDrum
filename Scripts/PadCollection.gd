@@ -6,6 +6,8 @@ var constants = preload("res://Scripts/Constants.gd")
 
 var grid = {}
 
+signal PadChanged
+
 func _init():
 	for x in range(0, constants.PAD_COL_COUNT):
 		var col = {}
@@ -16,6 +18,7 @@ func _init():
 # Set pad value
 func setPad(col, row, pressed):
 	grid[col][row] = pressed
+	PadChanged(grid[col])
 	
 # Get column values
 func getCol(col):
@@ -25,6 +28,13 @@ func getCol(col):
 		res.append(column[y])
 	return res
 	
-# Get row values
-func getRow(row):
-	pass
+# Get summ of columns as list of booleans
+func getColSumm():
+	var res = []
+	for x in range(0, constants.PAD_COL_COUNT):
+		var colData = []
+		var column = grid[x]
+		for y in range(0, constants.PAD_ROW_COUNT):			
+			colData.append(column[y])
+		res.append(colData)
+	return res
