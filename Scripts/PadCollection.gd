@@ -16,9 +16,9 @@ func _init():
 		grid[x] = col
 
 # Set pad value
-func setPad(col, row, pressed):
-	grid[col][row] = pressed
-	PadChanged(grid[col])
+func setPad(x, y, pressed):
+	grid[x][y] = pressed
+	emit_signal("PadChanged", x, y)
 	
 # Get column values
 func getCol(col):
