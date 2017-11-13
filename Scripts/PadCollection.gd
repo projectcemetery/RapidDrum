@@ -4,8 +4,14 @@ extends Reference
 
 var constants = preload("res://Scripts/Constants.gd")
 
+# Is collection empty
+var isEmpty = true
+# Filled pads
+var filled = 0
+# Pad grid
 var grid = {}
 
+# On pad changed signal
 signal PadChanged
 
 func _init():
@@ -15,9 +21,22 @@ func _init():
 			col[y] = false
 		grid[x] = col
 
+# Is collection has pads
+func hasPads():
+	return not isEmpty
+
 # Set pad value
 func setPad(x, y, pressed):
 	grid[x][y] = pressed
+	if pressed:
+		filled += 1
+		isEmpty = false
+	else:
+		filled -= 1
+		
+	if filled < 1:
+		isEmpty = true
+	
 	emit_signal("PadChanged", x, y)
 	
 # Get column values
