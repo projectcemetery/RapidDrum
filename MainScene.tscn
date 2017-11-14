@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Scripts/MainScene.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Background.png" type="Texture" id=2]
@@ -14,7 +14,10 @@
 [ext_resource path="res://Scripts/PageControl.gd" type="Script" id=12]
 [ext_resource path="res://Assets/pagebuttongroup.tres" type="ButtonGroup" id=13]
 [ext_resource path="res://Scripts/PadControl.gd" type="Script" id=14]
-[ext_resource path="res://Scripts/PadPlayer.gd" type="Script" id=15]
+[ext_resource path="res://Scripts/TempoControl.gd" type="Script" id=15]
+[ext_resource path="res://Assets/AddTempoButton.png" type="Texture" id=16]
+[ext_resource path="res://Assets/SubTempoButton.png" type="Texture" id=17]
+[ext_resource path="res://Scripts/PadPlayer.gd" type="Script" id=18]
 
 [node name="MainScene" type="Node2D"]
 
@@ -744,9 +747,134 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Rect", "custom_fonts" ]
 
+[node name="TempoControl" type="Control" parent="MainUI"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 675.0
+margin_top = 975.0
+margin_right = 1193.0
+margin_bottom = 1049.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 15 )
+
+[node name="TempoLabel" type="Label" parent="MainUI/TempoControl"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -10.0
+margin_top = 23.0
+margin_right = 49.0
+margin_bottom = 53.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 7 )
+text = "Tempo"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="ColorRect" type="ColorRect" parent="MainUI/TempoControl"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 68.0
+margin_top = 16.0
+margin_right = 191.0
+margin_bottom = 64.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0.0217896, 0.0662665, 0.109375, 1 )
+
+[node name="Label" type="Label" parent="MainUI/TempoControl/ColorRect"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 47.0
+margin_top = 8.0
+margin_right = 87.0
+margin_bottom = 38.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 7 )
+text = "100"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="AddTempoButton" type="TextureButton" parent="MainUI/TempoControl"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 203.0
+margin_top = 16.0
+margin_right = 251.0
+margin_bottom = 64.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 16 )
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="SubTempoButton" type="TextureButton" parent="MainUI/TempoControl"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 260.0
+margin_top = 16.0
+margin_right = 308.0
+margin_bottom = 64.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 17 )
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
 [node name="PadPlayer" type="Node" parent="."]
 
-script = ExtResource( 15 )
+script = ExtResource( 18 )
 
 [node name="PlayerTimer" type="Timer" parent="PadPlayer"]
 

@@ -11,7 +11,11 @@ func _init():
 # On pad changed
 func onPadChanged(x, y, index):
 	emit_signal("TrackPadChanged", x, y, index)
-	
+
+# Get collection count
+func getCount():
+	return len(collections)
+
 # Add pad collection to track
 func addPadCollection(coll):
 	collections.append(coll)

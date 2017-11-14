@@ -2,7 +2,8 @@ extends Node2D
 
 var constants = preload("res://Scripts/Constants.gd")
 var padCollectionClass = preload("res://Scripts/PadCollection.gd")
-var trackClass = load("res://Scripts/Track.gd")
+var trackClass = preload("res://Scripts/Track.gd")
+var kitClass = preload("res://Scripts/DrumKit.gd")
 
 # Current page count
 var pageNumber = 0
@@ -12,14 +13,13 @@ var padControl
 var padPlayer
 # Track to play
 var track 
-
-# On pad changed
-func onPadChanged(x, y):
-	print(x,y)
+# Drum kit
+var drumKit
 
 # On ready
 func _ready():
 	track = trackClass.new()
+	drumKit = kitClass.new(self)
 	
 	for i in range(0, constants.PAGE_COUNT):
 		var padColl = padCollectionClass.new()
@@ -28,14 +28,15 @@ func _ready():
 	padControl = get_node("MainUI/PadControl")
 	padControl.setPadCollection(track.getPadCollection(pageNumber))
 	padPlayer = get_node("PadPlayer")
+	padPlayer.setTrack(track)
+	padPlayer.setKit(drumKit)
 
 # On play button toggled
-func _on_PlayButton_toggled(pressed):
-	pass
-#	if pressed:
-#		padPlayer.start()
-#	else:
-#		padPlayer.stop()
+func _on_PlayButton_toggled(pressed):	
+	if pressed:
+		padPlayer.play()
+	else:
+		padPlayer.stop()
 
 # On page changed
 func _on_PageControl_PageChanged(page):

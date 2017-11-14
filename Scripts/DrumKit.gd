@@ -2,22 +2,31 @@ extends Reference
 
 var samples = []
 
+# AudioStreamPlayer2D without parent does not play
+var parentNode
+
 # Constructor
-func _init():
-	samples.append(newStream("crash.wav"))
-	samples.append(newStream("tom1.wav"))
-	samples.append(newStream("tom2.wav"))
-	samples.append(newStream("tom3.wav"))
-	samples.append(newStream("openhat.wav"))
-	samples.append(newStream("closedhat.wav"))
-	samples.append(newStream("kick.wav"))
-	samples.append(newStream("snare.wav"))
+func _init(node):
+	parentNode = node
+	samples.append(newStream("CYCdh_Kurz01-Crash01.wav"))
+	samples.append(newStream("CyCdh_K3Tom-01.wav"))
+	samples.append(newStream("CyCdh_K3Tom-04.wav"))
+	samples.append(newStream("CyCdh_K3Tom-05.wav"))
+	samples.append(newStream("CYCdh_K2room_OpHat-01.wav"))
+	samples.append(newStream("CYCdh_K6-ClHat.wav"))
+	samples.append(newStream("CYCdh_Kurz05-Kick01.wav"))
+	samples.append(newStream("CYCdh_K6-Snr02.wav"))
 	
 func newStream(name):
-	var nstream = AudioStreamPlayer2D.new()
+	var nstream = AudioStreamPlayer.new()
+	var path = "res://Assets/%s" % name
+	nstream.stream = load(path)
+	parentNode.add_child(nstream)
 	return nstream
 	
 # Play kit pattern
 func play(pattern):
 	for i in range(0, len(pattern)):
-		samples[i].play()
+		var need = pattern[i]
+		if need:
+			samples[i].play()
