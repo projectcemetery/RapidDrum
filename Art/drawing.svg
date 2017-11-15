@@ -1408,8 +1408,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.56710334"
-     inkscape:cx="406.4087"
-     inkscape:cy="-927.78608"
+     inkscape:cx="732.61982"
+     inkscape:cy="-1001.8604"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1492,6 +1492,14 @@
          d="M 41.356782,340.79006 549.12621,188.49491 42.857143,180.93363 Z"
          style="fill:#2a2a32;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter7055)" />
     </g>
+    <rect
+       style="opacity:1;fill:#121212;fill-opacity:1;stroke:#000000;stroke-width:5.23827553;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5037"
+       width="299.01166"
+       height="80.808693"
+       x="-154.49332"
+       y="2411.5747"
+       ry="7.1578679" />
     <rect
        style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:1.70954263;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect8836"
@@ -6734,16 +6742,16 @@
          x="-336.70587"
          y="2298.6299">Snare</tspan></text>
     <rect
-       style="opacity:1;fill:#ffe959;fill-opacity:1;stroke:#000000;stroke-width:2.82962441;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#e98300;fill-opacity:1;stroke:#000000;stroke-width:2.82962441;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect6735"
        width="80.96431"
        height="23.007675"
        x="-34.746346"
        y="2347.4211"
        ry="7.9870367"
-       inkscape:export-xdpi="77.383469"
-       inkscape:export-ydpi="77.383469"
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png" />
+       inkscape:export-xdpi="107.98351"
+       inkscape:export-ydpi="107.98351"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/TickActive.png" />
     <rect
        ry="7.9870367"
        y="2347.4211"
@@ -6752,9 +6760,9 @@
        width="80.96431"
        id="rect6737"
        style="opacity:1;fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:2.82962441;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-xdpi="77.383469"
-       inkscape:export-ydpi="77.383469"
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png" />
+       inkscape:export-xdpi="107.41"
+       inkscape:export-ydpi="107.41"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/TickNormal.png" />
     <rect
        style="opacity:1;fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:2.82962441;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect6739"
@@ -7108,9 +7116,9 @@
          sodipodi:role="line">4</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:53.18845367px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.02453649px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="204.97496"
-       y="2465.071"
+       style="font-style:normal;font-weight:normal;font-size:41.58784485px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.80108112px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="352.18631"
+       y="2464.2634"
        id="text6979"
        sodipodi:linespacing="125%"
        inkscape:export-xdpi="77.383469"
@@ -7118,12 +7126,12 @@
        inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png"><tspan
          sodipodi:role="line"
          id="tspan6981"
-         x="204.97496"
-         y="2465.071"
-         style="stroke-width:1.02453649px">Tempo</tspan></text>
+         x="352.18631"
+         y="2464.2634"
+         style="stroke-width:0.80108112px">Tempo</tspan></text>
     <g
        id="g4947"
-       transform="matrix(0.83461289,0,0,0.83461289,-416.57532,1313.3295)"
+       transform="matrix(0.65258057,0,0,0.65258057,-133.80141,1563.7213)"
        inkscape:export-xdpi="77.383469"
        inkscape:export-ydpi="77.383469"
        inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png">
@@ -7158,7 +7166,7 @@
     </g>
     <g
        id="g7017"
-       transform="matrix(1.386423,0,0,1.386423,-1015.7034,513.7755)"
+       transform="matrix(1.0840387,0,0,1.0840387,-602.25733,938.5531)"
        inkscape:export-xdpi="77.383469"
        inkscape:export-ydpi="77.383469"
        inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/SubTempoButton.png">
@@ -7187,7 +7195,7 @@
     </g>
     <g
        id="g7023"
-       transform="matrix(1.4094151,0,0,1.4094151,-1123.6367,582.92696)"
+       transform="matrix(1.1020162,0,0,1.1020162,-686.64996,992.62236)"
        inkscape:export-xdpi="110.82492"
        inkscape:export-ydpi="110.82492"
        inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/AddTempoButton.png">
@@ -8337,5 +8345,60 @@
        x="-199.25821"
        y="1534.9683"
        ry="0.94120002" />
+    <g
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/SubTempoButton.png"
+       inkscape:export-ydpi="77.383469"
+       inkscape:export-xdpi="77.383469"
+       transform="matrix(1.0840387,0,0,1.0840387,-1118.4634,939.79997)"
+       id="g5019">
+      <rect
+         ry="0"
+         y="1369.835"
+         x="1230.8097"
+         height="47.911495"
+         width="47.911495"
+         id="rect5021"
+         style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:3.94565225;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <g
+         id="g5023">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:76.78041077px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="1242.4081"
+           y="1415.1425"
+           id="text5025"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan5027"
+             x="1242.4081"
+             y="1415.1425">-</tspan></text>
+      </g>
+    </g>
+    <g
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/AddTempoButton.png"
+       inkscape:export-ydpi="110.82492"
+       inkscape:export-xdpi="110.82492"
+       transform="matrix(1.1020162,0,0,1.1020162,-1202.8561,993.86923)"
+       id="g5029">
+      <rect
+         style="opacity:1;fill:#176c1c;fill-opacity:1;stroke:#000000;stroke-width:3.94565225;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect5031"
+         width="47.911495"
+         height="47.911495"
+         x="1230.8097"
+         y="1298.2478"
+         ry="0" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:52.00445557px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="1239.4926"
+         y="1339.3574"
+         id="text5033"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan5035"
+           x="1239.4926"
+           y="1339.3574">+</tspan></text>
+    </g>
   </g>
 </svg>

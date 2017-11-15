@@ -5,6 +5,9 @@ var constants = preload("res://Scripts/Constants.gd")
 # Padding beetwen pad
 const PAD_PADDING = 4
 
+# Tick height
+const TICK_HEIGHT = 20
+
 # Texture for normal pad
 var normalTexture
 # Texture for pressed pad
@@ -14,6 +17,8 @@ var padSize = 50
 
 # Grid of pad
 var grid = {}
+# Ticks 
+var ticks = []
 # Current Pad collection
 var padCollection
 
@@ -37,11 +42,46 @@ func createPadButton(x, y, width, height):
 	add_child(butt)
 	return butt
 
+# Create tick
+func createTick(x):
+	var px = x * (padSize + PAD_PADDING)
+	var py = constants.PAD_ROW_COUNT * (padSize + PAD_PADDING) + PAD_PADDING
+	var tick = TextureRect.new()
+	tick.expand = true
+	tick.texture = preload("res://Assets/TickNormal.png")
+	tick.set_size(Vector2(padSize, TICK_HEIGHT))
+	tick.set_position(Vector2(px, py))
+	add_child(tick)
+	ticks.append(tick)
+
+# Clear tick activity
+func clearTicks():
+	for tick in ticks:
+		tick.texture = preload("res://Assets/TickNormal.png")
+	setActiveTick(0)
+
+# Set active tick
+func setActiveTick(x):
+	var last = x - 1
+	
+	if last < 0:
+		last = 0
+	
+	if last == 0:
+		ticks[constants.PAD_COL_COUNT - 1].texture = preload("res://Assets/TickNormal.png")
+	
+	ticks[last].texture = preload("res://Assets/TickNormal.png")
+	ticks[x].texture = preload("res://Assets/TickActive.png")
+
 # Create drum pad panel
 func createPadPanel():
 	for x in range(0, constants.PAD_COL_COUNT):
 		for y in range(0, constants.PAD_ROW_COUNT):
 			grid[y][x] = createPadButton(x, y, padSize, padSize)
+		createTick(x)
+		
+	# Set to start
+	setActiveTick(0)
 
 # Init pad grid
 func initGrid():

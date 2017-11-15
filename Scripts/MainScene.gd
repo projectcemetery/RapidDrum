@@ -9,6 +9,8 @@ var kitClass = preload("res://Scripts/DrumKit.gd")
 var pageNumber = 0
 # Control for manipulation with pads
 var padControl
+# Page control
+var pageControl
 # Pad player
 var padPlayer
 # Track to play
@@ -21,23 +23,48 @@ func _ready():
 	track = trackClass.new()
 	drumKit = kitClass.new(self)
 	
-	for i in range(0, constants.PAGE_COUNT):
-		var padColl = padCollectionClass.new()
-		track.addPadCollection(padColl)
+	var padColl = padCollectionClass.new()
+	track.addPadCollection(padColl)
 
 	padControl = get_node("MainUI/PadControl")
-	padControl.setPadCollection(track.getPadCollection(pageNumber))
+	padControl.setPadCollection(track.getPadCollection(pageNumber))	
 	padPlayer = get_node("PadPlayer")
 	padPlayer.setTrack(track)
 	padPlayer.setKit(drumKit)
+	
+	pageControl = get_node("MainUI/PageControl")
+
+# Update pad collection for pad control
+func updatePadCollection():
+	var coll = track.getPadCollection(pageNumber)
+	padControl.setPadCollection(coll)
 
 # On play button toggled
 func _on_PlayButton_toggled(pressed):	
 	if pressed:
 		padPlayer.play()
 	else:
+		padControl.clearTicks()
 		padPlayer.stop()
 
 # On page changed
 func _on_PageControl_PageChanged(page):
 	pageNumber = page
+	updatePadCollection()
+
+# On page added
+func _on_PageControl_PageAdded():
+	var padColl = padCollectionClass.new()
+	track.addPadCollection(padColl)
+	pageNumber += 1
+	updatePadCollection()
+
+# On page removed
+func _on_PageControl_PageRemoved():
+	track.removePadCollection(pageControl.getCount())
+	pageNumber -= 1
+	updatePadCollection()
+
+# On player step changed
+func _on_PadPlayer_PlayerStepChanged(step):
+	padControl.setActiveTick(step)

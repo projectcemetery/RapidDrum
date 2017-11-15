@@ -22,6 +22,10 @@ func addPadCollection(coll):
 	var index = len(collections) - 1
 	coll.connect("PadChanged", self, "onPadChanged", [index])
 
+# Remove collection by index
+func removePadCollection(index):
+	collections.remove(index)
+
 # Return collection
 func getPadCollection(index):
 	return collections[index]

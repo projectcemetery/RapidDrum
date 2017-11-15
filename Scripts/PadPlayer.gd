@@ -13,6 +13,8 @@ var step = 0
 # Playlist count
 var listCount = 0
 
+signal PlayerStepChanged
+
 func _ready():
 	player = get_node("PlayerTimer")
 
@@ -30,8 +32,6 @@ func createPlaylist():
 	var count = track.getCount()
 	for x in range(0, count):
 		var coll = track.getPadCollection(x)
-		if not coll.hasPads():
-			continue
 			
 		var collSum = coll.getColSumm()
 		for cl in collSum:
@@ -51,10 +51,11 @@ func stop():
 
 # On timer
 func _on_PlayerTimer_timeout():
-	if step >= listCount:
-		step = 0
-		
 	var pattern = playList[step]
+	drumKit.play(pattern)
 	step += 1
 	
-	drumKit.play(pattern)
+	if step >= listCount:
+		step = 0
+	
+	emit_signal("PlayerStepChanged", step)
