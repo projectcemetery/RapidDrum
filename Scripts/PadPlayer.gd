@@ -68,7 +68,8 @@ func stop():
 
 # On timer
 func _on_PlayerTimer_timeout():
-	var pattern = playList[currentPage * constants.PAD_COL_COUNT + step]
+	var pattern = playList[currentPage * constants.PAD_COL_COUNT + step]	
+	emit_signal("PlayerStepChanged", step)
 	drumKit.play(pattern)
 	step += 1
 	
@@ -78,5 +79,3 @@ func _on_PlayerTimer_timeout():
 		if currentPage >= pageCount:
 			currentPage = 0
 		emit_signal("CollectionChanged", currentPage)
-	
-	emit_signal("PlayerStepChanged", step)
