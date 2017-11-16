@@ -33,6 +33,7 @@ func _ready():
 	padPlayer.setKit(drumKit)
 	
 	pageControl = get_node("MainUI/PageControl")
+	padPlayer.setTempo(constants.DEFAULT_TEMPO)
 
 # Update pad collection for pad control
 func updatePadCollection():
@@ -42,8 +43,11 @@ func updatePadCollection():
 # On play button toggled
 func _on_PlayButton_toggled(pressed):	
 	if pressed:
+		pageControl.block()
+		pageControl.switchToPage(0)
 		padPlayer.play()
 	else:
+		pageControl.unblock()
 		padControl.clearTicks()
 		padPlayer.stop()
 
@@ -68,3 +72,11 @@ func _on_PageControl_PageRemoved():
 # On player step changed
 func _on_PadPlayer_PlayerStepChanged(step):
 	padControl.setActiveTick(step)
+
+# On player page/collection changed
+func _on_PadPlayer_CollectionChanged(page):
+	pageControl.switchToPage(page)
+
+# On tempo changed
+func _on_TempoControl_TempoChanged(tempo):
+	padPlayer.setTempo(tempo)

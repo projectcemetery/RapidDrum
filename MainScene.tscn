@@ -326,7 +326,6 @@ _sections_unfolded = [ "Textures" ]
 
 [node name="PageControl" type="Control" parent="MainUI"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -613,6 +612,25 @@ texture_normal = ExtResource( 15 )
 expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
 
+[node name="Blocker" type="ColorRect" parent="MainUI/PageControl"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -14.0
+margin_top = -9.0
+margin_right = 491.0
+margin_bottom = 83.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 1, 1, 1, 0 )
+_sections_unfolded = [ "Visibility" ]
+
 [node name="PadControl" type="TextureRect" parent="MainUI"]
 
 editor/display_folded = true
@@ -843,7 +861,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 852.0
 margin_top = 972.0
-margin_right = 1184.0
+margin_right = 1207.0
 margin_bottom = 1046.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -930,7 +948,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 color = Color( 0.0509804, 0.0509804, 0.0627451, 1 )
 
-[node name="Label" type="Label" parent="MainUI/TempoControl/ColorRect2"]
+[node name="TempoValue" type="Label" parent="MainUI/TempoControl/ColorRect2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -1028,6 +1046,14 @@ autostart = false
 [connection signal="pressed" from="MainUI/PageControl/AddPageButton" to="MainUI/PageControl" method="_on_AddPageButton_pressed"]
 
 [connection signal="pressed" from="MainUI/PageControl/SubPageButton" to="MainUI/PageControl" method="_on_SubPageButton_pressed"]
+
+[connection signal="TempoChanged" from="MainUI/TempoControl" to="." method="_on_TempoControl_TempoChanged"]
+
+[connection signal="button_down" from="MainUI/TempoControl/AddTempoButton" to="MainUI/TempoControl" method="_on_AddTempoButton_button_down"]
+
+[connection signal="button_down" from="MainUI/TempoControl/SubTempoButton" to="MainUI/TempoControl" method="_on_SubTempoButton_button_down"]
+
+[connection signal="CollectionChanged" from="PadPlayer" to="." method="_on_PadPlayer_CollectionChanged"]
 
 [connection signal="PlayerStepChanged" from="PadPlayer" to="." method="_on_PadPlayer_PlayerStepChanged"]
 

@@ -1,5 +1,10 @@
 extends Node
 
+# Constant to get Sixth from Fourth
+const FOUR = 4
+
+var constants = preload("res://Scripts/Constants.gd")
+
 # Timer player
 var player
 # Track to play
@@ -12,7 +17,14 @@ var playList = []
 var step = 0
 # Playlist count
 var listCount = 0
+# Page or collection's count
+var pageCount = 0
+# Current page
+var currentPage = 0
 
+# Player start play other collection
+signal CollectionChanged
+# Step changed
 signal PlayerStepChanged
 
 func _ready():
@@ -26,11 +38,15 @@ func setKit(kit):
 func setTrack(tr):
 	track = tr
 
+# Set play tempo
+func setTempo(tempo):
+	player.wait_time = 60.0 / (tempo * FOUR)
+
 # Create playlist for kit
 func createPlaylist():
 	playList.clear()
-	var count = track.getCount()
-	for x in range(0, count):
+	pageCount = track.getCount()
+	for x in range(0, pageCount):
 		var coll = track.getPadCollection(x)
 			
 		var collSum = coll.getColSumm()
@@ -42,6 +58,7 @@ func createPlaylist():
 # Start play
 func play():
 	step = 0
+	currentPage = 0
 	createPlaylist()
 	player.start()
 
@@ -51,11 +68,15 @@ func stop():
 
 # On timer
 func _on_PlayerTimer_timeout():
-	var pattern = playList[step]
+	var pattern = playList[currentPage * constants.PAD_COL_COUNT + step]
 	drumKit.play(pattern)
 	step += 1
 	
-	if step >= listCount:
+	if step >= constants.PAD_COL_COUNT:
 		step = 0
+		currentPage += 1
+		if currentPage >= pageCount:
+			currentPage = 0
+		emit_signal("CollectionChanged", currentPage)
 	
 	emit_signal("PlayerStepChanged", step)

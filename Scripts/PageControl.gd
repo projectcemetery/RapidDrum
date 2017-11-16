@@ -13,26 +13,55 @@ signal PageRemoved
 var currentPage = 0
 # Total page count
 var pageCount = 1
+# Node to block input
+var blockerNode
 
+# On ready
 func _ready():
-	pass
+	blockerNode = get_node("Blocker")
+
+# Get button name by page number 
+func getButtonByPage(page):
+	var name = "PageButton%s" % page
+	return get_node(name)
 
 # Add page
 func addPage():
 	pageCount += 1
-	var name = "PageButton%s" % pageCount
-	get_node(name).visible = true
-	get_node(name).pressed = true
+	var node = getButtonByPage(pageCount)
+	node.visible = true
+	node.pressed = true
 
 # Remove page
 func removePage():
-	var name = "PageButton%s" % pageCount
-	var prevName = "PageButton%s" % (pageCount - 1)
-	var node = get_node(name)
-	var prevNode = get_node(prevName)
+	var node = getButtonByPage(pageCount)
+	var prevNode = getButtonByPage(pageCount - 1)
 	node.visible = false
 	prevNode.pressed = true
 	pageCount -= 1
+	
+# Switch to page
+func switchToPage(page):
+	currentPage = page
+	var node = getButtonByPage(page + 1)
+	node.pressed = true
+	emit_signal("PageChanged", currentPage)
+
+# Return current page
+func getCurrentPage():
+	return currentPage
+
+# Return page count
+func getCount():
+	return pageCount
+
+# Block input
+func unblock():
+	blockerNode.visible = false
+
+# Block input
+func block():
+	blockerNode.visible = true
 
 func _on_PageButton1_toggled(pressed):
 	if pressed:
@@ -67,11 +96,3 @@ func _on_SubPageButton_pressed():
 		return
 	removePage()
 	emit_signal("PageRemoved")
-
-# Return current page
-func getCurrentPage():
-	return currentPage
-
-# Return page count
-func getCount():
-	return pageCount
