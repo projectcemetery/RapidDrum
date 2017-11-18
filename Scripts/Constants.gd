@@ -6,3 +6,5 @@ const PAD_ROW_COUNT = 8
 const PAGE_COUNT = 4
 # Default tempo
 const DEFAULT_TEMPO = 100
+# Max preset count
+const MAX_PRESET_COUNT = 5

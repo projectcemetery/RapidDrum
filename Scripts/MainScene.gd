@@ -4,6 +4,7 @@ var constants = preload("res://Scripts/Constants.gd")
 var padCollectionClass = preload("res://Scripts/PadCollection.gd")
 var trackClass = preload("res://Scripts/Track.gd")
 var kitClass = preload("res://Scripts/DrumKit.gd")
+var presetManagerClass = load("res://Scripts/PresetManager.gd")
 
 # Current page count
 var pageNumber = 0
@@ -17,6 +18,13 @@ var padPlayer
 var track 
 # Drum kit
 var drumKit
+
+# For loading and saving presets
+var presetManager
+# Dialog for open track
+var openDialog
+# Dialog for save track
+var saveDialog
 
 # On ready
 func _ready():
@@ -34,6 +42,10 @@ func _ready():
 	
 	pageControl = get_node("MainUI/PageControl")
 	padPlayer.setTempo(constants.DEFAULT_TEMPO)
+	
+	openDialog = get_node("MainUI/OpenDialog")
+	saveDialog = get_node("MainUI/SaveDialog")
+	presetManager = presetManagerClass.new()
 
 # Update pad collection for pad control
 func updatePadCollection():
@@ -80,3 +92,15 @@ func _on_PadPlayer_CollectionChanged(page):
 # On tempo changed
 func _on_TempoControl_TempoChanged(tempo):
 	padPlayer.setTempo(tempo)
+
+# On open button pressed
+func _on_OpenButton_pressed():
+	openDialog.popup()
+
+# On save button pressed
+func _on_SaveButton_pressed():
+	saveDialog.popup()
+
+# On save track
+func _on_SaveDialog_SaveTrack(trackName):
+	saveDialog.hide()

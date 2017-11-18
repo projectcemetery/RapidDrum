@@ -1408,8 +1408,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.56710334"
-     inkscape:cx="732.61982"
-     inkscape:cy="-1001.8604"
+     inkscape:cx="892.05335"
+     inkscape:cy="-2323.5406"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1436,22 +1436,6 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <rect
-       ry="9.9154148"
-       y="1567.8855"
-       x="4764.7397"
-       height="1419.2521"
-       width="1895.2521"
-       id="rect4934"
-       style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:4.7479372;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <rect
-       style="opacity:1;fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:4.15619946;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4932"
-       width="1915.8439"
-       height="1075.8438"
-       x="4751.375"
-       y="1725.2493"
-       ry="7.5162387" />
     <path
        style="fill:#333333;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.83461291px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m -386.85245,1567.3711 333.845194,-103.7305 -1.1923,103.7305 z"
@@ -8400,5 +8384,52 @@
            x="1239.4926"
            y="1339.3574">+</tspan></text>
     </g>
+    <rect
+       style="opacity:1;fill:#383844;fill-opacity:1;stroke:#000000;stroke-width:5.17506361;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5029"
+       width="648.73669"
+       height="749.24744"
+       x="419.76413"
+       y="2868.6973"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="443.48178"
+       y="2926.8003"
+       id="text5031"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5033"
+         x="443.48178"
+         y="2926.8003"
+         style="fill:#ffffff">Open Track</tspan></text>
+    <rect
+       style="opacity:1;fill:#2a2a33;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5035"
+       width="601.30133"
+       height="504.31726"
+       x="440.83676"
+       y="2956.7771" />
+    <rect
+       style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:4.74145842;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5038"
+       width="271.81396"
+       height="76.082466"
+       x="447.76089"
+       y="3510.3389"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/CancelButton.png"
+       inkscape:export-xdpi="113.58016"
+       inkscape:export-ydpi="113.58016" />
+    <rect
+       y="3510.3389"
+       x="773.9801"
+       height="76.082466"
+       width="271.81396"
+       id="rect5040"
+       style="opacity:1;fill:#008003;fill-opacity:1;stroke:#000000;stroke-width:4.74145842;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/ConfirmButton.png"
+       inkscape:export-xdpi="113.58016"
+       inkscape:export-ydpi="113.58016" />
   </g>
 </svg>

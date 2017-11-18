@@ -1,14 +1,14 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Scripts/MainScene.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Background.png" type="Texture" id=2]
-[ext_resource path="res://Assets/SimpleButtonNormal.png" type="Texture" id=3]
-[ext_resource path="res://Assets/SimpleButtonPressed.png" type="Texture" id=4]
-[ext_resource path="res://Assets/OpenIcon.png" type="Texture" id=5]
-[ext_resource path="res://Assets/SaveIcon.png" type="Texture" id=6]
-[ext_resource path="res://Assets/MainFont.tres" type="DynamicFont" id=7]
-[ext_resource path="res://Assets/Decor1.png" type="Texture" id=8]
-[ext_resource path="res://Assets/DrumLogo.png" type="Texture" id=9]
+[ext_resource path="res://Assets/MainFont.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Assets/Decor1.png" type="Texture" id=4]
+[ext_resource path="res://Assets/DrumLogo.png" type="Texture" id=5]
+[ext_resource path="res://Assets/SimpleButtonNormal.png" type="Texture" id=6]
+[ext_resource path="res://Assets/SimpleButtonPressed.png" type="Texture" id=7]
+[ext_resource path="res://Assets/OpenIcon.png" type="Texture" id=8]
+[ext_resource path="res://Assets/SaveIcon.png" type="Texture" id=9]
 [ext_resource path="res://Assets/PlayButtonNormal.png" type="Texture" id=10]
 [ext_resource path="res://Assets/PlayButtonPressed.png" type="Texture" id=11]
 [ext_resource path="res://Scripts/PageControl.gd" type="Script" id=12]
@@ -17,7 +17,11 @@
 [ext_resource path="res://Assets/SubTempoButton.png" type="Texture" id=15]
 [ext_resource path="res://Scripts/PadControl.gd" type="Script" id=16]
 [ext_resource path="res://Scripts/TempoControl.gd" type="Script" id=17]
-[ext_resource path="res://Scripts/PadPlayer.gd" type="Script" id=18]
+[ext_resource path="res://Scripts/OpenDialog.gd" type="Script" id=18]
+[ext_resource path="res://Assets/CancelButton.png" type="Texture" id=19]
+[ext_resource path="res://Assets/ConfirmButton.png" type="Texture" id=20]
+[ext_resource path="res://Scripts/SaveDialog.gd" type="Script" id=21]
+[ext_resource path="res://Scripts/PadPlayer.gd" type="Script" id=22]
 
 [node name="MainScene" type="Node2D"]
 
@@ -40,6 +44,193 @@ size_flags_vertical = 1
 texture = ExtResource( 2 )
 expand = true
 stretch_mode = 0
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Decor" type="Control" parent="MainUI"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Label1" type="Label" parent="MainUI/Decor"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 396.0
+margin_top = 68.0
+margin_right = 436.0
+margin_bottom = 114.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 3 )
+text = "1"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="Label2" type="Label" parent="MainUI/Decor"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 780.0
+margin_top = 65.0
+margin_right = 820.0
+margin_bottom = 111.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 3 )
+text = "2"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="Label3" type="Label" parent="MainUI/Decor"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1166.0
+margin_top = 67.0
+margin_right = 1206.0
+margin_bottom = 113.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 3 )
+text = "3"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="Label4" type="Label" parent="MainUI/Decor"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1542.0
+margin_top = 67.0
+margin_right = 1582.0
+margin_bottom = 113.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 3 )
+text = "4"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="Decor1" type="TextureRect" parent="MainUI/Decor"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1297.0
+margin_top = 990.0
+margin_right = 1669.0
+margin_bottom = 1038.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 0
+
+[node name="LogoIcon" type="TextureRect" parent="MainUI/Decor"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 120.0
+margin_top = 29.0
+margin_right = 218.0
+margin_bottom = 133.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 5 )
+expand = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="MainUI/Decor/LogoIcon"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -65.0
+margin_top = 39.0
+margin_right = 12.0
+margin_bottom = 85.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 3 )
+text = "Rapid"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="Label2" type="Label" parent="MainUI/Decor/LogoIcon"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 93.0
+margin_top = 39.0
+margin_right = 171.0
+margin_bottom = 85.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 3 )
+text = "Drum"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts", "custom_styles" ]
 
 [node name="OpenButton" type="TextureButton" parent="MainUI"]
 
@@ -61,8 +252,8 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 3 )
-texture_pressed = ExtResource( 4 )
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
 expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
 
@@ -81,13 +272,12 @@ rect_clip_content = false
 mouse_filter = 1
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 8 )
 expand = true
 stretch_mode = 0
 
 [node name="SaveButton" type="TextureButton" parent="MainUI"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -105,10 +295,10 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 3 )
-texture_pressed = ExtResource( 4 )
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
 expand = true
-_sections_unfolded = [ "Rect" ]
+_sections_unfolded = [ "Rect", "Textures" ]
 
 [node name="TextureRect" type="TextureRect" parent="MainUI/SaveButton"]
 
@@ -125,180 +315,9 @@ rect_clip_content = false
 mouse_filter = 1
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 6 )
-expand = true
-stretch_mode = 0
-
-[node name="Label1" type="Label" parent="MainUI"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 392.0
-margin_top = 72.0
-margin_right = 432.0
-margin_bottom = 102.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = ExtResource( 7 )
-text = "1"
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "custom_fonts" ]
-
-[node name="Label2" type="Label" parent="MainUI"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 781.0
-margin_top = 75.0
-margin_right = 821.0
-margin_bottom = 105.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = ExtResource( 7 )
-text = "2"
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "custom_fonts" ]
-
-[node name="Label3" type="Label" parent="MainUI"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 1164.0
-margin_top = 74.0
-margin_right = 1204.0
-margin_bottom = 104.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = ExtResource( 7 )
-text = "3"
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "custom_fonts" ]
-
-[node name="Label4" type="Label" parent="MainUI"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 1543.0
-margin_top = 74.0
-margin_right = 1583.0
-margin_bottom = 104.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = ExtResource( 7 )
-text = "4"
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "custom_fonts" ]
-
-[node name="Decor1" type="TextureRect" parent="MainUI"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 1297.0
-margin_top = 990.0
-margin_right = 1669.0
-margin_bottom = 1038.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-size_flags_horizontal = 1
-size_flags_vertical = 1
-texture = ExtResource( 8 )
-expand = true
-stretch_mode = 0
-
-[node name="LogoIcon" type="TextureRect" parent="MainUI"]
-
-editor/display_folded = true
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 120.0
-margin_top = 29.0
-margin_right = 218.0
-margin_bottom = 133.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 9 )
 expand = true
 stretch_mode = 0
-
-[node name="Label" type="Label" parent="MainUI/LogoIcon"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -47.0
-margin_top = 40.0
-margin_right = 4.0
-margin_bottom = 70.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = ExtResource( 7 )
-text = "Rapid"
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "custom_fonts" ]
-
-[node name="Label2" type="Label" parent="MainUI/LogoIcon"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 94.0
-margin_top = 40.0
-margin_right = 146.0
-margin_bottom = 70.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = ExtResource( 7 )
-text = "Drum"
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "custom_fonts", "custom_styles" ]
 
 [node name="PlayButton" type="TextureButton" parent="MainUI"]
 
@@ -326,6 +345,7 @@ _sections_unfolded = [ "Textures" ]
 
 [node name="PageControl" type="Control" parent="MainUI"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -377,7 +397,6 @@ color = Color( 0.0511017, 0.0516995, 0.0664062, 1 )
 
 [node name="PageButton1" type="TextureButton" parent="MainUI/PageControl"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -395,8 +414,8 @@ pressed = true
 enabled_focus_mode = 2
 shortcut = null
 group = ExtResource( 13 )
-texture_normal = ExtResource( 3 )
-texture_pressed = ExtResource( 4 )
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
 expand = true
 _sections_unfolded = [ "Margin", "Rect" ]
 
@@ -406,16 +425,16 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 30.0
-margin_top = 21.0
-margin_right = 61.0
-margin_bottom = 51.0
+margin_left = 29.0
+margin_top = 13.0
+margin_right = 60.0
+margin_bottom = 59.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 7 )
+custom_fonts/font = ExtResource( 3 )
 text = "1"
 percent_visible = 1.0
 lines_skipped = 0
@@ -424,7 +443,6 @@ _sections_unfolded = [ "custom_fonts" ]
 
 [node name="PageButton2" type="TextureButton" parent="MainUI/PageControl"]
 
-editor/display_folded = true
 visible = false
 anchor_left = 0.0
 anchor_top = 0.0
@@ -443,8 +461,8 @@ toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
 group = ExtResource( 13 )
-texture_normal = ExtResource( 3 )
-texture_pressed = ExtResource( 4 )
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
 expand = true
 _sections_unfolded = [ "Textures", "Visibility" ]
 
@@ -454,16 +472,16 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 29.0
-margin_top = 21.0
-margin_right = 60.0
-margin_bottom = 51.0
+margin_left = 26.0
+margin_top = 11.0
+margin_right = 57.0
+margin_bottom = 57.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 7 )
+custom_fonts/font = ExtResource( 3 )
 text = "2"
 percent_visible = 1.0
 lines_skipped = 0
@@ -472,7 +490,6 @@ _sections_unfolded = [ "custom_fonts" ]
 
 [node name="PageButton3" type="TextureButton" parent="MainUI/PageControl"]
 
-editor/display_folded = true
 visible = false
 anchor_left = 0.0
 anchor_top = 0.0
@@ -491,8 +508,8 @@ toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
 group = ExtResource( 13 )
-texture_normal = ExtResource( 3 )
-texture_pressed = ExtResource( 4 )
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
 expand = true
 _sections_unfolded = [ "Rect", "Visibility" ]
 
@@ -502,16 +519,16 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 29.0
-margin_top = 20.0
-margin_right = 60.0
-margin_bottom = 50.0
+margin_left = 25.0
+margin_top = 11.0
+margin_right = 56.0
+margin_bottom = 57.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 7 )
+custom_fonts/font = ExtResource( 3 )
 text = "3"
 percent_visible = 1.0
 lines_skipped = 0
@@ -520,7 +537,6 @@ _sections_unfolded = [ "custom_fonts" ]
 
 [node name="PageButton4" type="TextureButton" parent="MainUI/PageControl"]
 
-editor/display_folded = true
 visible = false
 anchor_left = 0.0
 anchor_top = 0.0
@@ -539,8 +555,8 @@ toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
 group = ExtResource( 13 )
-texture_normal = ExtResource( 3 )
-texture_pressed = ExtResource( 4 )
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
 expand = true
 _sections_unfolded = [ "Visibility" ]
 
@@ -550,16 +566,16 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 30.0
-margin_top = 20.0
-margin_right = 61.0
-margin_bottom = 50.0
+margin_left = 25.0
+margin_top = 12.0
+margin_right = 56.0
+margin_bottom = 58.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 7 )
+custom_fonts/font = ExtResource( 3 )
 text = "4"
 percent_visible = 1.0
 lines_skipped = 0
@@ -638,10 +654,10 @@ anchor_left = 1.0
 anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 0.0
-margin_left = -1558.0
-margin_top = 147.0
-margin_right = -36.0
-margin_bottom = 902.0
+margin_left = -1557.0
+margin_top = 143.0
+margin_right = -35.0
+margin_bottom = 898.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -667,7 +683,7 @@ rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 7 )
+custom_fonts/font = ExtResource( 3 )
 text = "Crash"
 align = 1
 valign = 1
@@ -692,7 +708,7 @@ rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 7 )
+custom_fonts/font = ExtResource( 3 )
 text = "Tom 1"
 align = 1
 valign = 1
@@ -717,7 +733,7 @@ rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 7 )
+custom_fonts/font = ExtResource( 3 )
 text = "Tom 2"
 align = 1
 valign = 1
@@ -742,7 +758,7 @@ rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 7 )
+custom_fonts/font = ExtResource( 3 )
 text = "Tom 3"
 align = 1
 valign = 1
@@ -767,7 +783,7 @@ rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 7 )
+custom_fonts/font = ExtResource( 3 )
 text = "Open hat"
 align = 1
 valign = 1
@@ -792,7 +808,7 @@ rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 7 )
+custom_fonts/font = ExtResource( 3 )
 text = "Closed hat"
 align = 1
 valign = 1
@@ -817,7 +833,7 @@ rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 7 )
+custom_fonts/font = ExtResource( 3 )
 text = "Kick"
 align = 1
 valign = 1
@@ -842,7 +858,7 @@ rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 7 )
+custom_fonts/font = ExtResource( 3 )
 text = "Snare"
 align = 1
 valign = 1
@@ -854,7 +870,6 @@ _sections_unfolded = [ "Rect", "custom_fonts" ]
 
 [node name="TempoControl" type="Control" parent="MainUI"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -876,16 +891,16 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = -10.0
-margin_top = 23.0
-margin_right = 49.0
-margin_bottom = 53.0
+margin_left = -36.0
+margin_top = 17.0
+margin_right = 52.0
+margin_bottom = 63.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 7 )
+custom_fonts/font = ExtResource( 3 )
 text = "Tempo"
 percent_visible = 1.0
 lines_skipped = 0
@@ -924,7 +939,7 @@ rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 7 )
+custom_fonts/font = ExtResource( 3 )
 text = "100"
 percent_visible = 1.0
 lines_skipped = 0
@@ -933,6 +948,7 @@ _sections_unfolded = [ "custom_fonts" ]
 
 [node name="ColorRect2" type="ColorRect" parent="MainUI/TempoControl"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -954,16 +970,16 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 47.0
-margin_top = 8.0
-margin_right = 87.0
-margin_bottom = 38.0
+margin_left = 39.0
+margin_top = 1.0
+margin_right = 83.0
+margin_bottom = 47.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 7 )
+custom_fonts/font = ExtResource( 3 )
 text = "100"
 percent_visible = 1.0
 lines_skipped = 0
@@ -1016,9 +1032,337 @@ texture_normal = ExtResource( 15 )
 expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
 
+[node name="OpenDialog" type="PopupDialog" parent="MainUI"]
+
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -239.0
+margin_top = -284.0
+margin_right = 261.0
+margin_bottom = 316.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+popup_exclusive = false
+script = ExtResource( 18 )
+
+[node name="Caption" type="Label" parent="MainUI/OpenDialog"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 29.0
+margin_top = 17.0
+margin_right = 186.0
+margin_bottom = 63.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 3 )
+text = "Open track"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="ItemList" type="ItemList" parent="MainUI/OpenDialog"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 23.0
+margin_top = 82.0
+margin_right = 471.0
+margin_bottom = 493.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+items = [  ]
+select_mode = 0
+auto_height = true
+icon_mode = 1
+
+[node name="CancelButton" type="TextureButton" parent="MainUI/OpenDialog"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 27.0
+margin_top = 510.0
+margin_right = 242.0
+margin_bottom = 570.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 19 )
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="Caption" type="Label" parent="MainUI/OpenDialog/CancelButton"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 62.0
+margin_top = 6.0
+margin_right = 161.0
+margin_bottom = 52.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 3 )
+text = "Cancel"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="OpenButton" type="TextureButton" parent="MainUI/OpenDialog"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 260.0
+margin_top = 510.0
+margin_right = 475.0
+margin_bottom = 570.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 20 )
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="Caption" type="Label" parent="MainUI/OpenDialog/OpenButton"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 75.0
+margin_top = 6.0
+margin_right = 174.0
+margin_bottom = 52.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 3 )
+text = "Open"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="SaveDialog" type="PopupDialog" parent="MainUI"]
+
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -239.0
+margin_top = -284.0
+margin_right = 261.0
+margin_bottom = 316.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+popup_exclusive = false
+script = ExtResource( 21 )
+
+[node name="Caption" type="Label" parent="MainUI/SaveDialog"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 29.0
+margin_top = 17.0
+margin_right = 186.0
+margin_bottom = 63.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 3 )
+text = "Save track"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="ItemList" type="ItemList" parent="MainUI/SaveDialog"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 23.0
+margin_top = 135.0
+margin_right = 471.0
+margin_bottom = 493.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+items = [  ]
+select_mode = 0
+auto_height = true
+icon_mode = 1
+
+[node name="CancelButton" type="TextureButton" parent="MainUI/SaveDialog"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 27.0
+margin_top = 510.0
+margin_right = 242.0
+margin_bottom = 570.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 19 )
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="Caption" type="Label" parent="MainUI/SaveDialog/CancelButton"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 62.0
+margin_top = 6.0
+margin_right = 161.0
+margin_bottom = 52.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 3 )
+text = "Cancel"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="SaveButton" type="TextureButton" parent="MainUI/SaveDialog"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 260.0
+margin_top = 510.0
+margin_right = 475.0
+margin_bottom = 570.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 20 )
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="Caption" type="Label" parent="MainUI/SaveDialog/SaveButton"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 75.0
+margin_top = 6.0
+margin_right = 174.0
+margin_bottom = 52.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 3 )
+text = "Save"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="FileEdit" type="TextEdit" parent="MainUI/SaveDialog"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 23.0
+margin_top = 70.0
+margin_right = 471.0
+margin_bottom = 126.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = ExtResource( 3 )
+highlight_current_line = false
+syntax_highlighting = false
+show_line_numbers = false
+highlight_all_occurrences = false
+override_selected_font_color = false
+smooth_scrolling = false
+v_scroll_speed = 80.0
+caret_block_mode = false
+caret_blink = false
+caret_blink_speed = 0.65
+_sections_unfolded = [ "Grow Direction", "Hint", "Rect" ]
+
 [node name="PadPlayer" type="Node" parent="."]
 
-script = ExtResource( 18 )
+editor/display_folded = true
+script = ExtResource( 22 )
 
 [node name="PlayerTimer" type="Timer" parent="PadPlayer"]
 
@@ -1026,6 +1370,10 @@ process_mode = 0
 wait_time = 0.1
 one_shot = false
 autostart = false
+
+[connection signal="pressed" from="MainUI/OpenButton" to="." method="_on_OpenButton_pressed"]
+
+[connection signal="pressed" from="MainUI/SaveButton" to="." method="_on_SaveButton_pressed"]
 
 [connection signal="toggled" from="MainUI/PlayButton" to="." method="_on_PlayButton_toggled"]
 
@@ -1052,6 +1400,14 @@ autostart = false
 [connection signal="button_down" from="MainUI/TempoControl/AddTempoButton" to="MainUI/TempoControl" method="_on_AddTempoButton_button_down"]
 
 [connection signal="button_down" from="MainUI/TempoControl/SubTempoButton" to="MainUI/TempoControl" method="_on_SubTempoButton_button_down"]
+
+[connection signal="pressed" from="MainUI/OpenDialog/CancelButton" to="MainUI/OpenDialog" method="_on_CancelButton_pressed"]
+
+[connection signal="SaveTrack" from="MainUI/SaveDialog" to="." method="_on_SaveDialog_SaveTrack"]
+
+[connection signal="pressed" from="MainUI/SaveDialog/CancelButton" to="MainUI/SaveDialog" method="_on_CancelButton_pressed"]
+
+[connection signal="pressed" from="MainUI/SaveDialog/SaveButton" to="MainUI/SaveDialog" method="_on_SaveButton_pressed"]
 
 [connection signal="CollectionChanged" from="PadPlayer" to="." method="_on_PadPlayer_CollectionChanged"]
 
