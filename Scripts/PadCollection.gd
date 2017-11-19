@@ -14,6 +14,7 @@ var grid = {}
 # On pad changed signal
 signal PadChanged
 
+# Constructor
 func _init():
 	for x in range(0, constants.PAD_COL_COUNT):
 		var col = {}
@@ -53,10 +54,20 @@ func getColSumm():
 	for x in range(0, constants.PAD_COL_COUNT):
 		var colData = []
 		var column = grid[x]
-		for y in range(0, constants.PAD_ROW_COUNT):			
+		for y in range(0, constants.PAD_ROW_COUNT):
 			colData.append(column[y])
 		res.append(colData)
 	return res
+
+# Fill collection from
+func fromDict(dict):
+	grid = {}
+	for k in dict.keys():
+		var col = {}
+		var dcol = dict[k]
+		for c in dcol.keys():
+			col[int(c)] = dcol[c]
+		grid[int(k)] = col
 
 # To dictionary
 func toDict():

@@ -35,9 +35,7 @@ func _ready():
 	track.addPadCollection(padColl)
 
 	padControl = get_node("MainUI/PadControl")
-	padControl.setPadCollection(track.getPadCollection(pageNumber))	
 	padPlayer = get_node("PadPlayer")
-	padPlayer.setTrack(track)
 	padPlayer.setKit(drumKit)
 	
 	pageControl = get_node("MainUI/PageControl")
@@ -46,6 +44,16 @@ func _ready():
 	openDialog = get_node("MainUI/OpenDialog")
 	saveDialog = get_node("MainUI/SaveDialog")
 	presetManager = presetManagerClass.new()
+	
+	setTrack(track)
+
+# Set track
+func setTrack(tr):
+	pageNumber = 0
+	track = tr
+	padControl.setPadCollection(track.getPadCollection(pageNumber))
+	padPlayer.setTrack(track)
+	updatePadCollection()
 
 # Update pad collection for pad control
 func updatePadCollection():
@@ -109,3 +117,18 @@ func _on_SaveButton_pressed():
 func _on_SaveDialog_SaveTrack(trackName):
 	saveDialog.hide()
 	presetManager.saveTrack(trackName, track)
+
+# On open track
+func _on_OpenDialog_OpenTrack(name):
+	var trackData = presetManager.loadTrack(name)
+	if trackData != null:
+		var colls = trackData["collections"]
+		var tr = trackClass.new()
+		for data in colls:
+			var col = padCollectionClass.new()
+			col.fromDict(data)
+			tr.addPadCollection(col)
+		setTrack(tr)
+		pageControl.setPageCount(len(colls))
+		pageControl.switchToPage(0)
+	openDialog.hide()

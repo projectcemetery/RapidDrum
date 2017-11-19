@@ -20,9 +20,13 @@ var blockerNode
 func _ready():
 	blockerNode = get_node("Blocker")
 
+# Return button name
+func getButtonNameByIndex(idx):
+	return "PageButton%s" % idx
+
 # Get button name by page number 
 func getButtonByPage(page):
-	var name = "PageButton%s" % page
+	var name = getButtonNameByIndex(page)
 	return get_node(name)
 
 # Add page
@@ -35,7 +39,11 @@ func addPage():
 # Remove page
 func removePage():
 	var node = getButtonByPage(pageCount)
+	if node == null:
+		return
 	var prevNode = getButtonByPage(pageCount - 1)
+	if prevNode == null:
+		return
 	node.visible = false
 	prevNode.pressed = true
 	pageCount -= 1
@@ -62,6 +70,19 @@ func unblock():
 # Block input
 func block():
 	blockerNode.visible = true
+
+# Clear pages
+func clear():
+	for i in range(0, pageCount - 1):
+		removePage()
+		
+	pageCount = 1
+
+# Set page count
+func setPageCount(count):
+	clear()
+	for i in range(0, count - 1):
+		addPage()
 
 func _on_PageButton1_toggled(pressed):
 	if pressed:

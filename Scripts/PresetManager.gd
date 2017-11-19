@@ -1,18 +1,23 @@
 extends Reference
 
-const PRESET_LIST_FILE = "user://presets.json";
+const PRESET_LIST_FILE = "presets";
 
 # Constructor
 func _init():
 	pass
 
+func getFileName(name):
+	return "user://%s.json" % name
+
 # Read preset dictionary
 func readDict(name):
+	var fileName = getFileName(name)
+	
 	var file = File.new()
-	if not file.file_exists(name):
+	if not file.file_exists(fileName):
 		return null
 	
-	file.open(name, file.READ)
+	file.open(fileName, file.READ)
 	var text = file.get_as_text()
 	var fileDict = parse_json(text)
 	file.close()
@@ -20,8 +25,9 @@ func readDict(name):
 
 # Save dict
 func saveDict(name, dict):
+	var fileName = getFileName(name)
 	var file = File.new()
-	file.open(name, file.WRITE)
+	file.open(fileName, file.WRITE)
 	file.store_string(to_json(dict))
 	file.close()
 
@@ -40,9 +46,8 @@ func saveTrack(name, track):
 		dict = {}
 	dict[name] = true
 	saveDict(PRESET_LIST_FILE, dict)
-	var data = track.toDict()
-	var fileName = "user://%s.json" % name
-	saveDict(fileName, data)
+	var data = track.toDict()	
+	saveDict(name, data)
 
 # Load track
 func loadTrack(name):
