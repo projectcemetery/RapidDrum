@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://Scripts/MainScene.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Background.png" type="Texture" id=2]
@@ -21,7 +21,8 @@
 [ext_resource path="res://Assets/CancelButton.png" type="Texture" id=19]
 [ext_resource path="res://Assets/ConfirmButton.png" type="Texture" id=20]
 [ext_resource path="res://Scripts/SaveDialog.gd" type="Script" id=21]
-[ext_resource path="res://Scripts/PadPlayer.gd" type="Script" id=22]
+[ext_resource path="res://Assets/Delete.png" type="Texture" id=22]
+[ext_resource path="res://Scripts/PadPlayer.gd" type="Script" id=23]
 
 [node name="MainScene" type="Node2D"]
 
@@ -654,10 +655,10 @@ anchor_left = 1.0
 anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 0.0
-margin_left = -1557.0
-margin_top = 143.0
-margin_right = -35.0
-margin_bottom = 898.0
+margin_left = -1555.0
+margin_top = 142.0
+margin_right = -33.0
+margin_bottom = 897.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -870,6 +871,7 @@ _sections_unfolded = [ "Rect", "custom_fonts" ]
 
 [node name="TempoControl" type="Control" parent="MainUI"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -1087,10 +1089,12 @@ rect_pivot_offset = Vector2( 0, 0 )
 mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+custom_fonts/font = ExtResource( 3 )
 items = [  ]
 select_mode = 0
 auto_height = true
 icon_mode = 1
+_sections_unfolded = [ "custom_fonts" ]
 
 [node name="CancelButton" type="TextureButton" parent="MainUI/OpenDialog"]
 
@@ -1189,9 +1193,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -239.0
-margin_top = -284.0
+margin_top = -285.0
 margin_right = 261.0
-margin_bottom = 316.0
+margin_bottom = 315.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -1228,18 +1232,20 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 23.0
+margin_left = 20.0
 margin_top = 135.0
-margin_right = 471.0
+margin_right = 480.0
 margin_bottom = 493.0
 rect_pivot_offset = Vector2( 0, 0 )
 mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+custom_fonts/font = ExtResource( 3 )
 items = [  ]
 select_mode = 0
 auto_height = true
 icon_mode = 1
+_sections_unfolded = [ "Rect", "custom_fonts" ]
 
 [node name="CancelButton" type="TextureButton" parent="MainUI/SaveDialog"]
 
@@ -1337,9 +1343,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 23.0
+margin_left = 20.0
 margin_top = 70.0
-margin_right = 471.0
+margin_right = 480.0
 margin_bottom = 126.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -1359,10 +1365,54 @@ caret_blink = false
 caret_blink_speed = 0.65
 _sections_unfolded = [ "Grow Direction", "Hint", "Rect" ]
 
+[node name="DeleteButton" type="TextureButton" parent="MainUI/SaveDialog"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 432.0
+margin_top = 18.0
+margin_right = 477.0
+margin_bottom = 70.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+expand = true
+stretch_mode = 4
+_sections_unfolded = [ "Textures" ]
+
+[node name="TextureRect" type="TextureRect" parent="MainUI/SaveDialog/DeleteButton"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 11.0
+margin_top = 7.0
+margin_right = 36.0
+margin_bottom = 48.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 22 )
+expand = true
+stretch_mode = 5
+
 [node name="PadPlayer" type="Node" parent="."]
 
 editor/display_folded = true
-script = ExtResource( 22 )
+script = ExtResource( 23 )
 
 [node name="PlayerTimer" type="Timer" parent="PadPlayer"]
 
@@ -1405,9 +1455,13 @@ autostart = false
 
 [connection signal="SaveTrack" from="MainUI/SaveDialog" to="." method="_on_SaveDialog_SaveTrack"]
 
+[connection signal="item_selected" from="MainUI/SaveDialog/ItemList" to="MainUI/SaveDialog" method="_on_ItemList_item_selected"]
+
 [connection signal="pressed" from="MainUI/SaveDialog/CancelButton" to="MainUI/SaveDialog" method="_on_CancelButton_pressed"]
 
 [connection signal="pressed" from="MainUI/SaveDialog/SaveButton" to="MainUI/SaveDialog" method="_on_SaveButton_pressed"]
+
+[connection signal="pressed" from="MainUI/SaveDialog/DeleteButton" to="MainUI/SaveDialog" method="_on_DeleteButton_pressed"]
 
 [connection signal="CollectionChanged" from="PadPlayer" to="." method="_on_PadPlayer_CollectionChanged"]
 

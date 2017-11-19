@@ -29,3 +29,13 @@ func removePadCollection(index):
 # Return collection
 func getPadCollection(index):
 	return collections[index]
+
+# Convert track to dict
+func toDict():
+	var lst = []
+	for col in collections:
+		lst.append(col.toDict())
+	
+	return {
+		"collections" : lst
+	}

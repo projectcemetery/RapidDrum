@@ -95,12 +95,17 @@ func _on_TempoControl_TempoChanged(tempo):
 
 # On open button pressed
 func _on_OpenButton_pressed():
+	var lst = presetManager.getList()
+	openDialog.setList(lst)
 	openDialog.popup()
 
 # On save button pressed
 func _on_SaveButton_pressed():
+	var lst = presetManager.getList()
+	saveDialog.setList(lst)
 	saveDialog.popup()
 
 # On save track
 func _on_SaveDialog_SaveTrack(trackName):
 	saveDialog.hide()
+	presetManager.saveTrack(trackName, track)

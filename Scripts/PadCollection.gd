@@ -57,3 +57,7 @@ func getColSumm():
 			colData.append(column[y])
 		res.append(colData)
 	return res
+
+# To dictionary
+func toDict():
+	return grid

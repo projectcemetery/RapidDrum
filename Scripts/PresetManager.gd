@@ -9,13 +9,12 @@ func _init():
 # Read preset dictionary
 func readDict(name):
 	var file = File.new()
-	if not file.file_exists():
+	if not file.file_exists(name):
 		return null
 	
 	file.open(name, file.READ)
 	var text = file.get_as_text()
-	var fileDict = {}
-	fileDict.parse_json(text)
+	var fileDict = parse_json(text)
 	file.close()
 	return fileDict
 
@@ -23,7 +22,7 @@ func readDict(name):
 func saveDict(name, dict):
 	var file = File.new()
 	file.open(name, file.WRITE)
-	file.store_string(dict.to_json())
+	file.store_string(to_json(dict))
 	file.close()
 
 # Get preset list
@@ -35,12 +34,20 @@ func getList():
 func saveTrack(name, track):
 	if name == "":
 		return
+	
 	var dict = readDict(PRESET_LIST_FILE)
+	if dict == null:
+		dict = {}
 	dict[name] = true
 	saveDict(PRESET_LIST_FILE, dict)
+	var data = track.toDict()
 	var fileName = "user://%s.json" % name
-	saveDict(fileName, track)
+	saveDict(fileName, data)
 
 # Load track
 func loadTrack(name):
 	return readDict(name)
+
+# Delete track
+func deleteTrack(name):
+	pass
