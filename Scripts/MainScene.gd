@@ -14,6 +14,8 @@ var padControl
 var pageControl
 # Pad player
 var padPlayer
+# Tempo control
+var tempoControl
 # Track to play
 var track 
 # Drum kit
@@ -39,7 +41,9 @@ func _ready():
 	padPlayer.setKit(drumKit)
 	
 	pageControl = get_node("MainUI/PageControl")
-	padPlayer.setTempo(constants.DEFAULT_TEMPO)
+	track.setTempo(constants.DEFAULT_TEMPO)
+	
+	tempoControl = get_node("MainUI/TempoControl")
 	
 	openDialog = get_node("MainUI/OpenDialog")
 	saveDialog = get_node("MainUI/SaveDialog")
@@ -53,6 +57,7 @@ func setTrack(tr):
 	track = tr
 	padControl.setPadCollection(track.getPadCollection(pageNumber))
 	padPlayer.setTrack(track)
+	tempoControl.setTempo(track.getTempo())
 	updatePadCollection()
 
 # Update pad collection for pad control
@@ -100,6 +105,7 @@ func _on_PadPlayer_CollectionChanged(page):
 # On tempo changed
 func _on_TempoControl_TempoChanged(tempo):
 	padPlayer.setTempo(tempo)
+	track.setTempo(tempo)
 
 # On open button pressed
 func _on_OpenButton_pressed():
@@ -122,8 +128,10 @@ func _on_SaveDialog_SaveTrack(trackName):
 func _on_OpenDialog_OpenTrack(name):
 	var trackData = presetManager.loadTrack(name)
 	if trackData != null:
+		var tempo = trackData["tempo"]
 		var colls = trackData["collections"]
 		var tr = trackClass.new()
+		tr.setTempo(int(tempo))
 		for data in colls:
 			var col = padCollectionClass.new()
 			col.fromDict(data)
@@ -132,3 +140,9 @@ func _on_OpenDialog_OpenTrack(name):
 		pageControl.setPageCount(len(colls))
 		pageControl.switchToPage(0)
 	openDialog.hide()
+
+# On delete track
+func _on_SaveDialog_DeleteTrack(name):
+	presetManager.deleteTrack(name)
+	var lst = presetManager.getList()
+	saveDialog.setList(lst)

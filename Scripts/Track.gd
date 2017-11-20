@@ -1,12 +1,24 @@
 extends Reference
 
+# Collections of track
 var collections = []
 
+# Tempo of track
+var tempo
+# On pad change
 signal TrackPadChanged
 
 # Constructor
 func _init():
 	pass
+
+# Set track tempo
+func setTempo(v):
+	tempo = v
+
+# Get tempo
+func getTempo():
+	return tempo
 
 # On pad changed
 func onPadChanged(x, y, index):
@@ -37,5 +49,6 @@ func toDict():
 		lst.append(col.toDict())
 	
 	return {
+		"tempo" : tempo,
 		"collections" : lst
 	}

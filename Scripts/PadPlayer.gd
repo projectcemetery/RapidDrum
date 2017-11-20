@@ -37,6 +37,7 @@ func setKit(kit):
 # Set track for playing
 func setTrack(tr):
 	track = tr
+	setTempo(tr.getTempo())
 
 # Set play tempo
 func setTempo(tempo):

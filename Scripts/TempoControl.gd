@@ -7,7 +7,7 @@ const MAX_TEMPO = 160
 
 # Current tempo
 var tempo = constants.DEFAULT_TEMPO
-
+# Label to show tempo
 var tempoLabel
 
 # On tempo changed
@@ -19,6 +19,11 @@ func _ready():
 # Update label text
 func updateLabel():
 	tempoLabel.text = str(tempo)
+
+# Set tempo
+func setTempo(v):
+	tempo = int(v)
+	updateLabel()
 
 # Get tempo
 func getTempo():

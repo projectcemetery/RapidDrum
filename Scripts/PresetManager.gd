@@ -46,7 +46,7 @@ func saveTrack(name, track):
 		dict = {}
 	dict[name] = true
 	saveDict(PRESET_LIST_FILE, dict)
-	var data = track.toDict()	
+	var data = track.toDict()
 	saveDict(name, data)
 
 # Load track
@@ -55,4 +55,12 @@ func loadTrack(name):
 
 # Delete track
 func deleteTrack(name):
-	pass
+	var dict = readDict(PRESET_LIST_FILE)
+	if dict == null:
+		return
+	
+	dict.erase(name)
+	saveDict(PRESET_LIST_FILE, dict)
+	var dir = Directory.new()
+	dir.remove(getFileName(name))
+	

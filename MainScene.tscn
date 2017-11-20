@@ -347,6 +347,7 @@ _sections_unfolded = [ "Textures" ]
 
 [node name="PageControl" type="Control" parent="MainUI"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -1041,6 +1042,7 @@ _sections_unfolded = [ "Rect", "Textures" ]
 [node name="OpenDialog" type="PopupDialog" parent="MainUI"]
 
 editor/display_folded = true
+visible = false
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -1192,8 +1194,6 @@ _sections_unfolded = [ "custom_fonts" ]
 
 [node name="SaveDialog" type="PopupDialog" parent="MainUI"]
 
-editor/display_folded = true
-visible = false
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -1462,6 +1462,8 @@ autostart = false
 [connection signal="pressed" from="MainUI/OpenDialog/CancelButton" to="MainUI/OpenDialog" method="_on_CancelButton_pressed"]
 
 [connection signal="pressed" from="MainUI/OpenDialog/OpenButton" to="MainUI/OpenDialog" method="_on_OpenButton_pressed"]
+
+[connection signal="DeleteTrack" from="MainUI/SaveDialog" to="." method="_on_SaveDialog_DeleteTrack"]
 
 [connection signal="SaveTrack" from="MainUI/SaveDialog" to="." method="_on_SaveDialog_SaveTrack"]
 
