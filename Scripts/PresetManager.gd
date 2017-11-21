@@ -4,15 +4,32 @@ const PRESET_LIST_FILE = "presets";
 
 # Constructor
 func _init():
-	pass
+	var dict = readDict(PRESET_LIST_FILE)
+	if dict == null:
+		pass
+		
+	initPresets()
 
-func getFileName(name):
-	return "user://%s.json" % name
+# Init presets
+func initPresets():
+	var dict = readDict(PRESET_LIST_FILE, true)
+	var dir = Directory.new()
+	for d in dict.keys():
+		dir.copy(getFileName(d, true), getFileName(d))
+	
+	dir.copy(getFileName(PRESET_LIST_FILE, true), getFileName(PRESET_LIST_FILE))
+
+# Get file name from resources or user
+func getFileName(name, isRes = False):
+	if isRes:
+		return "res://Assets/%s.json" % name
+	else:
+		return "user://%s.json" % name
 
 # Read preset dictionary
-func readDict(name):
-	var fileName = getFileName(name)
-	
+func readDict(name, isRes = False):
+	var fileName = getFileName(name, isRes)
+
 	var file = File.new()
 	if not file.file_exists(fileName):
 		return null
