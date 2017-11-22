@@ -2,7 +2,7 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Hip-Hop-Snare-3.wav-d41dcf96d3559dc04b1b032fbd0d0cc0.sample"
+path="res://.import/rock-tom1.wav-9cada6db95bf4b9837ac128b19b125f2.sample"
 
 [params]
 
@@ -10,7 +10,7 @@ force/8_bit=false
 force/mono=false
 force/max_rate=false
 force/max_rate_hz=44100
-edit/trim=true
-edit/normalize=true
+edit/trim=false
+edit/normalize=false
 edit/loop=false
 compress/mode=0

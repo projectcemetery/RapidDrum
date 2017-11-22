@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Scripts/MainScene.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Background.png" type="Texture" id=2]
@@ -23,6 +23,7 @@
 [ext_resource path="res://Scripts/SaveDialog.gd" type="Script" id=21]
 [ext_resource path="res://Assets/Delete.png" type="Texture" id=22]
 [ext_resource path="res://Scripts/PadPlayer.gd" type="Script" id=23]
+[ext_resource path="res://Assets/rock-kick.wav" type="AudioStream" id=24]
 
 [node name="MainScene" type="Node2D"]
 
@@ -1428,6 +1429,15 @@ process_mode = 0
 wait_time = 0.1
 one_shot = false
 autostart = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+stream = ExtResource( 24 )
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+_sections_unfolded = [ "Pause" ]
 
 [connection signal="pressed" from="MainUI/OpenButton" to="." method="_on_OpenButton_pressed"]
 

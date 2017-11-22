@@ -8,11 +8,13 @@
 
 config_version=3
 
+Output Latency=false
+
 [application]
 
 config/name="RapidDrum"
 run/main_scene="res://MainScene.tscn"
-config/icon="res://icon.png"
+config/icon="res://Assets/Icon.png"
 
 [display]
 

@@ -2,7 +2,7 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/CYCdh_Kurz04-Kick02.wav-2e4a2e6d99592a422e01359e9792a8a3.sample"
+path="res://.import/rock-kick.wav-70ce8df49a53088d32dfd0c3f3e3c2e4.sample"
 
 [params]
 
@@ -10,7 +10,7 @@ force/8_bit=false
 force/mono=false
 force/max_rate=false
 force/max_rate_hz=44100
-edit/trim=true
-edit/normalize=true
+edit/trim=false
+edit/normalize=false
 edit/loop=false
 compress/mode=0

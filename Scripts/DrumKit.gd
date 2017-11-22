@@ -8,19 +8,20 @@ var parentNode
 # Constructor
 func _init(node):
 	parentNode = node
-	samples.append(newStream("CYCdh_Kurz01-Crash01.wav"))
-	samples.append(newStream("CyCdh_K3Tom-01.wav"))
-	samples.append(newStream("CyCdh_K3Tom-04.wav"))
-	samples.append(newStream("CyCdh_K3Tom-05.wav"))
-	samples.append(newStream("CYCdh_K2room_OpHat-01.wav"))
-	samples.append(newStream("CYCdh_K6-ClHat.wav"))
-	samples.append(newStream("CYCdh_Kurz05-Kick01.wav"))
-	samples.append(newStream("CYCdh_K6-Snr02.wav"))
+	samples.append(newStream("rock-crash.wav"))
+	samples.append(newStream("rock-tom1.wav"))
+	samples.append(newStream("rock-tom2.wav"))
+	samples.append(newStream("rock-tom3.wav"))
+	samples.append(newStream("rock-hhopen.wav"))
+	samples.append(newStream("rock-hhclosed.wav"))
+	samples.append(newStream("rock-kick.wav"))
+	samples.append(newStream("rock-snare.wav"))
 	
 func newStream(name):
 	var nstream = AudioStreamPlayer.new()
 	var path = "res://Assets/%s" % name
-	nstream.stream = load(path)
+	nstream.stream = load(path)	
+	nstream.autoplay = false
 	parentNode.add_child(nstream)
 	return nstream
 	
