@@ -8431,5 +8431,15 @@
        inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/ConfirmButton.png"
        inkscape:export-xdpi="113.58016"
        inkscape:export-ydpi="113.58016" />
+    <rect
+       inkscape:export-ydpi="113.58016"
+       inkscape:export-xdpi="113.58016"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/DisabledButton.png"
+       style="opacity:1;fill:#3d433d;fill-opacity:1;stroke:#000000;stroke-width:4.74145842;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5033"
+       width="271.81396"
+       height="76.082466"
+       x="1101.9626"
+       y="3510.3389" />
   </g>
 </svg>

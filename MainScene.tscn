@@ -21,7 +21,7 @@
 [ext_resource path="res://Assets/CancelButton.png" type="Texture" id=19]
 [ext_resource path="res://Assets/ConfirmButton.png" type="Texture" id=20]
 [ext_resource path="res://Scripts/SaveDialog.gd" type="Script" id=21]
-[ext_resource path="res://Assets/Delete.png" type="Texture" id=22]
+[ext_resource path="res://Assets/DisabledButton.png" type="Texture" id=22]
 [ext_resource path="res://Scripts/PadPlayer.gd" type="Script" id=23]
 [ext_resource path="res://Assets/rock-kick.wav" type="AudioStream" id=24]
 
@@ -31,7 +31,6 @@ script = ExtResource( 1 )
 
 [node name="MainUI" type="TextureRect" parent="."]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -1043,7 +1042,6 @@ _sections_unfolded = [ "Rect", "Textures" ]
 
 [node name="OpenDialog" type="PopupDialog" parent="MainUI"]
 
-editor/display_folded = true
 visible = false
 anchor_left = 0.5
 anchor_top = 0.5
@@ -1092,8 +1090,9 @@ anchor_bottom = 0.0
 margin_left = 20.0
 margin_top = 82.0
 margin_right = 480.0
-margin_bottom = 493.0
+margin_bottom = 495.0
 rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
@@ -1102,7 +1101,7 @@ items = [  ]
 select_mode = 0
 auto_height = true
 icon_mode = 1
-_sections_unfolded = [ "Rect", "custom_fonts" ]
+_sections_unfolded = [ "Size Flags", "custom_fonts" ]
 
 [node name="CancelButton" type="TextureButton" parent="MainUI/OpenDialog"]
 
@@ -1196,15 +1195,14 @@ _sections_unfolded = [ "custom_fonts" ]
 
 [node name="SaveDialog" type="PopupDialog" parent="MainUI"]
 
-visible = false
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -239.0
-margin_top = -285.0
-margin_right = 261.0
-margin_bottom = 315.0
+margin_left = -300.0
+margin_top = -350.0
+margin_right = 300.0
+margin_bottom = 350.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -1212,6 +1210,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 popup_exclusive = false
 script = ExtResource( 21 )
+_sections_unfolded = [ "Anchor", "Popup" ]
 
 [node name="Caption" type="Label" parent="MainUI/SaveDialog"]
 
@@ -1219,9 +1218,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 29.0
+margin_left = 25.0
 margin_top = 17.0
-margin_right = 186.0
+margin_right = 182.0
 margin_bottom = 63.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -1242,10 +1241,11 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 20.0
-margin_top = 135.0
-margin_right = 480.0
-margin_bottom = 493.0
+margin_top = 149.0
+margin_right = 580.0
+margin_bottom = 599.0
 rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
@@ -1258,14 +1258,15 @@ _sections_unfolded = [ "Rect", "custom_fonts" ]
 
 [node name="CancelButton" type="TextureButton" parent="MainUI/SaveDialog"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 27.0
-margin_top = 510.0
-margin_right = 242.0
-margin_bottom = 570.0
+margin_left = 20.0
+margin_top = 615.0
+margin_right = 200.0
+margin_bottom = 675.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -1285,9 +1286,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 62.0
+margin_left = 42.0
 margin_top = 6.0
-margin_right = 161.0
+margin_right = 141.0
 margin_bottom = 52.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -1303,14 +1304,15 @@ _sections_unfolded = [ "custom_fonts" ]
 
 [node name="SaveButton" type="TextureButton" parent="MainUI/SaveDialog"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 260.0
-margin_top = 510.0
-margin_right = 475.0
-margin_bottom = 570.0
+margin_left = 400.0
+margin_top = 615.0
+margin_right = 580.0
+margin_bottom = 675.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -1321,6 +1323,7 @@ enabled_focus_mode = 2
 shortcut = null
 group = null
 texture_normal = ExtResource( 20 )
+texture_disabled = ExtResource( 22 )
 expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
 
@@ -1330,9 +1333,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 75.0
+margin_left = 59.0
 margin_top = 6.0
-margin_right = 174.0
+margin_right = 158.0
 margin_bottom = 52.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -1353,9 +1356,9 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 20.0
-margin_top = 70.0
-margin_right = 480.0
-margin_bottom = 126.0
+margin_top = 80.0
+margin_right = 580.0
+margin_bottom = 136.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -1372,18 +1375,18 @@ v_scroll_speed = 80.0
 caret_block_mode = false
 caret_blink = false
 caret_blink_speed = 0.65
-_sections_unfolded = [ "Grow Direction", "Hint", "Rect" ]
 
 [node name="DeleteButton" type="TextureButton" parent="MainUI/SaveDialog"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 432.0
-margin_top = 18.0
-margin_right = 477.0
-margin_bottom = 70.0
+margin_left = 210.0
+margin_top = 615.0
+margin_right = 390.0
+margin_bottom = 675.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -1393,30 +1396,54 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 6 )
+texture_normal = ExtResource( 19 )
 texture_pressed = ExtResource( 7 )
 expand = true
-stretch_mode = 4
-_sections_unfolded = [ "Textures" ]
+_sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="TextureRect" type="TextureRect" parent="MainUI/SaveDialog/DeleteButton"]
+[node name="Label" type="Label" parent="MainUI/SaveDialog/DeleteButton"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 11.0
-margin_top = 7.0
-margin_right = 36.0
-margin_bottom = 48.0
+margin_left = 40.0
+margin_top = 4.0
+margin_right = 134.0
+margin_bottom = 50.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
-mouse_filter = 1
+mouse_filter = 2
 size_flags_horizontal = 1
-size_flags_vertical = 1
-texture = ExtResource( 22 )
-expand = true
-stretch_mode = 5
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 3 )
+text = "Delete"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="CountLabel" type="Label" parent="MainUI/SaveDialog"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 187.0
+margin_top = 18.0
+margin_right = 418.0
+margin_bottom = 64.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 3 )
+text = "(0 to 10)"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
 
 [node name="PadPlayer" type="Node" parent="."]
 

@@ -8,7 +8,7 @@
 
 config_version=3
 
-Output Latency=false
+OutputLatency=null
 
 [application]
 

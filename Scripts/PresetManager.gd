@@ -6,9 +6,7 @@ const PRESET_LIST_FILE = "presets";
 func _init():
 	var dict = readDict(PRESET_LIST_FILE)
 	if dict == null:
-		pass
-		
-	initPresets()
+		initPresets()
 
 # Init presets
 func initPresets():
