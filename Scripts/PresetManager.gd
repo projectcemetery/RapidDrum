@@ -11,6 +11,10 @@ func _init():
 # Init presets
 func initPresets():
 	var dict = readDict(PRESET_LIST_FILE, true)
+	
+	if dict == null:
+		return
+	
 	var dir = Directory.new()
 	for d in dict.keys():
 		dir.copy(getFileName(d, true), getFileName(d))

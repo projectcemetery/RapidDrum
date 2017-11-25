@@ -8,13 +8,11 @@
 
 config_version=3
 
-OutputLatency=null
-
 [application]
 
 config/name="RapidDrum"
 run/main_scene="res://MainScene.tscn"
-config/icon="res://Assets/Icon.png"
+config/icon="res://icon.png"
 
 [display]
 
@@ -28,7 +26,3 @@ window/stretch/aspect="keep"
 [gdnative]
 
 singletons=[  ]
-
-[rendering]
-
-environment/default_environment="res://default_env.tres"
