@@ -1363,19 +1363,6 @@
          stdDeviation="1.6889734"
          id="feGaussianBlur8732" />
     </filter>
-    <filter
-       inkscape:collect="always"
-       style="color-interpolation-filters:sRGB"
-       id="filter8778"
-       x="-0.0070454661"
-       width="1.0140909"
-       y="-0.040434402"
-       height="1.0808688">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="0.74657159"
-         id="feGaussianBlur8780" />
-    </filter>
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4156"
@@ -1407,18 +1394,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.56710334"
-     inkscape:cx="892.05335"
-     inkscape:cy="-2323.5406"
+     inkscape:zoom="0.40100262"
+     inkscape:cx="563.89249"
+     inkscape:cy="-558.54974"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      showborder="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="0"
+     inkscape:window-width="1251"
+     inkscape:window-height="998"
+     inkscape:window-x="645"
      inkscape:window-y="30"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      showguides="true" />
   <metadata
      id="metadata7">
@@ -1477,13 +1464,29 @@
          style="fill:#2a2a32;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter7055)" />
     </g>
     <rect
-       style="opacity:1;fill:#121212;fill-opacity:1;stroke:#000000;stroke-width:5.23827553;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       ry="7.0382762"
+       y="2412.2495"
+       x="316.74475"
+       height="79.458557"
+       width="481.04959"
+       id="rect6114"
+       style="opacity:1;fill:#121212;fill-opacity:1;stroke:#000000;stroke-width:6.58840847;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#121212;fill-opacity:1;stroke:#000000;stroke-width:4.83684778;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect6026"
+       width="284.21329"
+       height="101.34169"
+       x="1164.609"
+       y="1471.8059"
+       ry="13.62577" />
+    <rect
+       style="opacity:1;fill:#121212;fill-opacity:1;stroke:#000000;stroke-width:6.28092146;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect5037"
-       width="299.01166"
-       height="80.808693"
-       x="-154.49332"
-       y="2411.5747"
-       ry="7.1578679" />
+       width="435.51007"
+       height="79.766045"
+       x="-153.972"
+       y="2412.0959"
+       ry="7.0655127" />
     <rect
        style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:1.70954263;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect8836"
@@ -1496,13 +1499,13 @@
        inkscape:export-ydpi="77.383469"
        inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png" />
     <rect
-       style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:2.6960578;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:1.39567983;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect6803"
-       width="226.86606"
-       height="52.359955"
-       x="-30.064461"
-       y="1513.1079"
-       ry="8.5964127"
+       width="56.097736"
+       height="56.746193"
+       x="-23.233402"
+       y="1533.6547"
+       ry="9.3165407"
        inkscape:export-xdpi="77.383469"
        inkscape:export-ydpi="77.383469"
        inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png" />
@@ -6904,96 +6907,18 @@
     <text
        sodipodi:linespacing="125%"
        id="text6769"
-       y="1551.8735"
-       x="-12.205696"
+       y="1574.3173"
+       x="-7.2181973"
        style="font-style:normal;font-weight:normal;font-size:43.32863998px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.83461291px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"
        inkscape:export-xdpi="77.383469"
        inkscape:export-ydpi="77.383469"
        inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png"><tspan
-         y="1551.8735"
-         x="-12.205696"
+         y="1574.3173"
+         x="-7.2181973"
          id="tspan6771"
          sodipodi:role="line"
          style="stroke-width:0.83461291px">1</tspan></text>
-    <rect
-       ry="8.5915985"
-       y="1514.3148"
-       x="345.00549"
-       height="52.330635"
-       width="227.24585"
-       id="rect6811"
-       style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:2.72538018;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-xdpi="77.383469"
-       inkscape:export-ydpi="77.383469"
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:43.32863998px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.83461291px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="359.27271"
-       y="1554.2581"
-       id="text6813"
-       sodipodi:linespacing="125%"
-       inkscape:export-xdpi="77.383469"
-       inkscape:export-ydpi="77.383469"
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png"><tspan
-         sodipodi:role="line"
-         id="tspan6815"
-         x="359.27271"
-         y="1554.2581"
-         style="stroke-width:0.83461291px">2</tspan></text>
-    <rect
-       style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:2.71556401;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect6837"
-       width="225.56952"
-       height="52.34045"
-       x="712.23035"
-       y="1514.3099"
-       ry="8.5932093"
-       inkscape:export-xdpi="77.383469"
-       inkscape:export-ydpi="77.383469"
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png" />
-    <text
-       sodipodi:linespacing="125%"
-       id="text6839"
-       y="1554.2581"
-       x="726.50244"
-       style="font-style:normal;font-weight:normal;font-size:43.32863998px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.83461291px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"
-       inkscape:export-xdpi="77.383469"
-       inkscape:export-ydpi="77.383469"
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png"><tspan
-         y="1554.2581"
-         x="726.50244"
-         id="tspan6841"
-         sodipodi:role="line"
-         style="stroke-width:0.83461291px">3</tspan></text>
-    <rect
-       ry="8.5848284"
-       y="1514.3354"
-       x="1076.4691"
-       height="52.289398"
-       width="234.35847"
-       id="rect6843"
-       style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:2.76661229;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-xdpi="77.383469"
-       inkscape:export-ydpi="77.383469"
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:43.32863998px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.83461291px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="1090.7157"
-       y="1554.2581"
-       id="text6845"
-       sodipodi:linespacing="125%"
-       inkscape:export-xdpi="77.383469"
-       inkscape:export-ydpi="77.383469"
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png"><tspan
-         sodipodi:role="line"
-         id="tspan6847"
-         x="1090.7157"
-         y="1554.2581"
-         style="stroke-width:0.83461291px">4</tspan></text>
     <rect
        style="opacity:1;fill:#aa4400;fill-opacity:1;stroke:#000000;stroke-width:2.56206751;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect6955"
@@ -7098,111 +7023,6 @@
          x="90.150993"
          id="tspan6977"
          sodipodi:role="line">4</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:41.58784485px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.80108112px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="352.18631"
-       y="2464.2634"
-       id="text6979"
-       sodipodi:linespacing="125%"
-       inkscape:export-xdpi="77.383469"
-       inkscape:export-ydpi="77.383469"
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png"><tspan
-         sodipodi:role="line"
-         id="tspan6981"
-         x="352.18631"
-         y="2464.2634"
-         style="stroke-width:0.80108112px">Tempo</tspan></text>
-    <g
-       id="g4947"
-       transform="matrix(0.65258057,0,0,0.65258057,-133.80141,1563.7213)"
-       inkscape:export-xdpi="77.383469"
-       inkscape:export-ydpi="77.383469"
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png">
-      <rect
-         ry="13.131983"
-         y="1319.1658"
-         x="951.46399"
-         height="80.678543"
-         width="262.90189"
-         id="rect6983"
-         style="opacity:1;fill:#232323;fill-opacity:1;stroke:#000000;stroke-width:6.17859888;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <rect
-         style="opacity:1;fill:#535353;fill-opacity:0.11875;stroke:none;stroke-width:6.17859888;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter8778)"
-         id="rect8768"
-         width="254.31558"
-         height="44.313053"
-         x="955.50458"
-         y="1354.016"
-         ry="0" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text6985"
-         y="1381.1544"
-         x="1039.307"
-         style="font-style:normal;font-weight:normal;font-size:63.72829056px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.22755885px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           style="stroke-width:1.22755885px"
-           y="1381.1544"
-           x="1039.307"
-           id="tspan6987"
-           sodipodi:role="line">120</tspan></text>
-    </g>
-    <g
-       id="g7017"
-       transform="matrix(1.0840387,0,0,1.0840387,-602.25733,938.5531)"
-       inkscape:export-xdpi="77.383469"
-       inkscape:export-ydpi="77.383469"
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/SubTempoButton.png">
-      <rect
-         style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:3.94565225;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect6995"
-         width="47.911495"
-         height="47.911495"
-         x="1230.8097"
-         y="1369.835"
-         ry="0" />
-      <g
-         id="g7013">
-        <text
-           sodipodi:linespacing="125%"
-           id="text6997"
-           y="1415.1425"
-           x="1242.4081"
-           style="font-style:normal;font-weight:normal;font-size:76.78041077px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           xml:space="preserve"><tspan
-             y="1415.1425"
-             x="1242.4081"
-             id="tspan6999"
-             sodipodi:role="line">-</tspan></text>
-      </g>
-    </g>
-    <g
-       id="g7023"
-       transform="matrix(1.1020162,0,0,1.1020162,-686.64996,992.62236)"
-       inkscape:export-xdpi="110.82492"
-       inkscape:export-ydpi="110.82492"
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/AddTempoButton.png">
-      <rect
-         ry="0"
-         y="1298.2478"
-         x="1230.8097"
-         height="47.911495"
-         width="47.911495"
-         id="rect7007"
-         style="opacity:1;fill:#176c1c;fill-opacity:1;stroke:#000000;stroke-width:3.94565225;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text7009"
-         y="1339.3574"
-         x="1239.4926"
-         style="font-style:normal;font-weight:normal;font-size:52.00445557px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="1339.3574"
-           x="1239.4926"
-           id="tspan7011"
-           sodipodi:role="line">+</tspan></text>
-    </g>
     <rect
        style="opacity:1;fill:#232323;fill-opacity:1;stroke:#000000;stroke-width:3.27758265;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect7061"
@@ -7533,313 +7353,6 @@
          ry="7.758532"
          inkscape:export-xdpi="90"
          inkscape:export-ydpi="90" />
-    </g>
-    <path
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png"
-       inkscape:export-ydpi="90.488754"
-       inkscape:export-xdpi="90.488754"
-       inkscape:connector-curvature="0"
-       id="path4939"
-       d="m 1676.3043,1567.3711 342.8025,-103.7305 -1.2242,103.7305 z"
-       style="fill:#333333;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.84573549px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <rect
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png"
-       inkscape:export-ydpi="90.488754"
-       inkscape:export-xdpi="90.488754"
-       ry="9.1005268"
-       y="1452.5153"
-       x="1674.7469"
-       height="1074.1666"
-       width="1908.7415"
-       id="rect4941"
-       style="opacity:1;fill:#cecece;fill-opacity:1;stroke:none;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <g
-       transform="matrix(0.85700627,0,0,0.83461289,1650.6811,1314.5218)"
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png"
-       inkscape:export-ydpi="90.488754"
-       inkscape:export-xdpi="90.488754"
-       id="g4943">
-      <rect
-         style="opacity:1;fill:#383844;fill-opacity:1;stroke:none;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect4945"
-         width="2201.4285"
-         height="1251.4285"
-         x="40"
-         y="180.93362"
-         ry="0" />
-      <path
-         style="fill:#2a2a32;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter7055)"
-         d="M 41.356782,340.79006 549.12621,188.49491 42.857143,180.93363 Z"
-         id="path4947"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cccc" />
-    </g>
-    <rect
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png"
-       inkscape:export-ydpi="90.488754"
-       inkscape:export-xdpi="90.488754"
-       ry="8.283082"
-       y="1580.7764"
-       x="2024.6874"
-       height="800.89166"
-       width="1532.26"
-       id="rect4949"
-       style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:1.73232508;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <rect
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png"
-       inkscape:export-ydpi="90.488754"
-       inkscape:export-xdpi="90.488754"
-       ry="8.5964127"
-       y="1513.1079"
-       x="2042.6653"
-       height="52.359955"
-       width="232.95306"
-       id="rect4951"
-       style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:2.73198724;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <rect
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png"
-       inkscape:export-ydpi="90.488754"
-       inkscape:export-xdpi="90.488754"
-       ry="0"
-       y="1599.9529"
-       x="1707.7341"
-       height="81.310333"
-       width="316.39218"
-       id="rect4953"
-       style="opacity:1;fill:#ba0f2e;fill-opacity:1;stroke:#000000;stroke-width:3.38294196;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <rect
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png"
-       inkscape:export-ydpi="90.488754"
-       inkscape:export-xdpi="90.488754"
-       transform="matrix(0.82948685,0,0,0.78525484,1657.593,1332.1243)"
-       style="opacity:1;fill:#e61339;fill-opacity:0.475;stroke:none;stroke-width:2.87179661;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter7043)"
-       id="rect4955"
-       width="370.31125"
-       height="50.063686"
-       x="66.008308"
-       y="389.91541"
-       ry="0" />
-    <rect
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png"
-       inkscape:export-ydpi="90.488754"
-       inkscape:export-xdpi="90.488754"
-       style="opacity:1;fill:#176c1c;fill-opacity:1;stroke:#000000;stroke-width:3.38294196;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4961"
-       width="316.39218"
-       height="81.310333"
-       x="1707.7341"
-       y="1691.0062"
-       ry="0" />
-    <rect
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png"
-       inkscape:export-ydpi="90.488754"
-       inkscape:export-xdpi="90.488754"
-       ry="0"
-       y="389.91541"
-       x="66.008308"
-       height="50.063686"
-       width="370.31125"
-       id="rect4963"
-       style="opacity:1;fill:#1f9125;fill-opacity:0.4745098;stroke:none;stroke-width:2.87179661;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter7043)"
-       transform="matrix(0.82948685,0,0,0.78525484,1657.593,1424.8638)" />
-    <g
-       id="g6510"
-       transform="matrix(1.0268309,0,0,1,-45.575066,1.870312)"
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png"
-       inkscape:export-xdpi="90.488754"
-       inkscape:export-ydpi="90.488754">
-      <rect
-         ry="0"
-         y="1874.7991"
-         x="1706.8722"
-         height="81.310333"
-         width="308.12494"
-         id="rect4969"
-         style="opacity:1;fill:#176c1c;fill-opacity:1;stroke:#000000;stroke-width:3.33845162;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         inkscape:export-xdpi="77.466568"
-         inkscape:export-ydpi="77.466568"
-         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png" />
-      <rect
-         transform="matrix(0.80781254,0,0,0.78525484,1658.0412,1604.9017)"
-         style="opacity:1;fill:#1f9125;fill-opacity:0.4745098;stroke:none;stroke-width:2.87179661;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter7043)"
-         id="rect4971"
-         width="370.31125"
-         height="50.063686"
-         x="66.008308"
-         y="389.91541"
-         ry="0"
-         inkscape:export-xdpi="77.466568"
-         inkscape:export-ydpi="77.466568"
-         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png" />
-    </g>
-    <rect
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png"
-       inkscape:export-ydpi="90.488754"
-       inkscape:export-xdpi="90.488754"
-       ry="0"
-       y="1784.938"
-       x="1707.7341"
-       height="81.310333"
-       width="316.39218"
-       id="rect6014"
-       style="opacity:1;fill:#176c1c;fill-opacity:1;stroke:#000000;stroke-width:3.38294196;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <rect
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png"
-       inkscape:export-ydpi="90.488754"
-       inkscape:export-xdpi="90.488754"
-       transform="matrix(0.82948685,0,0,0.78525484,1657.593,1515.4789)"
-       style="opacity:1;fill:#1f9125;fill-opacity:0.4745098;stroke:none;stroke-width:2.87179661;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter7043)"
-       id="rect6016"
-       width="370.31125"
-       height="50.063686"
-       x="66.008308"
-       y="389.91541"
-       ry="0" />
-    <rect
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png"
-       inkscape:export-ydpi="90.488754"
-       inkscape:export-xdpi="90.488754"
-       ry="0"
-       y="1969.2246"
-       x="1707.7341"
-       height="81.310333"
-       width="316.39218"
-       id="rect6022"
-       style="opacity:1;fill:#933523;fill-opacity:1;stroke:#000000;stroke-width:3.38294196;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <rect
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png"
-       inkscape:export-ydpi="90.488754"
-       inkscape:export-xdpi="90.488754"
-       transform="matrix(0.82948685,0,0,0.78525484,1657.593,1700.1705)"
-       style="opacity:1;fill:#b4402c;fill-opacity:0.49411765;stroke:none;stroke-width:2.87179661;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter7043)"
-       id="rect6024"
-       width="370.31125"
-       height="50.063686"
-       x="66.008308"
-       y="389.91541"
-       ry="0" />
-    <g
-       id="g6506"
-       transform="matrix(1.0268309,0,0,1,-44.934901,6.2343733)"
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png"
-       inkscape:export-xdpi="90.488754"
-       inkscape:export-ydpi="90.488754">
-      <rect
-         ry="0"
-         y="2059.4348"
-         x="1706.8722"
-         height="81.310333"
-         width="308.12494"
-         id="rect6030"
-         style="opacity:1;fill:#933523;fill-opacity:1;stroke:#000000;stroke-width:3.33845162;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         inkscape:export-xdpi="77.466568"
-         inkscape:export-ydpi="77.466568"
-         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png" />
-      <rect
-         transform="matrix(0.80781254,0,0,0.78525484,1658.0412,1791.9779)"
-         style="opacity:1;fill:#b4402c;fill-opacity:0.49411765;stroke:none;stroke-width:2.87179661;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter7043)"
-         id="rect6032"
-         width="370.31125"
-         height="50.063686"
-         x="66.008308"
-         y="389.91541"
-         ry="0"
-         inkscape:export-xdpi="77.466568"
-         inkscape:export-ydpi="77.466568"
-         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png" />
-    </g>
-    <g
-       id="g6496"
-       transform="matrix(1.0268309,0,0,1,-44.934901,6.2343733)"
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png"
-       inkscape:export-xdpi="90.488754"
-       inkscape:export-ydpi="90.488754">
-      <rect
-         style="opacity:1;fill:#00458c;fill-opacity:1;stroke:#000000;stroke-width:3.33845162;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect6038"
-         width="308.12494"
-         height="81.310333"
-         x="1706.8722"
-         y="2152.1743"
-         ry="0"
-         inkscape:export-xdpi="77.466568"
-         inkscape:export-ydpi="77.466568"
-         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png" />
-      <rect
-         ry="0"
-         y="389.91541"
-         x="66.008308"
-         height="50.063686"
-         width="370.31125"
-         id="rect6040"
-         style="opacity:1;fill:#0051a4;fill-opacity:0.49411765;stroke:none;stroke-width:2.87179661;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter7043)"
-         transform="matrix(0.80781254,0,0,0.78525484,1658.0412,1885.7608)"
-         inkscape:export-xdpi="77.466568"
-         inkscape:export-ydpi="77.466568"
-         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png" />
-    </g>
-    <rect
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png"
-       inkscape:export-ydpi="90.488754"
-       inkscape:export-xdpi="90.488754"
-       style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:2.76170039;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect6090"
-       width="233.34305"
-       height="52.330635"
-       x="2427.7986"
-       y="1514.3148"
-       ry="8.5915985" />
-    <rect
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png"
-       inkscape:export-ydpi="90.488754"
-       inkscape:export-xdpi="90.488754"
-       ry="8.5932093"
-       y="1514.3099"
-       x="2804.8765"
-       height="52.34045"
-       width="231.62175"
-       id="rect6096"
-       style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:2.75175333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <rect
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png"
-       inkscape:export-ydpi="90.488754"
-       inkscape:export-xdpi="90.488754"
-       style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:2.80348182;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect6102"
-       width="240.64651"
-       height="52.289398"
-       x="3178.8882"
-       y="1514.3354"
-       ry="8.5848284" />
-    <g
-       id="g6500"
-       transform="matrix(1.0268309,0,0,1,-44.934901,101.62028)"
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png"
-       inkscape:export-xdpi="90.488754"
-       inkscape:export-ydpi="90.488754">
-      <rect
-         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png"
-         inkscape:export-ydpi="77.466568"
-         inkscape:export-xdpi="77.466568"
-         ry="0"
-         y="2152.1743"
-         x="1706.8722"
-         height="81.310333"
-         width="308.12494"
-         id="rect6502"
-         style="opacity:1;fill:#00458c;fill-opacity:1;stroke:#000000;stroke-width:3.33845162;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <rect
-         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Background.png"
-         inkscape:export-ydpi="77.466568"
-         inkscape:export-xdpi="77.466568"
-         transform="matrix(0.80781254,0,0,0.78525484,1658.0412,1885.7608)"
-         style="opacity:1;fill:#0051a4;fill-opacity:0.49411765;stroke:none;stroke-width:2.87179661;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter7043)"
-         id="rect6504"
-         width="370.31125"
-         height="50.063686"
-         x="66.008308"
-         y="389.91541"
-         ry="0" />
     </g>
     <rect
        inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/PlayButtonNormal.png"
@@ -8329,101 +7842,46 @@
        x="-199.25821"
        y="1534.9683"
        ry="0.94120002" />
-    <g
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/SubTempoButton.png"
-       inkscape:export-ydpi="77.383469"
-       inkscape:export-xdpi="77.383469"
-       transform="matrix(1.0840387,0,0,1.0840387,-1118.4634,939.79997)"
-       id="g5019">
-      <rect
-         ry="0"
-         y="1369.835"
-         x="1230.8097"
-         height="47.911495"
-         width="47.911495"
-         id="rect5021"
-         style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:3.94565225;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <g
-         id="g5023">
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:76.78041077px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="1242.4081"
-           y="1415.1425"
-           id="text5025"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan5027"
-             x="1242.4081"
-             y="1415.1425">-</tspan></text>
-      </g>
-    </g>
-    <g
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/AddTempoButton.png"
-       inkscape:export-ydpi="110.82492"
-       inkscape:export-xdpi="110.82492"
-       transform="matrix(1.1020162,0,0,1.1020162,-1202.8561,993.86923)"
-       id="g5029">
-      <rect
-         style="opacity:1;fill:#176c1c;fill-opacity:1;stroke:#000000;stroke-width:3.94565225;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect5031"
-         width="47.911495"
-         height="47.911495"
-         x="1230.8097"
-         y="1298.2478"
-         ry="0" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:52.00445557px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         x="1239.4926"
-         y="1339.3574"
-         id="text5033"
-         sodipodi:linespacing="125%"><tspan
-           sodipodi:role="line"
-           id="tspan5035"
-           x="1239.4926"
-           y="1339.3574">+</tspan></text>
-    </g>
     <rect
        style="opacity:1;fill:#383844;fill-opacity:1;stroke:#000000;stroke-width:5.17506361;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect5029"
        width="648.73669"
        height="749.24744"
-       x="419.76413"
-       y="2868.6973"
+       x="-1570.2478"
+       y="1437.2852"
        ry="0" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="443.48178"
-       y="2926.8003"
+       x="-1546.5302"
+       y="1495.3882"
        id="text5031"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5033"
-         x="443.48178"
-         y="2926.8003"
+         x="-1546.5302"
+         y="1495.3882"
          style="fill:#ffffff">Open Track</tspan></text>
     <rect
        style="opacity:1;fill:#2a2a33;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect5035"
        width="601.30133"
        height="504.31726"
-       x="440.83676"
-       y="2956.7771" />
+       x="-1549.1752"
+       y="1525.365" />
     <rect
        style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:4.74145842;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect5038"
        width="271.81396"
        height="76.082466"
-       x="447.76089"
-       y="3510.3389"
+       x="-1542.2511"
+       y="2078.9268"
        inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/CancelButton.png"
        inkscape:export-xdpi="113.58016"
        inkscape:export-ydpi="113.58016" />
     <rect
-       y="3510.3389"
-       x="773.9801"
+       y="2078.9268"
+       x="-1216.0319"
        height="76.082466"
        width="271.81396"
        id="rect5040"
@@ -8439,7 +7897,264 @@
        id="rect5033"
        width="271.81396"
        height="76.082466"
-       x="1101.9626"
-       y="3510.3389" />
+       x="-888.04932"
+       y="2078.9268" />
+    <rect
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png"
+       inkscape:export-ydpi="77.383469"
+       inkscape:export-xdpi="77.383469"
+       ry="9.3165407"
+       y="1533.6547"
+       x="335.86649"
+       height="56.746193"
+       width="56.097736"
+       id="rect6006"
+       style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:1.39567983;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:43.32863998px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.83461291px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="354.28519"
+       y="1576.7018"
+       id="text6813"
+       sodipodi:linespacing="125%"
+       inkscape:export-xdpi="77.383469"
+       inkscape:export-ydpi="77.383469"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png"><tspan
+         sodipodi:role="line"
+         id="tspan6815"
+         x="354.28519"
+         y="1576.7018"
+         style="stroke-width:0.83461291px">2</tspan></text>
+    <rect
+       style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:1.39567983;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect6008"
+       width="56.097736"
+       height="56.746193"
+       x="713.66949"
+       y="1533.6547"
+       ry="9.3165407"
+       inkscape:export-xdpi="77.383469"
+       inkscape:export-ydpi="77.383469"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text6839"
+       y="1575.455"
+       x="730.24304"
+       style="font-style:normal;font-weight:normal;font-size:43.32863998px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.83461291px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"
+       inkscape:export-xdpi="77.383469"
+       inkscape:export-ydpi="77.383469"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png"><tspan
+         y="1575.455"
+         x="730.24304"
+         id="tspan6841"
+         sodipodi:role="line"
+         style="stroke-width:0.83461291px">3</tspan></text>
+    <rect
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png"
+       inkscape:export-ydpi="77.383469"
+       inkscape:export-xdpi="77.383469"
+       ry="9.3165407"
+       y="1533.6547"
+       x="1082.7444"
+       height="56.746193"
+       width="56.097736"
+       id="rect6010"
+       style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:1.39567983;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:43.32863998px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.83461291px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1098.1969"
+       y="1575.455"
+       id="text6845"
+       sodipodi:linespacing="125%"
+       inkscape:export-xdpi="77.383469"
+       inkscape:export-ydpi="77.383469"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png"><tspan
+         sodipodi:role="line"
+         id="tspan6847"
+         x="1098.1969"
+         y="1575.455"
+         style="stroke-width:0.83461291px">4</tspan></text>
+    <rect
+       style="opacity:1;fill:#161616;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect6012"
+       width="254.36243"
+       height="33.514343"
+       x="1180.6742"
+       y="1487.9596"
+       ry="7.3651853" />
+    <rect
+       ry="6.1399207"
+       y="1490.9332"
+       x="1183.7601"
+       height="27.938932"
+       width="247.74986"
+       id="rect6016"
+       style="opacity:1;fill:#292929;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <g
+       id="g6028"
+       transform="translate(62.343733,0)">
+      <circle
+         style="opacity:1;fill:#793100;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="circle6018"
+         cx="1309.8247"
+         cy="1505.0707"
+         r="26.57719" />
+      <circle
+         r="26.57719"
+         cy="1502.39"
+         cx="1307.8314"
+         id="path6014"
+         style="opacity:1;fill:#d45500;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         style="opacity:1;fill:#a34000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="circle6020"
+         cx="1307.7307"
+         cy="1502.0881"
+         r="21.241621" />
+    </g>
+    <text
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png"
+       inkscape:export-ydpi="77.383469"
+       inkscape:export-xdpi="77.383469"
+       sodipodi:linespacing="125%"
+       id="text6022"
+       y="1565.7832"
+       x="1234.1233"
+       style="font-style:normal;font-weight:normal;font-size:41.58784485px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.80108112px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.80108112px"
+         y="1565.7832"
+         x="1234.1233"
+         id="tspan6024"
+         sodipodi:role="line">Volume</tspan></text>
+    <rect
+       ry="9.9539051"
+       y="2421.2996"
+       x="330.87"
+       height="61.153488"
+       width="121.60198"
+       id="rect6035"
+       style="opacity:1;fill:#232323;fill-opacity:1;stroke:#000000;stroke-width:3.65843296;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text6039"
+       y="2462.9722"
+       x="360.95596"
+       style="font-style:normal;font-weight:normal;font-size:36.55617523px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.70415908px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.70415908px"
+         y="2462.9722"
+         x="360.95596"
+         id="tspan6041"
+         sodipodi:role="line">120</tspan></text>
+    <circle
+       style="opacity:1;fill:#176c1c;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path6043"
+       cx="756.66614"
+       cy="2448.4922"
+       r="26.009369" />
+    <circle
+       r="26.009369"
+       cy="2450.2556"
+       cx="493.92731"
+       id="circle6045"
+       style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text7009-3"
+       y="2467.1082"
+       x="740.38696"
+       style="font-style:normal;font-weight:normal;font-size:57.30975342px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="2467.1082"
+         x="740.38696"
+         id="tspan7011-6"
+         sodipodi:role="line">+</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text6997-7"
+       y="2471.042"
+       x="480.50958"
+       style="font-style:normal;font-weight:normal;font-size:83.23293304px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="2471.042"
+         x="480.50958"
+         id="tspan6999-5"
+         sodipodi:role="line">-</tspan></text>
+    <rect
+       ry="7.3651853"
+       y="2432.7488"
+       x="532.84937"
+       height="33.514343"
+       width="185.16089"
+       id="rect6083"
+       style="opacity:1;fill:#161616;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#292929;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect6086"
+       width="180.34732"
+       height="27.938932"
+       x="535.09576"
+       y="2435.7224"
+       ry="6.1399207" />
+    <g
+       transform="translate(-654.68261,944.7891)"
+       id="g6088">
+      <circle
+         r="26.57719"
+         cy="1505.0707"
+         cx="1309.8247"
+         id="circle6090"
+         style="opacity:1;fill:#793100;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         style="opacity:1;fill:#d45500;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="circle6092"
+         cx="1307.8314"
+         cy="1502.39"
+         r="26.57719" />
+      <circle
+         r="21.241621"
+         cy="1502.0881"
+         cx="1307.7307"
+         id="circle6094"
+         style="opacity:1;fill:#a34000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <circle
+       r="26.009369"
+       cy="2448.4922"
+       cx="178.53894"
+       id="circle6102"
+       style="opacity:1;fill:#176c1c;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:57.30975342px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="162.25977"
+       y="2467.1082"
+       id="text6104"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6106"
+         x="162.25977"
+         y="2467.1082">+</tspan></text>
+    <circle
+       style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle6108"
+       cx="243.78267"
+       cy="2450.2556"
+       r="26.009369" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:83.23293304px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="230.36494"
+       y="2471.042"
+       id="text6110"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6112"
+         x="230.36494"
+         y="2471.042">-</tspan></text>
   </g>
 </svg>
