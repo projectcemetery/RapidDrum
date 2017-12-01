@@ -1,6 +1,7 @@
 {
+    "Id" : "Rock",
     "Samples" : {
-        "Snare" : "",
-        "Kick" : ""
+        "Snare" : "snare.wav",
+        "Kick" : "kick.wav"
     }
 }

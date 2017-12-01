@@ -14,6 +14,6 @@ class DrumKitController extends HTTPController {
   /// Return drum kit by id
   @httpGet
   Future<Response> getDrumKit(@HTTPPath("id") String id) async {
-    return await getFile("${id}.json", ContentType.JSON);
+    return await getKit(id);
   }
 }
