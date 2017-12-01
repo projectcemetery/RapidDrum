@@ -9,3 +9,4 @@ export 'dart:io';
 export 'package:aqueduct/aqueduct.dart';
 
 export 'service_sink.dart';
+export 'asset_manager.dart';
