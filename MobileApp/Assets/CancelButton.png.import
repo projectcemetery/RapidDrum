@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/CancelButton.png-aef759f724714ae52c7cc36f9eb66cd0.stex"
 
+[deps]
+
+source_md5="921b32ce2dbe376fa077866edf411ff3"
+
 [params]
 
 compress/mode=0

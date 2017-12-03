@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/PadButtonNormal.png-c70e8fcf87ef50f0f3e703ffc3513c63.stex"
 
+[deps]
+
+source_md5="d2a0a2114e895a930e1d9bcda0f1f4e6"
+
 [params]
 
 compress/mode=0

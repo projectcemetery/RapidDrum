@@ -4,6 +4,10 @@ importer="wav"
 type="AudioStreamSample"
 path="res://.import/rock-snare.wav-c0156a70a21c25fb122fbcec3c2d4016.sample"
 
+[deps]
+
+source_md5="748fae0daf9fc7cdf7a1e73728dabe08"
+
 [params]
 
 force/8_bit=false

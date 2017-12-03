@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/DisabledButton.png-200dc946b70605d216b6aee9a1405aa3.stex"
 
+[deps]
+
+source_md5="94064ef80dff8ecc7d9ad99b9b2baeee"
+
 [params]
 
 compress/mode=0

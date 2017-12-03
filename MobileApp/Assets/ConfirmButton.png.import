@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/ConfirmButton.png-3a60b581a249ade422ca8ad779685961.stex"
 
+[deps]
+
+source_md5="49814cbc9db2fa738a054e3cfc3c335f"
+
 [params]
 
 compress/mode=0

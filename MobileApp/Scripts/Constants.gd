@@ -8,3 +8,10 @@ const PAGE_COUNT = 4
 const DEFAULT_TEMPO = 100
 # Max preset count
 const MAX_PRESET_COUNT = 10
+
+# Defult bus index
+const DEFAULT_BUS_INDEX = 0
+# Default volume at start
+const DEFAULT_VOLUME = 70
+# Minimal bus volume
+const MIN_BUS_VOLUME = -80

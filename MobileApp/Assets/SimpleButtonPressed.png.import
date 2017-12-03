@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/SimpleButtonPressed.png-31bb61d19fe2e31bdd04ea35e2175869.stex"
 
+[deps]
+
+source_md5="847c3047af96efd9ce50546bf6b25eaf"
+
 [params]
 
 compress/mode=0

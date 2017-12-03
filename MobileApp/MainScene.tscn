@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Scripts/MainScene.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Background.png" type="Texture" id=2]
@@ -22,8 +22,10 @@
 [ext_resource path="res://Assets/ConfirmButton.png" type="Texture" id=20]
 [ext_resource path="res://Scripts/SaveDialog.gd" type="Script" id=21]
 [ext_resource path="res://Assets/DisabledButton.png" type="Texture" id=22]
-[ext_resource path="res://Scripts/PadPlayer.gd" type="Script" id=23]
-[ext_resource path="res://Assets/rock-kick.wav" type="AudioStream" id=24]
+[ext_resource path="res://Assets/VolumePanel.png" type="Texture" id=23]
+[ext_resource path="res://Scripts/VolumeControl.gd" type="Script" id=24]
+[ext_resource path="res://Assets/Grabber.png" type="Texture" id=25]
+[ext_resource path="res://Scripts/PadPlayer.gd" type="Script" id=26]
 
 [node name="MainScene" type="Node2D"]
 
@@ -172,15 +174,15 @@ stretch_mode = 0
 
 [node name="LogoIcon" type="TextureRect" parent="MainUI/Decor"]
 
-editor/display_folded = true
+visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 120.0
-margin_top = 29.0
-margin_right = 218.0
-margin_bottom = 133.0
+margin_left = 139.0
+margin_top = -269.0
+margin_right = 237.0
+margin_bottom = -165.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -1042,6 +1044,7 @@ _sections_unfolded = [ "Rect", "Textures" ]
 
 [node name="OpenDialog" type="PopupDialog" parent="MainUI"]
 
+editor/display_folded = true
 visible = false
 anchor_left = 0.5
 anchor_top = 0.5
@@ -1195,6 +1198,7 @@ _sections_unfolded = [ "custom_fonts" ]
 
 [node name="SaveDialog" type="PopupDialog" parent="MainUI"]
 
+editor/display_folded = true
 visible = false
 anchor_left = 0.5
 anchor_top = 0.5
@@ -1366,13 +1370,17 @@ mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 custom_fonts/font = ExtResource( 3 )
+text = ""
+readonly = false
 highlight_current_line = false
 syntax_highlighting = false
 show_line_numbers = false
 highlight_all_occurrences = false
 override_selected_font_color = false
+context_menu_enabled = true
 smooth_scrolling = false
 v_scroll_speed = 80.0
+hiding_enabled = 0
 caret_block_mode = false
 caret_blink = false
 caret_blink_speed = 0.65
@@ -1446,10 +1454,78 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_fonts" ]
 
+[node name="VolumeControl" type="TextureRect" parent="MainUI"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 42.0
+margin_top = 25.0
+margin_right = 342.0
+margin_bottom = 133.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 23 )
+stretch_mode = 0
+script = ExtResource( 24 )
+
+[node name="Label" type="Label" parent="MainUI/VolumeControl"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 88.0
+margin_top = 3.0
+margin_right = 194.0
+margin_bottom = 49.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 3 )
+text = "Volume"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="VolumeSlider" type="HSlider" parent="MainUI/VolumeControl"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 21.0
+margin_top = 60.0
+margin_right = 284.0
+margin_bottom = 89.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 0
+custom_icons/grabber_highlight = ExtResource( 25 )
+custom_icons/grabber = ExtResource( 25 )
+min_value = 0.0
+max_value = 100.0
+step = 1.0
+page = 0.0
+value = 70.0
+exp_edit = false
+rounded = false
+editable = true
+tick_count = 50
+ticks_on_borders = true
+focus_mode = 2
+
 [node name="PadPlayer" type="Node" parent="."]
 
-editor/display_folded = true
-script = ExtResource( 23 )
+script = ExtResource( 26 )
 
 [node name="PlayerTimer" type="Timer" parent="PadPlayer"]
 
@@ -1457,15 +1533,6 @@ process_mode = 0
 wait_time = 0.1
 one_shot = false
 autostart = false
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-
-stream = ExtResource( 24 )
-volume_db = 0.0
-autoplay = false
-mix_target = 0
-bus = "Master"
-_sections_unfolded = [ "Pause" ]
 
 [connection signal="pressed" from="MainUI/OpenButton" to="." method="_on_OpenButton_pressed"]
 
@@ -1514,6 +1581,10 @@ _sections_unfolded = [ "Pause" ]
 [connection signal="pressed" from="MainUI/SaveDialog/SaveButton" to="MainUI/SaveDialog" method="_on_SaveButton_pressed"]
 
 [connection signal="pressed" from="MainUI/SaveDialog/DeleteButton" to="MainUI/SaveDialog" method="_on_DeleteButton_pressed"]
+
+[connection signal="VolumeChange" from="MainUI/VolumeControl" to="." method="_on_VolumeControl_VolumeChange"]
+
+[connection signal="value_changed" from="MainUI/VolumeControl/VolumeSlider" to="MainUI/VolumeControl" method="_on_VolumeSlider_value_changed"]
 
 [connection signal="CollectionChanged" from="PadPlayer" to="." method="_on_PadPlayer_CollectionChanged"]
 

@@ -4,6 +4,10 @@ importer="wav"
 type="AudioStreamSample"
 path="res://.import/rock-tom2.wav-bb4cf38c7e1ad460fcf57584c062b519.sample"
 
+[deps]
+
+source_md5="fe9d11b370b47fe4afce850042b3dff1"
+
 [params]
 
 force/8_bit=false

@@ -4,6 +4,10 @@ importer="wav"
 type="AudioStreamSample"
 path="res://.import/rock-kick.wav-70ce8df49a53088d32dfd0c3f3e3c2e4.sample"
 
+[deps]
+
+source_md5="28455f1102786572fda714bb0e8f75f5"
+
 [params]
 
 force/8_bit=false

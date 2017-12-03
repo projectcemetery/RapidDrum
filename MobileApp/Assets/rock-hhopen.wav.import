@@ -4,6 +4,10 @@ importer="wav"
 type="AudioStreamSample"
 path="res://.import/rock-hhopen.wav-5a5bf9ad3e1bfe8851421da5b246cfe6.sample"
 
+[deps]
+
+source_md5="6eed0e14dcf5632a14b637d0b50c1b93"
+
 [params]
 
 force/8_bit=false

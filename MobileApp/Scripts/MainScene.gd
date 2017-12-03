@@ -49,6 +49,9 @@ func _ready():
 	saveDialog = get_node("MainUI/SaveDialog")
 	presetManager = presetManagerClass.new()
 	
+	var vol = constants.MIN_BUS_VOLUME + constants.DEFAULT_VOLUME
+	AudioServer.set_bus_volume_db(constants.DEFAULT_BUS_INDEX, vol)
+	
 	setTrack(track)
 
 # Set track
@@ -146,3 +149,8 @@ func _on_SaveDialog_DeleteTrack(name):
 	presetManager.deleteTrack(name)
 	var lst = presetManager.getList()
 	saveDialog.setList(lst)
+
+# On volume chagne
+func _on_VolumeControl_VolumeChange(volume):
+	var vol = constants.MIN_BUS_VOLUME + volume	
+	AudioServer.set_bus_volume_db(constants.DEFAULT_BUS_INDEX, vol)

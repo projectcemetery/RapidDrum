@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/PlayButtonPressed.png-eaf6c4785e0fd4b5e71fb10adc611180.stex"
 
+[deps]
+
+source_md5="4010c01da153e9e8302bc0abfc0c260c"
+
 [params]
 
 compress/mode=0

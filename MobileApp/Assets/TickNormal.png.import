@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/TickNormal.png-0a11705edcfa2965987cd6337590ec24.stex"
 
+[deps]
+
+source_md5="02479e0540696668f12bd99fbcc3814b"
+
 [params]
 
 compress/mode=0

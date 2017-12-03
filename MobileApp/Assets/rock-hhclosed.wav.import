@@ -4,6 +4,10 @@ importer="wav"
 type="AudioStreamSample"
 path="res://.import/rock-hhclosed.wav-21e16264e649ecc53500e5da2628bc4d.sample"
 
+[deps]
+
+source_md5="9461ab67a5c1a1b3e6ea61d0eec531ee"
+
 [params]
 
 force/8_bit=false

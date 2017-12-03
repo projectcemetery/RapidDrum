@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/DrumLogo.png-33ba9de0d9577d4eeb2c4b6e4830dd87.stex"
 
+[deps]
+
+source_md5="9e6fd21f86c22e9b104e68d9a608fcc1"
+
 [params]
 
 compress/mode=0

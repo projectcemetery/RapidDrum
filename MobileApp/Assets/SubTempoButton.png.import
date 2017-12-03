@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/SubTempoButton.png-c31b880ff862ddaa703817c1ddf96b7a.stex"
 
+[deps]
+
+source_md5="28d8bd63687cddccce00c6c3ba648d3c"
+
 [params]
 
 compress/mode=0

@@ -4,6 +4,10 @@ importer="wav"
 type="AudioStreamSample"
 path="res://.import/rock-crash.wav-5d59f989db950ba89ea03254952cd038.sample"
 
+[deps]
+
+source_md5="7fc5a695417d02d446af62f5b7166612"
+
 [params]
 
 force/8_bit=false

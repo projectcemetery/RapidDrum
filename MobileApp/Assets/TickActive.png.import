@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path="res://.import/TickActive.png-a08728a9da251204f08ae40985891dc1.stex"
 
+[deps]
+
+source_md5="1fadffc87d77d464c3f92a786b4349d0"
+
 [params]
 
 compress/mode=0
