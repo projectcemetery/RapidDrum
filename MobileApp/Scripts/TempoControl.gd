@@ -9,21 +9,25 @@ const MAX_TEMPO = 160
 var tempo = constants.DEFAULT_TEMPO
 # Label to show tempo
 var tempoLabel
+# Tempo slider
+var tempoSlider
 
 # On tempo changed
 signal TempoChanged
 
 func _ready():
-	tempoLabel = get_node("ColorRect2/TempoValue")
+	tempoLabel = get_node("TempoLed/TempoValue")
+	tempoSlider = get_node("TempoSlider")
 
 # Update label text
-func updateLabel():
+func updateUi():
 	tempoLabel.text = str(tempo)
+	tempoSlider.value = tempo
 
 # Set tempo
 func setTempo(v):
 	tempo = int(v)
-	updateLabel()
+	updateUi()
 
 # Get tempo
 func getTempo():
@@ -35,14 +39,20 @@ func _on_AddTempoButton_button_down():
 	if tempo > MAX_TEMPO:
 		tempo = MAX_TEMPO
 	else:
-		updateLabel()
+		updateUi()
 		emit_signal("TempoChanged", tempo)
 
-
+# On substract button down
 func _on_SubTempoButton_button_down():
 	tempo -= 1
 	if tempo < MINIMAL_TEMPO:
 		tempo = MINIMAL_TEMPO
 	else:
-		updateLabel()
+		updateUi()
 		emit_signal("TempoChanged", tempo)
+
+# On tempo slider change
+func _on_TempoSlider_value_changed(value):
+	tempo = value
+	emit_signal("TempoChanged", value)
+	updateUi()

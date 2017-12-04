@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://Scripts/MainScene.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Background.png" type="Texture" id=2]
@@ -12,20 +12,23 @@
 [ext_resource path="res://Assets/PlayButtonNormal.png" type="Texture" id=10]
 [ext_resource path="res://Assets/PlayButtonPressed.png" type="Texture" id=11]
 [ext_resource path="res://Scripts/PageControl.gd" type="Script" id=12]
-[ext_resource path="res://Assets/pagebuttongroup.tres" type="ButtonGroup" id=13]
-[ext_resource path="res://Assets/AddTempoButton.png" type="Texture" id=14]
-[ext_resource path="res://Assets/SubTempoButton.png" type="Texture" id=15]
-[ext_resource path="res://Scripts/PadControl.gd" type="Script" id=16]
-[ext_resource path="res://Scripts/TempoControl.gd" type="Script" id=17]
-[ext_resource path="res://Scripts/OpenDialog.gd" type="Script" id=18]
-[ext_resource path="res://Assets/CancelButton.png" type="Texture" id=19]
-[ext_resource path="res://Assets/ConfirmButton.png" type="Texture" id=20]
-[ext_resource path="res://Scripts/SaveDialog.gd" type="Script" id=21]
-[ext_resource path="res://Assets/DisabledButton.png" type="Texture" id=22]
-[ext_resource path="res://Assets/VolumePanel.png" type="Texture" id=23]
-[ext_resource path="res://Scripts/VolumeControl.gd" type="Script" id=24]
-[ext_resource path="res://Assets/Grabber.png" type="Texture" id=25]
-[ext_resource path="res://Scripts/PadPlayer.gd" type="Script" id=26]
+[ext_resource path="res://Assets/SmallPanelBackground.png" type="Texture" id=13]
+[ext_resource path="res://Assets/pagebuttongroup.tres" type="ButtonGroup" id=14]
+[ext_resource path="res://Assets/AddButton.png" type="Texture" id=15]
+[ext_resource path="res://Assets/AddButtonPress.png" type="Texture" id=16]
+[ext_resource path="res://Assets/SubButton.png" type="Texture" id=17]
+[ext_resource path="res://Assets/SubButtonPress.png" type="Texture" id=18]
+[ext_resource path="res://Scripts/PadControl.gd" type="Script" id=19]
+[ext_resource path="res://Scripts/TempoControl.gd" type="Script" id=20]
+[ext_resource path="res://Assets/Grabber.png" type="Texture" id=21]
+[ext_resource path="res://Scripts/OpenDialog.gd" type="Script" id=22]
+[ext_resource path="res://Assets/CancelButton.png" type="Texture" id=23]
+[ext_resource path="res://Assets/ConfirmButton.png" type="Texture" id=24]
+[ext_resource path="res://Scripts/SaveDialog.gd" type="Script" id=25]
+[ext_resource path="res://Assets/DisabledButton.png" type="Texture" id=26]
+[ext_resource path="res://Assets/VolumePanel.png" type="Texture" id=27]
+[ext_resource path="res://Scripts/VolumeControl.gd" type="Script" id=28]
+[ext_resource path="res://Scripts/PadPlayer.gd" type="Script" id=29]
 
 [node name="MainScene" type="Node2D"]
 
@@ -52,7 +55,6 @@ _sections_unfolded = [ "Visibility" ]
 
 [node name="Decor" type="Control" parent="MainUI"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -159,9 +161,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 1297.0
+margin_left = 1289.0
 margin_top = 990.0
-margin_right = 1669.0
+margin_right = 1661.0
 margin_bottom = 1038.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -350,13 +352,12 @@ _sections_unfolded = [ "Textures" ]
 
 [node name="PageControl" type="Control" parent="MainUI"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 268.0
-margin_top = 977.0
+margin_left = 264.0
+margin_top = 972.0
 margin_right = 613.0
 margin_bottom = 1053.0
 rect_pivot_offset = Vector2( 0, 0 )
@@ -366,49 +367,33 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 script = ExtResource( 12 )
 
-[node name="ColorRect" type="ColorRect" parent="MainUI/PageControl"]
+[node name="Background" type="TextureRect" parent="MainUI/PageControl"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = -15.0
-margin_top = -10.0
-margin_right = 341.0
-margin_bottom = 85.0
+margin_left = -18.0
+margin_right = 465.0
+margin_bottom = 80.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
-mouse_filter = 0
+mouse_filter = 1
 size_flags_horizontal = 1
 size_flags_vertical = 1
-color = Color( 0, 0, 0, 1 )
-
-[node name="ColorRect2" type="ColorRect" parent="MainUI/PageControl"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = -7.0
-margin_top = -2.0
-margin_right = 332.0
-margin_bottom = 78.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-color = Color( 0.0511017, 0.0516995, 0.0664062, 1 )
+texture = ExtResource( 13 )
+expand = true
+stretch_mode = 0
 
 [node name="PageButton1" type="TextureButton" parent="MainUI/PageControl"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 3.0
-margin_right = 70.0
+margin_left = -1.0
+margin_top = 8.0
+margin_right = 64.0
 margin_bottom = 73.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -419,7 +404,7 @@ toggle_mode = true
 pressed = true
 enabled_focus_mode = 2
 shortcut = null
-group = ExtResource( 13 )
+group = ExtResource( 14 )
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 7 )
 expand = true
@@ -432,9 +417,9 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 29.0
-margin_top = 13.0
+margin_top = 11.0
 margin_right = 60.0
-margin_bottom = 59.0
+margin_bottom = 57.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -449,15 +434,14 @@ _sections_unfolded = [ "custom_fonts" ]
 
 [node name="PageButton2" type="TextureButton" parent="MainUI/PageControl"]
 
-editor/display_folded = true
 visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 89.0
-margin_top = 3.0
-margin_right = 159.0
+margin_left = 77.0
+margin_top = 8.0
+margin_right = 142.0
 margin_bottom = 73.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -467,7 +451,7 @@ size_flags_vertical = 1
 toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
-group = ExtResource( 13 )
+group = ExtResource( 14 )
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 7 )
 expand = true
@@ -479,10 +463,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 26.0
-margin_top = 11.0
-margin_right = 57.0
-margin_bottom = 57.0
+margin_left = 24.0
+margin_top = 9.0
+margin_right = 55.0
+margin_bottom = 55.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -497,16 +481,15 @@ _sections_unfolded = [ "custom_fonts" ]
 
 [node name="PageButton3" type="TextureButton" parent="MainUI/PageControl"]
 
-editor/display_folded = true
 visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 174.0
-margin_top = 3.0
-margin_right = 244.0
-margin_bottom = 73.0
+margin_left = 156.0
+margin_top = 9.0
+margin_right = 221.0
+margin_bottom = 74.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -515,7 +498,7 @@ size_flags_vertical = 1
 toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
-group = ExtResource( 13 )
+group = ExtResource( 14 )
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 7 )
 expand = true
@@ -527,10 +510,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 25.0
-margin_top = 11.0
-margin_right = 56.0
-margin_bottom = 57.0
+margin_left = 23.0
+margin_top = 9.0
+margin_right = 54.0
+margin_bottom = 55.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -545,16 +528,15 @@ _sections_unfolded = [ "custom_fonts" ]
 
 [node name="PageButton4" type="TextureButton" parent="MainUI/PageControl"]
 
-editor/display_folded = true
 visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 257.0
-margin_top = 3.0
-margin_right = 327.0
-margin_bottom = 73.0
+margin_left = 236.0
+margin_top = 9.0
+margin_right = 301.0
+margin_bottom = 74.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -563,7 +545,7 @@ size_flags_vertical = 1
 toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
-group = ExtResource( 13 )
+group = ExtResource( 14 )
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 7 )
 expand = true
@@ -575,10 +557,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 25.0
-margin_top = 12.0
-margin_right = 56.0
-margin_bottom = 58.0
+margin_left = 23.0
+margin_top = 10.0
+margin_right = 54.0
+margin_bottom = 56.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -597,33 +579,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 354.0
-margin_top = 8.0
-margin_right = 414.0
-margin_bottom = 68.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-texture_normal = ExtResource( 14 )
-expand = true
-_sections_unfolded = [ "Rect", "Textures" ]
-
-[node name="SubPageButton" type="TextureButton" parent="MainUI/PageControl"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 421.0
-margin_top = 8.0
-margin_right = 481.0
-margin_bottom = 68.0
+margin_left = 319.0
+margin_top = 11.0
+margin_right = 379.0
+margin_bottom = 71.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -634,7 +593,34 @@ enabled_focus_mode = 2
 shortcut = null
 group = null
 texture_normal = ExtResource( 15 )
+texture_pressed = ExtResource( 16 )
 expand = true
+stretch_mode = 5
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="SubPageButton" type="TextureButton" parent="MainUI/PageControl"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 391.0
+margin_top = 12.0
+margin_right = 451.0
+margin_bottom = 72.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 18 )
+expand = true
+stretch_mode = 5
 _sections_unfolded = [ "Rect", "Textures" ]
 
 [node name="Blocker" type="ColorRect" parent="MainUI/PageControl"]
@@ -674,7 +660,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 expand = true
 stretch_mode = 0
-script = ExtResource( 16 )
+script = ExtResource( 19 )
 _sections_unfolded = [ "Anchor", "Margin", "Rect" ]
 
 [node name="PadLabel1" type="Label" parent="MainUI/PadControl"]
@@ -879,24 +865,42 @@ _sections_unfolded = [ "Rect", "custom_fonts" ]
 
 [node name="TempoControl" type="Control" parent="MainUI"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 852.0
+margin_left = 808.0
 margin_top = 972.0
-margin_right = 1207.0
+margin_right = 1286.0
 margin_bottom = 1046.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-script = ExtResource( 17 )
+script = ExtResource( 20 )
+
+[node name="Background" type="TextureRect" parent="MainUI/TempoControl"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -49.0
+margin_right = 433.0
+margin_bottom = 80.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 13 )
+expand = true
+stretch_mode = 0
 
 [node name="TempoLabel" type="Label" parent="MainUI/TempoControl"]
 
+visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -917,73 +921,32 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_fonts" ]
 
-[node name="ColorRect" type="ColorRect" parent="MainUI/TempoControl"]
+[node name="TempoLed" type="ColorRect" parent="MainUI/TempoControl"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 64.0
-margin_top = 11.0
-margin_right = 195.0
-margin_bottom = 70.0
+margin_left = -34.0
+margin_top = 17.0
+margin_right = 72.0
+margin_bottom = 65.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-color = Color( 0, 0, 0, 1 )
+color = Color( 0.176514, 0.176514, 0.1875, 1 )
 
-[node name="Label" type="Label" parent="MainUI/TempoControl/ColorRect"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 47.0
-margin_top = 8.0
-margin_right = 87.0
-margin_bottom = 38.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = ExtResource( 3 )
-text = "100"
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "custom_fonts" ]
-
-[node name="ColorRect2" type="ColorRect" parent="MainUI/TempoControl"]
-
-editor/display_folded = true
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 68.0
-margin_top = 16.0
-margin_right = 191.0
-margin_bottom = 64.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-color = Color( 0.0509804, 0.0509804, 0.0627451, 1 )
-
-[node name="TempoValue" type="Label" parent="MainUI/TempoControl/ColorRect2"]
+[node name="TempoValue" type="Label" parent="MainUI/TempoControl/TempoLed"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 39.0
-margin_top = 1.0
-margin_right = 83.0
-margin_bottom = 47.0
+margin_left = 30.0
+margin_right = 74.0
+margin_bottom = 46.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -1002,33 +965,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 209.0
-margin_top = 10.0
-margin_right = 269.0
-margin_bottom = 70.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-texture_normal = ExtResource( 14 )
-expand = true
-_sections_unfolded = [ "Rect", "Textures" ]
-
-[node name="SubTempoButton" type="TextureButton" parent="MainUI/TempoControl"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 281.0
-margin_top = 10.0
-margin_right = 341.0
-margin_bottom = 70.0
+margin_left = 89.0
+margin_top = 9.0
+margin_right = 149.0
+margin_bottom = 69.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -1039,8 +979,64 @@ enabled_focus_mode = 2
 shortcut = null
 group = null
 texture_normal = ExtResource( 15 )
+texture_pressed = ExtResource( 16 )
 expand = true
+stretch_mode = 5
 _sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="SubTempoButton" type="TextureButton" parent="MainUI/TempoControl"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 350.0
+margin_top = 12.0
+margin_right = 410.0
+margin_bottom = 72.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 18 )
+expand = true
+stretch_mode = 5
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="TempoSlider" type="HSlider" parent="MainUI/TempoControl"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 161.0
+margin_top = 33.0
+margin_right = 338.0
+margin_bottom = 49.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 0
+custom_icons/grabber_highlight = ExtResource( 21 )
+custom_icons/grabber = ExtResource( 21 )
+min_value = 60.0
+max_value = 160.0
+step = 1.0
+page = 0.0
+value = 100.0
+exp_edit = false
+rounded = false
+editable = true
+tick_count = 10
+ticks_on_borders = false
+focus_mode = 2
 
 [node name="OpenDialog" type="PopupDialog" parent="MainUI"]
 
@@ -1060,7 +1056,7 @@ mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 popup_exclusive = false
-script = ExtResource( 18 )
+script = ExtResource( 22 )
 
 [node name="Caption" type="Label" parent="MainUI/OpenDialog"]
 
@@ -1125,7 +1121,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 19 )
+texture_normal = ExtResource( 23 )
 expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
 
@@ -1170,7 +1166,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 20 )
+texture_normal = ExtResource( 24 )
 expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
 
@@ -1214,7 +1210,7 @@ mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 popup_exclusive = false
-script = ExtResource( 21 )
+script = ExtResource( 25 )
 _sections_unfolded = [ "Anchor", "Popup" ]
 
 [node name="Caption" type="Label" parent="MainUI/SaveDialog"]
@@ -1281,7 +1277,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 19 )
+texture_normal = ExtResource( 23 )
 expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
 
@@ -1327,8 +1323,8 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 20 )
-texture_disabled = ExtResource( 22 )
+texture_normal = ExtResource( 24 )
+texture_disabled = ExtResource( 26 )
 expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
 
@@ -1405,7 +1401,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 19 )
+texture_normal = ExtResource( 23 )
 texture_pressed = ExtResource( 7 )
 expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
@@ -1469,9 +1465,9 @@ rect_clip_content = false
 mouse_filter = 1
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 23 )
+texture = ExtResource( 27 )
 stretch_mode = 0
-script = ExtResource( 24 )
+script = ExtResource( 28 )
 
 [node name="Label" type="Label" parent="MainUI/VolumeControl"]
 
@@ -1509,8 +1505,8 @@ rect_clip_content = false
 mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 0
-custom_icons/grabber_highlight = ExtResource( 25 )
-custom_icons/grabber = ExtResource( 25 )
+custom_icons/grabber_highlight = ExtResource( 21 )
+custom_icons/grabber = ExtResource( 21 )
 min_value = 0.0
 max_value = 100.0
 step = 1.0
@@ -1519,13 +1515,13 @@ value = 70.0
 exp_edit = false
 rounded = false
 editable = true
-tick_count = 50
+tick_count = 20
 ticks_on_borders = true
 focus_mode = 2
 
 [node name="PadPlayer" type="Node" parent="."]
 
-script = ExtResource( 26 )
+script = ExtResource( 29 )
 
 [node name="PlayerTimer" type="Timer" parent="PadPlayer"]
 
@@ -1563,6 +1559,8 @@ autostart = false
 [connection signal="button_down" from="MainUI/TempoControl/AddTempoButton" to="MainUI/TempoControl" method="_on_AddTempoButton_button_down"]
 
 [connection signal="button_down" from="MainUI/TempoControl/SubTempoButton" to="MainUI/TempoControl" method="_on_SubTempoButton_button_down"]
+
+[connection signal="value_changed" from="MainUI/TempoControl/TempoSlider" to="MainUI/TempoControl" method="_on_TempoSlider_value_changed"]
 
 [connection signal="OpenTrack" from="MainUI/OpenDialog" to="." method="_on_OpenDialog_OpenTrack"]
 

@@ -1498,17 +1498,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35355339"
-     inkscape:cx="838.05828"
-     inkscape:cy="-1017.6509"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="723.56389"
+     inkscape:cy="-1544.716"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      showborder="false"
      inkscape:window-width="1102"
      inkscape:window-height="819"
-     inkscape:window-x="813"
-     inkscape:window-y="140"
+     inkscape:window-x="784"
+     inkscape:window-y="53"
      inkscape:window-maximized="0"
      showguides="false" />
   <metadata
@@ -1615,7 +1615,10 @@
        height="79.458557"
        width="481.04959"
        id="rect6114"
-       style="opacity:1;fill:#121212;fill-opacity:1;stroke:#000000;stroke-width:6.58840847;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#121212;fill-opacity:1;stroke:#000000;stroke-width:6.58840847;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SmallPanelBackground.png"
+       inkscape:export-xdpi="74.160004"
+       inkscape:export-ydpi="74.160004" />
     <rect
        style="opacity:1;fill:#121212;fill-opacity:1;stroke:#000000;stroke-width:6.28092146;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect5037"
@@ -9660,7 +9663,10 @@
          ry="2.0625" />
     </g>
     <g
-       id="g8544">
+       id="g8544"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SubButton.png"
+       inkscape:export-xdpi="131.8732"
+       inkscape:export-ydpi="131.8732">
       <g
          id="g5914"
          transform="matrix(0.948885,0,0,0.93694748,591.18095,20.931904)">
@@ -9718,7 +9724,10 @@
          ry="2.0155885" />
     </g>
     <g
-       id="g8555">
+       id="g8555"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/AddButton.png"
+       inkscape:export-xdpi="132.15161"
+       inkscape:export-ydpi="132.15161">
       <g
          id="g5904"
          transform="matrix(0.99030736,0,0,0.97784589,308.72671,-86.362135)">
@@ -9748,7 +9757,7 @@
       </g>
       <path
          style="fill:#ffffff;fill-opacity:0.18823529;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter8426)"
-         d="m 458.73185,2448.2088 c 0,0 3.07997,8.3429 8.26598,13.1993 5.186,4.8565 15.30453,7.8706 18.4273,7.7487 2.69731,-0.1053 9.77031,-2.0949 15.37107,-7.0512 5.60077,-4.9564 9.37767,-14.4272 9.37767,-14.4272 0,0 1.58839,3.7055 -4.5962,15.5564 -3.30413,6.3314 -12.83658,10.5949 -19.97576,10.7834 -7.54192,0.1992 -15.65629,-3.5663 -20.68288,-9.1924 -6.61152,-7.4001 -6.18718,-16.617 -6.18718,-16.617 z"
+         d="m 459.70412,2448.2972 c 0,0 3.07997,8.3429 8.26598,13.1993 5.186,4.8565 15.30453,7.8706 18.4273,7.7487 2.69731,-0.1053 9.77031,-2.0949 15.37107,-7.0512 5.60077,-4.9564 9.37767,-14.4272 9.37767,-14.4272 0,0 1.58839,3.7055 -4.5962,15.5564 -3.30413,6.3314 -12.83658,10.5949 -19.97576,10.7834 -7.54192,0.1992 -15.65629,-3.5663 -20.68288,-9.1924 -6.61152,-7.4001 -6.18718,-16.617 -6.18718,-16.617 z"
          id="path8528"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="cssscsssc" />
@@ -9860,7 +9869,7 @@
          sodipodi:nodetypes="cssscsssc"
          inkscape:connector-curvature="0"
          id="path8597"
-         d="m 459.35685,2448.7088 c 0,0 3.07997,8.3429 8.26598,13.1993 5.186,4.8565 15.30453,7.8706 18.4273,7.7487 2.69731,-0.1053 9.77031,-2.0949 15.37107,-7.0512 5.60077,-4.9564 9.37767,-14.4272 9.37767,-14.4272 0,0 1.58839,3.7055 -4.5962,15.5564 -3.30413,6.3314 -12.83658,10.5949 -19.97576,10.7834 -7.54192,0.1992 -15.65629,-3.5663 -20.68288,-9.1924 -6.61152,-7.4001 -6.18718,-16.617 -6.18718,-16.617 z"
+         d="m 459.60685,2448.7088 c 0,0 3.07997,8.3429 8.26598,13.1993 5.186,4.8565 15.30453,7.8706 18.4273,7.7487 2.69731,-0.1053 9.77031,-2.0949 15.37107,-7.0512 5.60077,-4.9564 9.37767,-14.4272 9.37767,-14.4272 0,0 1.58839,3.7055 -4.5962,15.5564 -3.30413,6.3314 -12.83658,10.5949 -19.97576,10.7834 -7.54192,0.1992 -15.65629,-3.5663 -20.68288,-9.1924 -6.61152,-7.4001 -6.18718,-16.617 -6.18718,-16.617 z"
          style="fill:#ffffff;fill-opacity:0.18823529;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter8426)" />
       <ellipse
          ry="3.3905885"
@@ -9877,5 +9886,265 @@
          rx="3.2612903"
          ry="2.0155885" />
     </g>
+    <g
+       inkscape:export-ydpi="132.15161"
+       inkscape:export-xdpi="132.15161"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/AddButton.png"
+       id="g5295"
+       transform="matrix(1.0096164,0,0,1,-69.913891,124.5)">
+      <g
+         transform="matrix(0.99030736,0,0,0.97784589,308.72671,-86.362135)"
+         id="g5297">
+        <circle
+           r="26.009369"
+           cy="2598.2422"
+           cx="180.03894"
+           id="circle5299"
+           style="opacity:1;fill:#0f4412;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <circle
+           style="opacity:1;fill:#176c1c;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="circle5301"
+           cx="178.53894"
+           cy="2592.9922"
+           r="26.009369" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text5303"
+           y="2611.1082"
+           x="162.25977"
+           style="font-style:normal;font-weight:normal;font-size:57.30975342px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             y="2611.1082"
+             x="162.25977"
+             id="tspan5305"
+             sodipodi:role="line">+</tspan></text>
+      </g>
+      <path
+         sodipodi:nodetypes="cssscsssc"
+         inkscape:connector-curvature="0"
+         id="path5307"
+         d="m 459.70412,2448.2972 c 0,0 3.07997,8.3429 8.26598,13.1993 5.186,4.8565 15.30453,7.8706 18.4273,7.7487 2.69731,-0.1053 9.77031,-2.0949 15.37107,-7.0512 5.60077,-4.9564 9.37767,-14.4272 9.37767,-14.4272 0,0 1.58839,3.7055 -4.5962,15.5564 -3.30413,6.3314 -12.83658,10.5949 -19.97576,10.7834 -7.54192,0.1992 -15.65629,-3.5663 -20.68288,-9.1924 -6.61152,-7.4001 -6.18718,-16.617 -6.18718,-16.617 z"
+         style="fill:#ffffff;fill-opacity:0.18823529;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter8426)" />
+      <ellipse
+         ry="3.3905885"
+         rx="5.4860868"
+         cy="2434.7534"
+         cx="498.30508"
+         id="ellipse5309"
+         style="opacity:1;fill:#ffffff;fill-opacity:0.1625;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.08125" />
+      <ellipse
+         style="opacity:1;fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.08125"
+         id="ellipse5311"
+         cx="489.28741"
+         cy="2428.8147"
+         rx="3.2612903"
+         ry="2.0155885" />
+    </g>
+    <g
+       id="g5343"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/AddButtonPress.png"
+       inkscape:export-xdpi="132.50957"
+       inkscape:export-ydpi="132.50957"
+       transform="matrix(1.0106048,0,0,1,-4.9232471,0)">
+      <ellipse
+         inkscape:export-ydpi="132"
+         inkscape:export-xdpi="132"
+         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/AddButtonPress.png"
+         ry="25.433155"
+         rx="25.757269"
+         cy="2581.3184"
+         cx="490.7706"
+         id="circle5317"
+         style="opacity:1;fill:#0f4412;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         inkscape:export-ydpi="132"
+         inkscape:export-xdpi="132"
+         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/AddButtonPress.png"
+         ry="25.433155"
+         rx="25.757269"
+         style="opacity:1;fill:#176c1c;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="circle5319"
+         cx="490.78513"
+         cy="2580.1846" />
+      <text
+         inkscape:export-ydpi="132"
+         inkscape:export-xdpi="132"
+         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/AddButtonPress.png"
+         transform="scale(1.0063517,0.99368837)"
+         sodipodi:linespacing="125%"
+         id="text5321"
+         y="2614.4004"
+         x="471.66785"
+         style="font-style:normal;font-weight:normal;font-size:56.39605713px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="2614.4004"
+           x="471.66785"
+           id="tspan5323"
+           sodipodi:role="line">+</tspan></text>
+      <path
+         inkscape:export-ydpi="132"
+         inkscape:export-xdpi="132"
+         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/AddButtonPress.png"
+         style="fill:#ffffff;fill-opacity:0.18823529;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter8426)"
+         d="m 464.95412,2579.2972 c 0,0 3.07997,8.3429 8.26598,13.1993 5.186,4.8565 15.30453,7.8706 18.4273,7.7487 2.69731,-0.1053 9.77031,-2.0949 15.37107,-7.0512 5.60077,-4.9564 9.37767,-14.4272 9.37767,-14.4272 0,0 1.58839,3.7055 -4.5962,15.5564 -3.30413,6.3314 -12.83658,10.5949 -19.97576,10.7834 -7.54192,0.1992 -15.65629,-3.5663 -20.68288,-9.1924 -6.61152,-7.4001 -6.18718,-16.617 -6.18718,-16.617 z"
+         id="path5325"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cssscsssc" />
+      <ellipse
+         inkscape:export-ydpi="132"
+         inkscape:export-xdpi="132"
+         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/AddButtonPress.png"
+         style="opacity:1;fill:#ffffff;fill-opacity:0.1625;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.08125"
+         id="ellipse5327"
+         cx="503.55508"
+         cy="2565.7534"
+         rx="5.4860868"
+         ry="3.3905885" />
+      <ellipse
+         inkscape:export-ydpi="132"
+         inkscape:export-xdpi="132"
+         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/AddButtonPress.png"
+         ry="2.0155885"
+         rx="3.2612903"
+         cy="2559.8147"
+         cx="494.53741"
+         id="ellipse5329"
+         style="opacity:1;fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.08125" />
+    </g>
+    <g
+       inkscape:export-ydpi="131.8732"
+       inkscape:export-xdpi="131.8732"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SubButton.png"
+       id="g5352"
+       transform="translate(-142.83557,126.57211)">
+      <g
+         transform="matrix(0.948885,0,0,0.93694748,591.18095,20.931904)"
+         id="g5354">
+        <circle
+           style="opacity:1;fill:#a30000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="circle5356"
+           cx="174.73982"
+           cy="2598.21"
+           r="27.144777" />
+        <circle
+           r="27.144777"
+           cy="2592.731"
+           cx="173.17435"
+           id="circle5358"
+           style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <text
+           transform="scale(1.0880674,0.91906071)"
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:107.10778046px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="141.47252"
+           y="2849.5088"
+           id="text5360"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan5362"
+             x="141.47252"
+             y="2849.5088">-</tspan></text>
+      </g>
+      <path
+         style="fill:#ffffff;fill-opacity:0.18823529;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter8426)"
+         d="m 729.55743,2449.9588 c 0,0 3.07997,8.3429 8.26598,13.1993 5.186,4.8565 15.30453,7.8706 18.4273,7.7487 2.69731,-0.1053 9.77031,-2.0949 15.37107,-7.0512 5.60077,-4.9564 9.37767,-14.4272 9.37767,-14.4272 0,0 1.58839,3.7055 -4.5962,15.5564 -3.30413,6.3314 -12.83658,10.5949 -19.97576,10.7834 -7.54192,0.1992 -15.65629,-3.5663 -20.68288,-9.1924 -6.61152,-7.4001 -6.18718,-16.617 -6.18718,-16.617 z"
+         id="path5364"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cssscsssc" />
+      <ellipse
+         style="opacity:1;fill:#ffffff;fill-opacity:0.1625;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.08125"
+         id="ellipse5366"
+         cx="746.96313"
+         cy="2432.1929"
+         rx="4.1474452"
+         ry="2.5632622"
+         transform="matrix(1.322763,0,0,1.322763,-239.43428,-783.87537)" />
+      <path
+         style="fill:#a30000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 773.00001,2431.3622 -4.25,7.25 8.6875,-1.8125 -2.03125,-2.8438 z"
+         id="path5368"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+      <ellipse
+         ry="2.0155885"
+         rx="3.2612903"
+         cy="2438.7144"
+         cx="738.89612"
+         id="ellipse5370"
+         style="opacity:1;fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.08125" />
+    </g>
+    <ellipse
+       cy="2581.8904"
+       cx="686.65338"
+       id="circle5376"
+       style="opacity:1;fill:#a30000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       rx="25.757273"
+       ry="25.433231"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SubButtonPress.png"
+       inkscape:export-xdpi="132.26147"
+       inkscape:export-ydpi="132.26147" />
+    <ellipse
+       style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle5378"
+       cx="686.41791"
+       cy="2581.2568"
+       rx="25.757273"
+       ry="25.433231"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SubButtonPress.png"
+       inkscape:export-xdpi="132.26147"
+       inkscape:export-ydpi="132.26147" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text5380"
+       y="2853.2351"
+       x="610.20355"
+       style="font-style:normal;font-weight:normal;font-size:100.99163818px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"
+       transform="scale(1.0949769,0.91326127)"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SubButtonPress.png"
+       inkscape:export-xdpi="132.26147"
+       inkscape:export-ydpi="132.26147"><tspan
+         y="2853.2351"
+         x="610.20355"
+         id="tspan5382"
+         sodipodi:role="line">-</tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:0.18823529;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter8426)"
+       d="m 660.47186,2581.0309 c 0,0 3.07997,8.3429 8.26598,13.1993 5.186,4.8565 15.30453,7.8706 18.4273,7.7487 2.69731,-0.1053 9.77031,-2.0949 15.37107,-7.0512 5.60077,-4.9564 9.37767,-14.4272 9.37767,-14.4272 0,0 1.58839,3.7055 -4.5962,15.5564 -3.30413,6.3314 -12.83658,10.5949 -19.97576,10.7834 -7.54192,0.1992 -15.65629,-3.5663 -20.68288,-9.1924 -6.61152,-7.4001 -6.18718,-16.617 -6.18718,-16.617 z"
+       id="path5384"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssscsssc"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SubButtonPress.png"
+       inkscape:export-xdpi="132.26147"
+       inkscape:export-ydpi="132.26147" />
+    <ellipse
+       style="opacity:1;fill:#ffffff;fill-opacity:0.1625;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.08125"
+       id="ellipse5386"
+       cx="679.53534"
+       cy="2564.4114"
+       rx="5.4860868"
+       ry="3.3905885"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SubButtonPress.png"
+       inkscape:export-xdpi="132.26147"
+       inkscape:export-ydpi="132.26147" />
+    <path
+       style="fill:#a30000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 703.91444,2562.4343 -4.25,7.25 8.6875,-1.8125 -2.03125,-2.8438 z"
+       id="path5388"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SubButtonPress.png"
+       inkscape:export-xdpi="132.26147"
+       inkscape:export-ydpi="132.26147" />
+    <ellipse
+       ry="2.0155885"
+       rx="3.2612903"
+       cy="2569.7864"
+       cx="669.81055"
+       id="ellipse5390"
+       style="opacity:1;fill:#ffffff;fill-opacity:0.2;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.08125"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SubButtonPress.png"
+       inkscape:export-xdpi="132.26147"
+       inkscape:export-ydpi="132.26147" />
   </g>
 </svg>
