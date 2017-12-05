@@ -36,8 +36,8 @@ func setKit(kit):
 	
 # Set track for playing
 func setTrack(tr):
-	if track != null:
-		track.disconnect("TrackPadChanged")
+#	if track != null:
+#		track.disconnect("TrackPadChanged")
 		
 	track = tr
 	track.connect("TrackPadChanged", self, "onPadChange")
@@ -49,7 +49,6 @@ func setTempo(tempo):
 
 # On pad change
 func onPadChange(x, y, pressed, pageIndex):
-	print(x, y, pressed, pageIndex)
 	var idx = pageIndex * constants.PAD_COL_COUNT + x
 	if idx >= len(playList):
 		return
