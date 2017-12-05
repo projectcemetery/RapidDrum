@@ -21,8 +21,8 @@ func getTempo():
 	return tempo
 
 # On pad changed
-func onPadChanged(x, y, index):
-	emit_signal("TrackPadChanged", x, y, index)
+func onPadChanged(x, y, pressed, index):
+	emit_signal("TrackPadChanged", x, y, pressed, index)
 
 # Get collection count
 func getCount():

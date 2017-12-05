@@ -36,12 +36,27 @@ func setKit(kit):
 	
 # Set track for playing
 func setTrack(tr):
+	if track != null:
+		track.disconnect("TrackPadChanged")
+		
 	track = tr
+	track.connect("TrackPadChanged", self, "onPadChange")
 	setTempo(tr.getTempo())
 
 # Set play tempo
 func setTempo(tempo):
 	player.wait_time = 60.0 / (tempo * FOUR)
+
+# On pad change
+func onPadChange(x, y, pressed, pageIndex):
+	print(x, y, pressed, pageIndex)
+	var idx = pageIndex * constants.PAD_COL_COUNT + x
+	if idx >= len(playList):
+		return
+		
+	var col = playList[idx]
+	if col != null:
+		col[y] = pressed
 
 # Create playlist for kit
 func createPlaylist():

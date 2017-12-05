@@ -38,7 +38,7 @@ func setPad(x, y, pressed):
 	if filled < 1:
 		isEmpty = true
 	
-	emit_signal("PadChanged", x, y)
+	emit_signal("PadChanged", x, y, pressed)
 	
 # Get column values
 func getCol(col):
