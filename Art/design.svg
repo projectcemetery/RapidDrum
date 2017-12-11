@@ -21,6 +21,18 @@
      id="defs4">
     <linearGradient
        inkscape:collect="always"
+       id="linearGradient5500">
+      <stop
+         style="stop-color:#4d4d4d;stop-opacity:1;"
+         offset="0"
+         id="stop5502" />
+      <stop
+         style="stop-color:#4d4d4d;stop-opacity:0;"
+         offset="1"
+         id="stop5504" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
        id="linearGradient4156">
       <stop
          style="stop-color:#808080;stop-opacity:1;"
@@ -1490,6 +1502,99 @@
          stdDeviation="0.58483326"
          id="feGaussianBlur8428" />
     </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter5333"
+       x="-0.018412744"
+       width="1.0368255"
+       y="-0.034455285"
+       height="1.0689106">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.37280228"
+         id="feGaussianBlur5335" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter5388"
+       x="-0.01952913"
+       width="1.0390583"
+       y="-0.22988518"
+       height="1.4597704">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.592644"
+         id="feGaussianBlur5390" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter5464"
+       x="-0.025936842"
+       width="1.0518737"
+       y="-0.3213913"
+       height="1.6427826">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.77"
+         id="feGaussianBlur5466" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter5480"
+       x="-0.028812278"
+       width="1.0576246"
+       y="-0.047965934"
+       height="1.0959319">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.1452564"
+         id="feGaussianBlur5482" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5500"
+       id="linearGradient5506"
+       x1="1325.8522"
+       y1="2435.7532"
+       x2="1326.7664"
+       y2="2491.2612"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5500"
+       id="linearGradient5530"
+       gradientUnits="userSpaceOnUse"
+       x1="1325.8522"
+       y1="2435.7532"
+       x2="1326.7664"
+       y2="2491.2612"
+       gradientTransform="translate(0,8.3750001)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5500"
+       id="linearGradient5560"
+       gradientUnits="userSpaceOnUse"
+       x1="1325.8522"
+       y1="2435.7532"
+       x2="1326.7664"
+       y2="2491.2612" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter5591"
+       x="-0.044758363"
+       width="1.0895167"
+       y="-0.090982372"
+       height="1.1819647">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.50003484"
+         id="feGaussianBlur5593" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -1498,18 +1603,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.99999999"
-     inkscape:cx="-568.34977"
-     inkscape:cy="-487.46644"
+     inkscape:zoom="1.4142135"
+     inkscape:cx="1182.6842"
+     inkscape:cy="-1352.3885"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      showborder="false"
-     inkscape:window-width="1102"
-     inkscape:window-height="819"
-     inkscape:window-x="784"
-     inkscape:window-y="53"
-     inkscape:window-maximized="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
      showguides="false" />
   <metadata
      id="metadata7">
@@ -7080,7 +7185,7 @@
        ry="6.5162983"
        inkscape:export-xdpi="77.383469"
        inkscape:export-ydpi="77.383469"
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/SimpleButtonPressed.png" />
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/PageButtonPressed.png" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:46.18997192px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.88972896px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -7106,7 +7211,7 @@
        style="opacity:1;fill:#232323;fill-opacity:1;stroke:#000000;stroke-width:2.56206751;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        inkscape:export-xdpi="77.383469"
        inkscape:export-ydpi="77.383469"
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png" />
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/PageButton.png" />
     <text
        sodipodi:linespacing="125%"
        id="text6963"
@@ -7179,16 +7284,16 @@
        id="rect7061"
        width="77.257309"
        height="77.257309"
-       x="1339.5353"
-       y="2409.2061"
+       x="1561.0682"
+       y="2598.2598"
        ry="8.3361225"
        inkscape:export-xdpi="77.383469"
        inkscape:export-ydpi="77.383469"
        inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png" />
     <rect
        ry="8.3361225"
-       y="2409.2061"
-       x="1232.7655"
+       y="2598.2598"
+       x="1454.2985"
        height="77.257309"
        width="77.257309"
        id="rect7067"
@@ -7198,7 +7303,7 @@
        inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png" />
     <path
        inkscape:connector-curvature="0"
-       d="m 1289.479,2425.6292 -40.0614,0 0,45.7844 45.7845,0 0,-40.0614 -5.7231,-5.723 z m -17.1691,5.723 5.723,0 0,11.4461 -5.723,0 0,-11.4461 z m 17.1691,34.3384 -34.3384,0 0,-34.3384 2.8616,0 0,14.3077 25.7538,0 0,-14.3077 3.3522,0 2.3708,2.3708 0,31.9676 z"
+       d="m 1511.012,2614.683 -40.0614,0 0,45.7844 45.7845,0 0,-40.0614 -5.7231,-5.723 z m -17.1691,5.723 5.723,0 0,11.4461 -5.723,0 0,-11.4461 z m 17.1691,34.3384 -34.3384,0 0,-34.3384 2.8616,0 0,14.3077 25.7538,0 0,-14.3077 3.3522,0 2.3708,2.3708 0,31.9676 z"
        id="path7881"
        style="fill:#ffffff"
        inkscape:export-xdpi="176.91559"
@@ -7206,7 +7311,7 @@
        inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/SaveIcon.png" />
     <path
        inkscape:connector-curvature="0"
-       d="m 1398.4096,2466.2918 9.4788,-25.2769 -41.0749,0 -9.4788,25.2769 z m -34.7557,-28.4365 -6.3192,28.4365 0,-41.0749 14.2183,0 6.3191,6.3192 20.5375,0 0,6.3192 z"
+       d="m 1619.9426,2655.3456 9.4788,-25.2769 -41.0749,0 -9.4788,25.2769 z m -34.7557,-28.4365 -6.3192,28.4365 0,-41.0749 14.2183,0 6.3191,6.3192 20.5375,0 0,6.3192 z"
        id="path8689"
        style="fill:#ffffff"
        inkscape:export-xdpi="160.22563"
@@ -7214,7 +7319,7 @@
        inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/OpenIcon.png" />
     <g
        id="g4930"
-       transform="matrix(0.83461289,0,0,0.83461289,-348.49165,1316.1308)"
+       transform="matrix(0.83461289,0,0,0.83461289,-1574.352,39.407556)"
        inkscape:export-xdpi="149.28201"
        inkscape:export-ydpi="149.28201"
        inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/Decor1.png">
@@ -10146,5 +10251,354 @@
        inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SubButtonPress.png"
        inkscape:export-xdpi="132.26147"
        inkscape:export-ydpi="132.26147" />
+    <rect
+       inkscape:export-ydpi="74.160004"
+       inkscape:export-xdpi="74.160004"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SmallPanelBackground.png"
+       style="opacity:1;fill:#121212;fill-opacity:1;stroke:#000000;stroke-width:5.55102539;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5312"
+       width="337.08698"
+       height="80.495941"
+       x="832.33374"
+       y="2412.918"
+       ry="7.1301651" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="864"
+       y="2467.3623"
+       id="text5314"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5316"
+         x="864"
+         y="2467.3623">Rock Kit</tspan></text>
+    <g
+       id="g5337"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/ChooseKitButton.png"
+       inkscape:export-xdpi="160"
+       inkscape:export-ydpi="160">
+      <rect
+         ry="5.6189995"
+         y="2426.7222"
+         x="1097.3171"
+         height="52.075623"
+         width="52.075623"
+         id="rect5319"
+         style="opacity:1;fill:#232323;fill-opacity:1;stroke:#000000;stroke-width:2.20926881;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:export-xdpi="77.383469"
+         inkscape:export-ydpi="77.383469"
+         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png" />
+      <rect
+         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png"
+         inkscape:export-ydpi="77.383469"
+         inkscape:export-xdpi="77.383469"
+         style="opacity:1;fill:#272727;fill-opacity:1;stroke:none;stroke-width:1.81716323;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter5333)"
+         id="rect5327"
+         width="48.592728"
+         height="25.967728"
+         x="1099.1211"
+         y="2428.4011"
+         ry="2.6780748" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:47.69346237px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1103.8833"
+       y="2469.2354"
+       id="text5322"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/ChooseKitButton.png"
+       inkscape:export-xdpi="160"
+       inkscape:export-ydpi="160"><tspan
+         sodipodi:role="line"
+         id="tspan5324"
+         x="1103.8833"
+         y="2469.2354">...</tspan></text>
+    <g
+       id="g5508"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SimpleButtonNormal.png"
+       inkscape:export-xdpi="89.776657"
+       inkscape:export-ydpi="89.776657">
+      <path
+         inkscape:export-ydpi="89.776657"
+         inkscape:export-xdpi="89.776657"
+         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SimpleButtonNormal.png"
+         sodipodi:nodetypes="ccssssccc"
+         inkscape:connector-curvature="0"
+         id="path5372"
+         d="m 1285.563,2444.3019 -5.1694,1.4142 c 0,0 -6.431,31.0413 1.2375,44.1942 1.7619,3.0219 5.4745,4.6991 8.8388,5.6568 23.2388,6.6155 50.454,8.8756 72.4784,-1.0606 3.194,-1.441 5.7538,-4.5313 7.0711,-7.7782 5.3641,-13.2211 0.8839,-40.6587 0.8839,-40.6587 l -5.4801,-1.4142 z"
+         style="fill:#000000;fill-opacity:0.35294119;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter5480)" />
+      <rect
+         ry="8.3361225"
+         y="2410.4741"
+         x="1286.9432"
+         height="77.257309"
+         width="77.257309"
+         id="rect5343"
+         style="opacity:1;fill:#232323;fill-opacity:1;stroke:#000000;stroke-width:3.27758265;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:export-xdpi="89.776657"
+         inkscape:export-ydpi="89.776657"
+         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SimpleButtonNormal.png" />
+      <rect
+         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SimpleButtonNormal.png"
+         inkscape:export-ydpi="89.776657"
+         inkscape:export-xdpi="89.776657"
+         style="opacity:1;fill:url(#linearGradient5506);fill-opacity:1;stroke:#000000;stroke-width:3.07706261;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect5345"
+         width="74.558334"
+         height="70.558334"
+         x="1287.7926"
+         y="2404.3633"
+         ry="7.6132984" />
+      <path
+         inkscape:export-ydpi="89.776657"
+         inkscape:export-xdpi="89.776657"
+         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SimpleButtonNormal.png"
+         inkscape:connector-curvature="0"
+         id="path5374"
+         d="m 1288.5253,2467.4596 72.832,-0.5303 -3.889,6.1872 -63.4629,0 z"
+         style="fill:#ffffff;fill-opacity:0.03921569;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter5388)" />
+      <path
+         inkscape:export-ydpi="89.776657"
+         inkscape:export-xdpi="89.776657"
+         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SimpleButtonNormal.png"
+         transform="matrix(1.0310618,0,0,0.99424962,-40.53075,7.2514281)"
+         style="fill:#ffffff;fill-opacity:0.02745098;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter5388)"
+         d="m 1288.3485,2488.1425 72.832,-0.5303 -3.889,6.1872 -63.4629,0 z"
+         id="path5448"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-ydpi="89.776657"
+         inkscape:export-xdpi="89.776657"
+         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SimpleButtonNormal.png"
+         inkscape:connector-curvature="0"
+         id="path5450"
+         d="m 1289.5,2411.2911 71.25,0.25 -4.25,-5.75 -62.75,0 z"
+         style="fill:#ffffff;fill-opacity:0.05882353;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter5464)" />
+    </g>
+    <path
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/SaveIcon.png"
+       inkscape:export-ydpi="176.91559"
+       inkscape:export-xdpi="176.91559"
+       style="fill:#ffffff"
+       id="path5347"
+       d="m 1342.4496,2416.9978 -40.0614,0 0,45.7844 45.7845,0 0,-40.0614 -5.7231,-5.723 z m -17.1691,5.723 5.723,0 0,11.4461 -5.723,0 0,-11.4461 z m 17.1691,34.3384 -34.3384,0 0,-34.3384 2.8616,0 0,14.3077 25.7538,0 0,-14.3077 3.3522,0 2.3708,2.3708 0,31.9676 z"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g5534"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SimpleButtonPressed.png"
+       inkscape:export-xdpi="89.776657"
+       inkscape:export-ydpi="89.776657">
+      <g
+         transform="translate(-103.5,158)"
+         id="g5516"
+         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SimpleButtonNormal.png"
+         inkscape:export-xdpi="89.776657"
+         inkscape:export-ydpi="89.776657">
+        <path
+           inkscape:export-ydpi="89.776657"
+           inkscape:export-xdpi="89.776657"
+           inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SimpleButtonNormal.png"
+           sodipodi:nodetypes="ccssssccc"
+           inkscape:connector-curvature="0"
+           id="path5518"
+           d="m 1285.563,2444.3019 -5.1694,1.4142 c 0,0 -6.431,31.0413 1.2375,44.1942 1.7619,3.0219 5.4745,4.6991 8.8388,5.6568 23.2388,6.6155 50.454,8.8756 72.4784,-1.0606 3.194,-1.441 5.7538,-4.5313 7.0711,-7.7782 5.3641,-13.2211 0.8839,-40.6587 0.8839,-40.6587 l -5.4801,-1.4142 z"
+           style="fill:#000000;fill-opacity:0.35294118;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter5480)" />
+        <rect
+           ry="8.3361225"
+           y="2410.4741"
+           x="1286.9432"
+           height="77.257309"
+           width="77.257309"
+           id="rect5520"
+           style="opacity:1;fill:#232323;fill-opacity:1;stroke:#000000;stroke-width:3.27758265;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           inkscape:export-xdpi="89.776657"
+           inkscape:export-ydpi="89.776657"
+           inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SimpleButtonNormal.png" />
+        <rect
+           inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SimpleButtonNormal.png"
+           inkscape:export-ydpi="89.776657"
+           inkscape:export-xdpi="89.776657"
+           style="opacity:1;fill:url(#linearGradient5530);fill-opacity:1;stroke:#000000;stroke-width:3.07706261;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect5522"
+           width="74.558334"
+           height="70.558334"
+           x="1287.7926"
+           y="2412.7383"
+           ry="7.6132984" />
+        <path
+           inkscape:export-ydpi="89.776657"
+           inkscape:export-xdpi="89.776657"
+           inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SimpleButtonNormal.png"
+           inkscape:connector-curvature="0"
+           id="path5524"
+           d="m 1288.5253,2475.8346 72.832,-0.5303 -3.889,6.1872 -63.4629,0 z"
+           style="fill:#ffffff;fill-opacity:0.03921569;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter5388)" />
+        <path
+           inkscape:export-ydpi="89.776657"
+           inkscape:export-xdpi="89.776657"
+           inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SimpleButtonNormal.png"
+           transform="matrix(1.0310618,0,0,0.99424962,-40.53075,7.2514281)"
+           style="fill:#ffffff;fill-opacity:0.02745098;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter5388)"
+           d="m 1288.3485,2488.1425 72.832,-0.5303 -3.889,6.1872 -63.4629,0 z"
+           id="path5526"
+           inkscape:connector-curvature="0" />
+        <path
+           inkscape:export-ydpi="89.776657"
+           inkscape:export-xdpi="89.776657"
+           inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SimpleButtonNormal.png"
+           inkscape:connector-curvature="0"
+           id="path5528"
+           d="m 1289.5,2419.6661 71.25,0.25 -4.25,-5.75 -62.75,0 z"
+           style="fill:#ffffff;fill-opacity:0.05882353;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter5464)" />
+      </g>
+      <rect
+         ry="7.0710678"
+         y="2561.1248"
+         x="1182.2826"
+         height="14.142136"
+         width="77.428192"
+         id="rect5532"
+         style="opacity:1;fill:#000000;fill-opacity:0;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       inkscape:export-ydpi="89.776657"
+       inkscape:export-xdpi="89.776657"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SimpleButtonNormal.png"
+       id="g5544"
+       transform="translate(108,0)">
+      <path
+         style="fill:#000000;fill-opacity:0.35294118;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter5480)"
+         d="m 1285.563,2444.3019 -5.1694,1.4142 c 0,0 -6.431,31.0413 1.2375,44.1942 1.7619,3.0219 5.4745,4.6991 8.8388,5.6568 23.2388,6.6155 50.454,8.8756 72.4784,-1.0606 3.194,-1.441 5.7538,-4.5313 7.0711,-7.7782 5.3641,-13.2211 0.8839,-40.6587 0.8839,-40.6587 l -5.4801,-1.4142 z"
+         id="path5546"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccssssccc"
+         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SimpleButtonNormal.png"
+         inkscape:export-xdpi="89.776657"
+         inkscape:export-ydpi="89.776657" />
+      <rect
+         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SimpleButtonNormal.png"
+         inkscape:export-ydpi="89.776657"
+         inkscape:export-xdpi="89.776657"
+         style="opacity:1;fill:#232323;fill-opacity:1;stroke:#000000;stroke-width:3.27758265;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect5548"
+         width="77.257309"
+         height="77.257309"
+         x="1286.9432"
+         y="2410.4741"
+         ry="8.3361225" />
+      <rect
+         ry="7.6132984"
+         y="2404.3633"
+         x="1287.7926"
+         height="70.558334"
+         width="74.558334"
+         id="rect5550"
+         style="opacity:1;fill:url(#linearGradient5560);fill-opacity:1;stroke:#000000;stroke-width:3.07706261;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:export-xdpi="89.776657"
+         inkscape:export-ydpi="89.776657"
+         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SimpleButtonNormal.png" />
+      <path
+         style="fill:#ffffff;fill-opacity:0.03921569;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter5388)"
+         d="m 1288.5253,2467.4596 72.832,-0.5303 -3.889,6.1872 -63.4629,0 z"
+         id="path5552"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SimpleButtonNormal.png"
+         inkscape:export-xdpi="89.776657"
+         inkscape:export-ydpi="89.776657" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path5554"
+         d="m 1288.3485,2488.1425 72.832,-0.5303 -3.889,6.1872 -63.4629,0 z"
+         style="fill:#ffffff;fill-opacity:0.02745098;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter5388)"
+         transform="matrix(1.0310618,0,0,0.99424962,-40.53075,7.2514281)"
+         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SimpleButtonNormal.png"
+         inkscape:export-xdpi="89.776657"
+         inkscape:export-ydpi="89.776657" />
+      <path
+         style="fill:#ffffff;fill-opacity:0.05882353;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter5464)"
+         d="m 1289.5,2411.2911 71.25,0.25 -4.25,-5.75 -62.75,0 z"
+         id="path5556"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/SimpleButtonNormal.png"
+         inkscape:export-xdpi="89.776657"
+         inkscape:export-ydpi="89.776657" />
+    </g>
+    <path
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/OpenIcon.png"
+       inkscape:export-ydpi="160.22563"
+       inkscape:export-xdpi="160.22563"
+       style="fill:#ffffff"
+       id="path5562"
+       d="m 1452.9426,2459.3456 9.4788,-25.2769 -41.0749,0 -9.4788,25.2769 z m -34.7557,-28.4365 -6.3192,28.4365 0,-41.0749 14.2183,0 6.3191,6.3192 20.5375,0 0,6.3192 z"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g5596"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/Decor2.png"
+       inkscape:export-xdpi="160"
+       inkscape:export-ydpi="160">
+      <circle
+         r="18.384777"
+         cy="2452.9641"
+         cx="1228.0677"
+         id="path5564"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         style="opacity:1;fill:#5b6000;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="circle5567"
+         cx="1228.0677"
+         cy="2452.9641"
+         r="13.384777" />
+      <path
+         sodipodi:nodetypes="cscsc"
+         inkscape:connector-curvature="0"
+         id="path5569"
+         d="m 1214.6875,2453.1122 c 0,0 7.915,8.4704 13.3125,8.5 5.1387,0.028 13.5,-8.3125 13.5,-8.3125 0,0 -0.6863,12.7873 -13.3125,13 -13.3228,0.2245 -13.5,-13.1875 -13.5,-13.1875 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:0.15625;filter:url(#filter5591)" />
+    </g>
+    <g
+       inkscape:export-ydpi="160"
+       inkscape:export-xdpi="160"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/ChooseKitButton.png"
+       id="g5601"
+       transform="translate(0,104.6518)">
+      <rect
+         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png"
+         inkscape:export-ydpi="77.383469"
+         inkscape:export-xdpi="77.383469"
+         style="opacity:1;fill:#4d4d4d;fill-opacity:1;stroke:#000000;stroke-width:2.20926881;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect5603"
+         width="52.075623"
+         height="52.075623"
+         x="1097.3171"
+         y="2426.7222"
+         ry="5.6189995" />
+      <rect
+         ry="2.6780748"
+         y="2428.4011"
+         x="1099.1211"
+         height="25.967728"
+         width="48.592728"
+         id="rect5606"
+         style="opacity:1;fill:#5a5a5a;fill-opacity:1;stroke:none;stroke-width:1.81716323;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter5333)"
+         inkscape:export-xdpi="77.383469"
+         inkscape:export-ydpi="77.383469"
+         inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png" />
+    </g>
+    <text
+       inkscape:export-ydpi="160"
+       inkscape:export-xdpi="160"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/ChooseKitButton.png"
+       sodipodi:linespacing="125%"
+       id="text5608"
+       y="2573.8872"
+       x="1103.8833"
+       style="font-style:normal;font-weight:normal;font-size:47.69346237px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="2573.8872"
+         x="1103.8833"
+         id="tspan5610"
+         sodipodi:role="line">...</tspan></text>
   </g>
 </svg>

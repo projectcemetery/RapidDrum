@@ -1,34 +1,39 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://Scripts/MainScene.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Background.png" type="Texture" id=2]
 [ext_resource path="res://Assets/MainFont.tres" type="DynamicFont" id=3]
-[ext_resource path="res://Assets/Decor1.png" type="Texture" id=4]
-[ext_resource path="res://Assets/DrumLogo.png" type="Texture" id=5]
+[ext_resource path="res://Assets/DrumLogo.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Decor2.png" type="Texture" id=5]
 [ext_resource path="res://Assets/SimpleButtonNormal.png" type="Texture" id=6]
 [ext_resource path="res://Assets/SimpleButtonPressed.png" type="Texture" id=7]
-[ext_resource path="res://Assets/OpenIcon.png" type="Texture" id=8]
-[ext_resource path="res://Assets/SaveIcon.png" type="Texture" id=9]
-[ext_resource path="res://Assets/PlayButtonNormal.png" type="Texture" id=10]
-[ext_resource path="res://Assets/PlayButtonPressed.png" type="Texture" id=11]
-[ext_resource path="res://Scripts/PageControl.gd" type="Script" id=12]
-[ext_resource path="res://Assets/SmallPanelBackground.png" type="Texture" id=13]
-[ext_resource path="res://Assets/pagebuttongroup.tres" type="ButtonGroup" id=14]
-[ext_resource path="res://Assets/AddButton.png" type="Texture" id=15]
-[ext_resource path="res://Assets/AddButtonPress.png" type="Texture" id=16]
-[ext_resource path="res://Assets/SubButton.png" type="Texture" id=17]
-[ext_resource path="res://Assets/SubButtonPress.png" type="Texture" id=18]
-[ext_resource path="res://Scripts/PadControl.gd" type="Script" id=19]
-[ext_resource path="res://Scripts/TempoControl.gd" type="Script" id=20]
-[ext_resource path="res://Assets/Grabber.png" type="Texture" id=21]
-[ext_resource path="res://Scripts/OpenDialog.gd" type="Script" id=22]
-[ext_resource path="res://Assets/CancelButton.png" type="Texture" id=23]
-[ext_resource path="res://Assets/ConfirmButton.png" type="Texture" id=24]
-[ext_resource path="res://Scripts/SaveDialog.gd" type="Script" id=25]
-[ext_resource path="res://Assets/DisabledButton.png" type="Texture" id=26]
-[ext_resource path="res://Assets/VolumePanel.png" type="Texture" id=27]
-[ext_resource path="res://Scripts/VolumeControl.gd" type="Script" id=28]
-[ext_resource path="res://Scripts/PadPlayer.gd" type="Script" id=29]
+[ext_resource path="res://Scripts/SimplePressButton.gd" type="Script" id=8]
+[ext_resource path="res://Assets/OpenIcon.png" type="Texture" id=9]
+[ext_resource path="res://Assets/SaveIcon.png" type="Texture" id=10]
+[ext_resource path="res://Assets/PlayButtonNormal.png" type="Texture" id=11]
+[ext_resource path="res://Assets/PlayButtonPressed.png" type="Texture" id=12]
+[ext_resource path="res://Scripts/PageControl.gd" type="Script" id=13]
+[ext_resource path="res://Assets/SmallPanelBackground.png" type="Texture" id=14]
+[ext_resource path="res://Assets/pagebuttongroup.tres" type="ButtonGroup" id=15]
+[ext_resource path="res://Assets/PageButton.png" type="Texture" id=16]
+[ext_resource path="res://Assets/PageButtonPressed.png" type="Texture" id=17]
+[ext_resource path="res://Assets/AddButton.png" type="Texture" id=18]
+[ext_resource path="res://Assets/AddButtonPress.png" type="Texture" id=19]
+[ext_resource path="res://Assets/SubButton.png" type="Texture" id=20]
+[ext_resource path="res://Assets/SubButtonPress.png" type="Texture" id=21]
+[ext_resource path="res://Scripts/PadControl.gd" type="Script" id=22]
+[ext_resource path="res://Scripts/TempoControl.gd" type="Script" id=23]
+[ext_resource path="res://Assets/Grabber.png" type="Texture" id=24]
+[ext_resource path="res://Scripts/OpenDialog.gd" type="Script" id=25]
+[ext_resource path="res://Assets/CancelButton.png" type="Texture" id=26]
+[ext_resource path="res://Assets/ConfirmButton.png" type="Texture" id=27]
+[ext_resource path="res://Scripts/SaveDialog.gd" type="Script" id=28]
+[ext_resource path="res://Assets/DisabledButton.png" type="Texture" id=29]
+[ext_resource path="res://Assets/VolumePanel.png" type="Texture" id=30]
+[ext_resource path="res://Scripts/VolumeControl.gd" type="Script" id=31]
+[ext_resource path="res://Assets/ChooseKitButton.png" type="Texture" id=32]
+[ext_resource path="res://Assets/ChooseKitButtonPressed.png" type="Texture" id=33]
+[ext_resource path="res://Scripts/PadPlayer.gd" type="Script" id=34]
 
 [node name="MainScene" type="Node2D"]
 
@@ -55,7 +60,6 @@ _sections_unfolded = [ "Visibility" ]
 
 [node name="Decor" type="Control" parent="MainUI"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -156,27 +160,9 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_fonts" ]
 
-[node name="Decor1" type="TextureRect" parent="MainUI/Decor"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 1289.0
-margin_top = 990.0
-margin_right = 1661.0
-margin_bottom = 1038.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-size_flags_horizontal = 1
-size_flags_vertical = 1
-texture = ExtResource( 4 )
-expand = true
-stretch_mode = 0
-
 [node name="LogoIcon" type="TextureRect" parent="MainUI/Decor"]
 
+editor/display_folded = true
 visible = false
 anchor_left = 0.0
 anchor_top = 0.0
@@ -191,7 +177,7 @@ rect_clip_content = false
 mouse_filter = 1
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 4 )
 expand = true
 stretch_mode = 0
 
@@ -239,6 +225,25 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_fonts", "custom_styles" ]
 
+[node name="TextureRect" type="TextureRect" parent="MainUI/Decor"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1652.0
+margin_top = 994.0
+margin_right = 1692.0
+margin_bottom = 1034.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 5 )
+expand = true
+stretch_mode = 0
+
 [node name="OpenButton" type="TextureButton" parent="MainUI"]
 
 editor/display_folded = true
@@ -246,10 +251,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 1814.0
-margin_top = 978.0
-margin_right = 1884.0
-margin_bottom = 1048.0
+margin_left = 1810.0
+margin_top = 969.0
+margin_right = 1900.0
+margin_bottom = 1060.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -262,24 +267,26 @@ group = null
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 7 )
 expand = true
+stretch_mode = 5
+script = ExtResource( 8 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="TextureRect" type="TextureRect" parent="MainUI/OpenButton"]
+[node name="Icon" type="TextureRect" parent="MainUI/OpenButton"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 18.0
-margin_top = 15.0
-margin_right = 57.0
-margin_bottom = 52.0
+margin_left = 28.0
+margin_top = 14.0
+margin_right = 67.0
+margin_bottom = 51.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 8 )
+texture = ExtResource( 9 )
 expand = true
 stretch_mode = 0
 
@@ -290,10 +297,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 1721.0
-margin_top = 978.0
-margin_right = 1791.0
-margin_bottom = 1048.0
+margin_left = 1712.0
+margin_top = 969.0
+margin_right = 1802.0
+margin_bottom = 1060.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -306,24 +313,26 @@ group = null
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 7 )
 expand = true
+stretch_mode = 5
+script = ExtResource( 8 )
 _sections_unfolded = [ "Rect", "Textures" ]
 
-[node name="TextureRect" type="TextureRect" parent="MainUI/SaveButton"]
+[node name="Icon" type="TextureRect" parent="MainUI/SaveButton"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 17.0
-margin_top = 15.0
-margin_right = 56.0
-margin_bottom = 52.0
+margin_left = 26.0
+margin_top = 14.0
+margin_right = 65.0
+margin_bottom = 51.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 9 )
+texture = ExtResource( 10 )
 expand = true
 stretch_mode = 0
 
@@ -346,13 +355,14 @@ toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 10 )
-texture_pressed = ExtResource( 11 )
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 12 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
 [node name="PageControl" type="Control" parent="MainUI"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -366,7 +376,7 @@ rect_clip_content = false
 mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-script = ExtResource( 12 )
+script = ExtResource( 13 )
 
 [node name="Background" type="TextureRect" parent="MainUI/PageControl"]
 
@@ -382,7 +392,7 @@ rect_clip_content = false
 mouse_filter = 1
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 13 )
+texture = ExtResource( 14 )
 expand = true
 stretch_mode = 0
 
@@ -405,9 +415,9 @@ toggle_mode = true
 pressed = true
 enabled_focus_mode = 2
 shortcut = null
-group = ExtResource( 14 )
-texture_normal = ExtResource( 6 )
-texture_pressed = ExtResource( 7 )
+group = ExtResource( 15 )
+texture_normal = ExtResource( 16 )
+texture_pressed = ExtResource( 17 )
 expand = true
 _sections_unfolded = [ "Margin", "Rect" ]
 
@@ -452,9 +462,9 @@ size_flags_vertical = 1
 toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
-group = ExtResource( 14 )
-texture_normal = ExtResource( 6 )
-texture_pressed = ExtResource( 7 )
+group = ExtResource( 15 )
+texture_normal = ExtResource( 16 )
+texture_pressed = ExtResource( 17 )
 expand = true
 _sections_unfolded = [ "Textures", "Visibility" ]
 
@@ -499,9 +509,9 @@ size_flags_vertical = 1
 toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
-group = ExtResource( 14 )
-texture_normal = ExtResource( 6 )
-texture_pressed = ExtResource( 7 )
+group = ExtResource( 15 )
+texture_normal = ExtResource( 16 )
+texture_pressed = ExtResource( 17 )
 expand = true
 _sections_unfolded = [ "Rect", "Visibility" ]
 
@@ -546,9 +556,9 @@ size_flags_vertical = 1
 toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
-group = ExtResource( 14 )
-texture_normal = ExtResource( 6 )
-texture_pressed = ExtResource( 7 )
+group = ExtResource( 15 )
+texture_normal = ExtResource( 16 )
+texture_pressed = ExtResource( 17 )
 expand = true
 _sections_unfolded = [ "Visibility" ]
 
@@ -593,8 +603,8 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 15 )
-texture_pressed = ExtResource( 16 )
+texture_normal = ExtResource( 18 )
+texture_pressed = ExtResource( 19 )
 expand = true
 stretch_mode = 5
 _sections_unfolded = [ "Rect", "Textures" ]
@@ -618,8 +628,8 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 17 )
-texture_pressed = ExtResource( 18 )
+texture_normal = ExtResource( 20 )
+texture_pressed = ExtResource( 21 )
 expand = true
 stretch_mode = 5
 _sections_unfolded = [ "Rect", "Textures" ]
@@ -661,7 +671,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 expand = true
 stretch_mode = 0
-script = ExtResource( 19 )
+script = ExtResource( 22 )
 _sections_unfolded = [ "Anchor", "Margin", "Rect" ]
 
 [node name="PadLabel1" type="Label" parent="MainUI/PadControl"]
@@ -866,6 +876,7 @@ _sections_unfolded = [ "Rect", "custom_fonts" ]
 
 [node name="TempoControl" type="Control" parent="MainUI"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -879,7 +890,7 @@ rect_clip_content = false
 mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-script = ExtResource( 20 )
+script = ExtResource( 23 )
 
 [node name="Background" type="TextureRect" parent="MainUI/TempoControl"]
 
@@ -895,7 +906,7 @@ rect_clip_content = false
 mouse_filter = 1
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 13 )
+texture = ExtResource( 14 )
 expand = true
 stretch_mode = 0
 
@@ -979,8 +990,8 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 15 )
-texture_pressed = ExtResource( 16 )
+texture_normal = ExtResource( 18 )
+texture_pressed = ExtResource( 19 )
 expand = true
 stretch_mode = 5
 _sections_unfolded = [ "Rect", "Textures" ]
@@ -1004,8 +1015,8 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 17 )
-texture_pressed = ExtResource( 18 )
+texture_normal = ExtResource( 20 )
+texture_pressed = ExtResource( 21 )
 expand = true
 stretch_mode = 5
 _sections_unfolded = [ "Rect", "Textures" ]
@@ -1025,8 +1036,8 @@ rect_clip_content = false
 mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 0
-custom_icons/grabber_highlight = ExtResource( 21 )
-custom_icons/grabber = ExtResource( 21 )
+custom_icons/grabber_highlight = ExtResource( 24 )
+custom_icons/grabber = ExtResource( 24 )
 min_value = 60.0
 max_value = 160.0
 step = 1.0
@@ -1057,7 +1068,7 @@ mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 popup_exclusive = false
-script = ExtResource( 22 )
+script = ExtResource( 25 )
 
 [node name="Caption" type="Label" parent="MainUI/OpenDialog"]
 
@@ -1122,7 +1133,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 23 )
+texture_normal = ExtResource( 26 )
 expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
 
@@ -1167,7 +1178,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 24 )
+texture_normal = ExtResource( 27 )
 expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
 
@@ -1211,7 +1222,7 @@ mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 popup_exclusive = false
-script = ExtResource( 25 )
+script = ExtResource( 28 )
 _sections_unfolded = [ "Anchor", "Popup" ]
 
 [node name="Caption" type="Label" parent="MainUI/SaveDialog"]
@@ -1278,7 +1289,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 23 )
+texture_normal = ExtResource( 26 )
 expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
 
@@ -1324,8 +1335,8 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 24 )
-texture_disabled = ExtResource( 26 )
+texture_normal = ExtResource( 27 )
+texture_disabled = ExtResource( 29 )
 expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
 
@@ -1402,7 +1413,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 23 )
+texture_normal = ExtResource( 26 )
 texture_pressed = ExtResource( 7 )
 expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
@@ -1453,6 +1464,7 @@ _sections_unfolded = [ "custom_fonts" ]
 
 [node name="VolumeControl" type="TextureRect" parent="MainUI"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -1466,9 +1478,9 @@ rect_clip_content = false
 mouse_filter = 1
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 27 )
+texture = ExtResource( 30 )
 stretch_mode = 0
-script = ExtResource( 28 )
+script = ExtResource( 31 )
 
 [node name="Label" type="Label" parent="MainUI/VolumeControl"]
 
@@ -1506,8 +1518,8 @@ rect_clip_content = false
 mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 0
-custom_icons/grabber_highlight = ExtResource( 21 )
-custom_icons/grabber = ExtResource( 21 )
+custom_icons/grabber_highlight = ExtResource( 24 )
+custom_icons/grabber = ExtResource( 24 )
 min_value = 0.0
 max_value = 100.0
 step = 1.0
@@ -1520,9 +1532,88 @@ tick_count = 20
 ticks_on_borders = true
 focus_mode = 2
 
+[node name="DrumKitControl" type="Control" parent="MainUI"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1267.0
+margin_top = 975.0
+margin_right = 1668.0
+margin_bottom = 1050.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Background" type="TextureRect" parent="MainUI/DrumKitControl"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 4.0
+margin_top = -3.0
+margin_right = 359.0
+margin_bottom = 77.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 14 )
+expand = true
+stretch_mode = 0
+
+[node name="KitName" type="Label" parent="MainUI/DrumKitControl"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 36.0
+margin_top = 15.0
+margin_right = 156.0
+margin_bottom = 61.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 3 )
+text = "Rock Kit"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="TextureButton" type="TextureButton" parent="MainUI/DrumKitControl"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 293.0
+margin_top = 12.0
+margin_right = 343.0
+margin_bottom = 62.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 32 )
+texture_pressed = ExtResource( 33 )
+expand = true
+
 [node name="PadPlayer" type="Node" parent="."]
 
-script = ExtResource( 29 )
+script = ExtResource( 34 )
 
 [node name="PlayerTimer" type="Timer" parent="PadPlayer"]
 
@@ -1531,7 +1622,15 @@ wait_time = 0.1
 one_shot = false
 autostart = false
 
+[connection signal="button_down" from="MainUI/OpenButton" to="MainUI/OpenButton" method="_on_button_down"]
+
+[connection signal="button_up" from="MainUI/OpenButton" to="MainUI/OpenButton" method="_on_button_up"]
+
 [connection signal="pressed" from="MainUI/OpenButton" to="." method="_on_OpenButton_pressed"]
+
+[connection signal="button_down" from="MainUI/SaveButton" to="MainUI/SaveButton" method="_on_button_down"]
+
+[connection signal="button_up" from="MainUI/SaveButton" to="MainUI/SaveButton" method="_on_button_up"]
 
 [connection signal="pressed" from="MainUI/SaveButton" to="." method="_on_SaveButton_pressed"]
 
