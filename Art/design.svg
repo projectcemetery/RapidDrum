@@ -1604,8 +1604,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142135"
-     inkscape:cx="1182.6842"
-     inkscape:cy="-1352.3885"
+     inkscape:cx="1040.4527"
+     inkscape:cy="-1420.1511"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -10560,14 +10560,14 @@
     <g
        inkscape:export-ydpi="160"
        inkscape:export-xdpi="160"
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/ChooseKitButton.png"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/ChooseKitButtonPressed.png"
        id="g5601"
        transform="translate(0,104.6518)">
       <rect
          inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png"
          inkscape:export-ydpi="77.383469"
          inkscape:export-xdpi="77.383469"
-         style="opacity:1;fill:#4d4d4d;fill-opacity:1;stroke:#000000;stroke-width:2.20926881;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="opacity:1;fill:#3b3b3b;fill-opacity:1;stroke:#000000;stroke-width:2.20926881;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="rect5603"
          width="52.075623"
          height="52.075623"
@@ -10581,7 +10581,7 @@
          height="25.967728"
          width="48.592728"
          id="rect5606"
-         style="opacity:1;fill:#5a5a5a;fill-opacity:1;stroke:none;stroke-width:1.81716323;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter5333)"
+         style="opacity:1;fill:#454545;fill-opacity:1;stroke:none;stroke-width:1.81716323;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter5333)"
          inkscape:export-xdpi="77.383469"
          inkscape:export-ydpi="77.383469"
          inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/Assets/screen.png" />
@@ -10589,7 +10589,7 @@
     <text
        inkscape:export-ydpi="160"
        inkscape:export-xdpi="160"
-       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/ChooseKitButton.png"
+       inkscape:export-filename="/home/grabli66/Workspace/RapidDrum/MobileApp/Assets/ChooseKitButtonPressed.png"
        sodipodi:linespacing="125%"
        id="text5608"
        y="2573.8872"
