@@ -45,8 +45,8 @@ func _ready():
 	
 	tempoControl = get_node("MainUI/TempoControl")
 	
-	openDialog = get_node("MainUI/OpenDialog")
-	saveDialog = get_node("MainUI/SaveDialog")
+	openDialog = get_node("MainUI/Dialogs/OpenDialog")
+	saveDialog = get_node("MainUI/Dialogs/SaveDialog")
 	presetManager = presetManagerClass.new()
 	
 	var vol = constants.MIN_BUS_VOLUME + constants.DEFAULT_VOLUME
