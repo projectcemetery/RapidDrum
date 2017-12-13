@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=39 format=2]
 
 [ext_resource path="res://Scripts/MainScene.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Background.png" type="Texture" id=2]
@@ -26,14 +26,18 @@
 [ext_resource path="res://Assets/Grabber.png" type="Texture" id=24]
 [ext_resource path="res://Assets/VolumePanel.png" type="Texture" id=25]
 [ext_resource path="res://Scripts/VolumeControl.gd" type="Script" id=26]
-[ext_resource path="res://Assets/ChooseKitButton.png" type="Texture" id=27]
-[ext_resource path="res://Assets/ChooseKitButtonPressed.png" type="Texture" id=28]
-[ext_resource path="res://Scripts/OpenDialog.gd" type="Script" id=29]
-[ext_resource path="res://Assets/CancelButton.png" type="Texture" id=30]
-[ext_resource path="res://Assets/ConfirmButton.png" type="Texture" id=31]
-[ext_resource path="res://Scripts/SaveDialog.gd" type="Script" id=32]
-[ext_resource path="res://Assets/DisabledButton.png" type="Texture" id=33]
-[ext_resource path="res://Scripts/PadPlayer.gd" type="Script" id=34]
+[ext_resource path="res://Scripts/DrumKitControl.gd" type="Script" id=27]
+[ext_resource path="res://Assets/ChooseKitButton.png" type="Texture" id=28]
+[ext_resource path="res://Assets/ChooseKitButtonPressed.png" type="Texture" id=29]
+[ext_resource path="res://Scripts/OpenDialog.gd" type="Script" id=30]
+[ext_resource path="res://Assets/CancelButton.png" type="Texture" id=31]
+[ext_resource path="res://Assets/ConfirmButton.png" type="Texture" id=32]
+[ext_resource path="res://Scripts/SaveDialog.gd" type="Script" id=33]
+[ext_resource path="res://Assets/DisabledButton.png" type="Texture" id=34]
+[ext_resource path="res://Scripts/DrumKitDialog.gd" type="Script" id=35]
+[ext_resource path="res://Assets/TabSelectedStyle.tres" type="StyleBox" id=36]
+[ext_resource path="res://Assets/TabStyle.tres" type="StyleBox" id=37]
+[ext_resource path="res://Scripts/PadPlayer.gd" type="Script" id=38]
 
 [node name="MainScene" type="Node2D"]
 
@@ -1130,13 +1134,14 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 1267.0
 margin_top = 975.0
-margin_right = 1668.0
+margin_right = 1623.0
 margin_bottom = 1050.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+script = ExtResource( 27 )
 
 [node name="Background" type="TextureRect" parent="MainUI/DrumKitControl"]
 
@@ -1178,7 +1183,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="TextureButton" type="TextureButton" parent="MainUI/DrumKitControl"]
+[node name="SelectKitButton" type="TextureButton" parent="MainUI/DrumKitControl"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -1197,8 +1202,8 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 27 )
-texture_pressed = ExtResource( 28 )
+texture_normal = ExtResource( 28 )
+texture_pressed = ExtResource( 29 )
 expand = true
 
 [node name="Dialogs" type="Control" parent="MainUI"]
@@ -1235,7 +1240,7 @@ mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 popup_exclusive = false
-script = ExtResource( 29 )
+script = ExtResource( 30 )
 
 [node name="Caption" type="Label" parent="MainUI/Dialogs/OpenDialog"]
 
@@ -1243,9 +1248,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 29.0
+margin_left = 25.0
 margin_top = 17.0
-margin_right = 186.0
+margin_right = 182.0
 margin_bottom = 63.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -1283,6 +1288,7 @@ _sections_unfolded = [ "Size Flags", "custom_fonts" ]
 
 [node name="CancelButton" type="TextureButton" parent="MainUI/Dialogs/OpenDialog"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -1300,7 +1306,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 30 )
+texture_normal = ExtResource( 31 )
 expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
 
@@ -1328,6 +1334,7 @@ _sections_unfolded = [ "custom_fonts" ]
 
 [node name="OpenButton" type="TextureButton" parent="MainUI/Dialogs/OpenDialog"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -1345,7 +1352,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 31 )
+texture_normal = ExtResource( 32 )
 expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
 
@@ -1389,7 +1396,7 @@ mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 popup_exclusive = false
-script = ExtResource( 32 )
+script = ExtResource( 33 )
 _sections_unfolded = [ "Anchor", "Popup" ]
 
 [node name="Caption" type="Label" parent="MainUI/Dialogs/SaveDialog"]
@@ -1456,7 +1463,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 30 )
+texture_normal = ExtResource( 31 )
 expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
 
@@ -1502,8 +1509,8 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 31 )
-texture_disabled = ExtResource( 33 )
+texture_normal = ExtResource( 32 )
+texture_disabled = ExtResource( 34 )
 expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
 
@@ -1580,7 +1587,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 30 )
+texture_normal = ExtResource( 31 )
 texture_pressed = ExtResource( 7 )
 expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
@@ -1629,10 +1636,212 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_fonts" ]
 
+[node name="DrumKitDialog" type="PopupDialog" parent="MainUI/Dialogs"]
+
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -550.0
+margin_top = -380.0
+margin_right = 550.0
+margin_bottom = 380.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+popup_exclusive = false
+script = ExtResource( 35 )
+
+[node name="Caption" type="Label" parent="MainUI/Dialogs/DrumKitDialog"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 25.0
+margin_top = 17.0
+margin_right = 255.0
+margin_bottom = 63.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 3 )
+text = "Select drum kit"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="SelectButton" type="TextureButton" parent="MainUI/Dialogs/DrumKitDialog"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 895.0
+margin_top = 679.0
+margin_right = 1075.0
+margin_bottom = 739.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 32 )
+texture_disabled = ExtResource( 34 )
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="Caption" type="Label" parent="MainUI/Dialogs/DrumKitDialog/SelectButton"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 40.0
+margin_top = 7.0
+margin_right = 139.0
+margin_bottom = 53.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 3 )
+text = "Select"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="CancelButton" type="TextureButton" parent="MainUI/Dialogs/DrumKitDialog"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 694.0
+margin_top = 680.0
+margin_right = 874.0
+margin_bottom = 740.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 31 )
+expand = true
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="Caption" type="Label" parent="MainUI/Dialogs/DrumKitDialog/CancelButton"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 42.0
+margin_top = 6.0
+margin_right = 141.0
+margin_bottom = 52.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 3 )
+text = "Cancel"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="TabContainer" type="TabContainer" parent="MainUI/Dialogs/DrumKitDialog"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 17.0
+margin_top = 78.0
+margin_right = 1074.0
+margin_bottom = 668.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/tab_fg = ExtResource( 36 )
+custom_styles/tab_bg = ExtResource( 37 )
+custom_fonts/font = ExtResource( 3 )
+tab_align = 1
+tabs_visible = true
+
+[node name="Loaded" type="Tabs" parent="MainUI/Dialogs/DrumKitDialog/TabContainer"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 60.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = ExtResource( 3 )
+scrolling_enabled = true
+
+[node name="LoadedList" type="ItemList" parent="MainUI/Dialogs/DrumKitDialog/TabContainer/Loaded"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+margin_right = 460.0
+margin_bottom = -10.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+items = [  ]
+select_mode = 0
+icon_mode = 1
+
+[node name="Download" type="Tabs" parent="MainUI/Dialogs/DrumKitDialog/TabContainer"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+scrolling_enabled = true
+
 [node name="PadPlayer" type="Node" parent="."]
 
 editor/display_folded = true
-script = ExtResource( 34 )
+script = ExtResource( 38 )
 
 [node name="PlayerTimer" type="Timer" parent="PadPlayer"]
 
@@ -1685,6 +1894,8 @@ autostart = false
 
 [connection signal="value_changed" from="MainUI/VolumeControl/VolumeSlider" to="MainUI/VolumeControl" method="_on_VolumeSlider_value_changed"]
 
+[connection signal="pressed" from="MainUI/DrumKitControl/SelectKitButton" to="MainUI/DrumKitControl" method="_on_SelectKitButton_pressed"]
+
 [connection signal="OpenTrack" from="MainUI/Dialogs/OpenDialog" to="." method="_on_OpenDialog_OpenTrack"]
 
 [connection signal="pressed" from="MainUI/Dialogs/OpenDialog/CancelButton" to="MainUI/Dialogs/OpenDialog" method="_on_CancelButton_pressed"]
@@ -1702,6 +1913,8 @@ autostart = false
 [connection signal="pressed" from="MainUI/Dialogs/SaveDialog/SaveButton" to="MainUI/Dialogs/SaveDialog" method="_on_SaveButton_pressed"]
 
 [connection signal="pressed" from="MainUI/Dialogs/SaveDialog/DeleteButton" to="MainUI/Dialogs/SaveDialog" method="_on_DeleteButton_pressed"]
+
+[connection signal="pressed" from="MainUI/Dialogs/DrumKitDialog/CancelButton" to="MainUI/DrumKitControl" method="_on_CancelButton_pressed"]
 
 [connection signal="CollectionChanged" from="PadPlayer" to="." method="_on_PadPlayer_CollectionChanged"]
 

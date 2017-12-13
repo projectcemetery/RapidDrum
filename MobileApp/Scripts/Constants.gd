@@ -1,3 +1,6 @@
+# Default drum kit on start
+const DEFAULT_DRUMKIT_NAME = "Rock"
+
 # Pad column count
 const PAD_COL_COUNT = 16
 # Pad rows count

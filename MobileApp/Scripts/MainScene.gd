@@ -32,6 +32,7 @@ var saveDialog
 func _ready():
 	track = trackClass.new()
 	drumKit = kitClass.new(self)
+	drumKit.loadKit(constants.DEFAULT_DRUMKIT_NAME)
 	
 	var padColl = padCollectionClass.new()
 	track.addPadCollection(padColl)

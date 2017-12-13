@@ -1603,9 +1603,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35355338"
-     inkscape:cx="1648.2228"
-     inkscape:cy="-1349.6363"
+     inkscape:zoom="0.70710676"
+     inkscape:cx="3787.6862"
+     inkscape:cy="-1005.3863"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -10715,6 +10715,13 @@
        width="1127.0618"
        id="rect11099"
        style="opacity:1;fill:#2a2a33;fill-opacity:1;stroke:#000000;stroke-width:7.23961258;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       y="1639.0818"
+       x="1774.0365"
+       height="55.000004"
+       width="418.00003"
+       id="rect8270"
+       style="opacity:1;fill:#454554;fill-opacity:1;stroke:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <text
        sodipodi:linespacing="125%"
        id="text11101"
@@ -10775,13 +10782,13 @@
        sodipodi:linespacing="125%"
        id="text11121"
        y="2261.2546"
-       x="2727.4241"
+       x="2687.8262"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          y="2261.2546"
-         x="2727.4241"
+         x="2687.8262"
          id="tspan11123"
-         sodipodi:role="line">OK</tspan></text>
+         sodipodi:role="line">SELECT</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -10884,14 +10891,14 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="3991.4241"
+       x="3947.5835"
        y="2261.2546"
        id="text11211"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan11213"
-         x="3991.4241"
-         y="2261.2546">OK</tspan></text>
+         x="3947.5835"
+         y="2261.2546">SELECT</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text11215"
@@ -11017,13 +11024,13 @@
        sodipodi:linespacing="125%"
        id="text11257"
        y="3203.1208"
-       x="3991.4241"
+       x="3903.7429"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          y="3203.1208"
-         x="3991.4241"
+         x="3903.7429"
          id="tspan11259"
-         sodipodi:role="line">OK</tspan></text>
+         sodipodi:role="line">DOWNLOAD</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -11193,5 +11200,120 @@
          x="3512.0115"
          id="tspan11337"
          sodipodi:role="line">Crash</tspan></text>
+    <rect
+       y="1622.6573"
+       x="2214.2458"
+       height="565.70184"
+       width="676.13757"
+       id="rect8232"
+       style="opacity:1;fill:#24242c;fill-opacity:1;stroke:#000000;stroke-width:5.61543417;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text8234"
+       y="1677.4652"
+       x="2240.876"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff"
+         y="1677.4652"
+         x="2240.876"
+         id="tspan8236"
+         sodipodi:role="line">Samples:</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text8238"
+       y="1737.4652"
+       x="2244.876"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff"
+         y="1737.4652"
+         x="2244.876"
+         id="tspan8240"
+         sodipodi:role="line">Kick</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="2244.876"
+       y="1791.4652"
+       id="text8242"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan8244"
+         x="2244.876"
+         y="1791.4652"
+         style="fill:#ffffff">Kick 2</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text8246"
+       y="1843.4652"
+       x="2244.876"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff"
+         y="1843.4652"
+         x="2244.876"
+         id="tspan8248"
+         sodipodi:role="line">Snare</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="2244.876"
+       y="1899.4652"
+       id="text8250"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan8252"
+         x="2244.876"
+         y="1899.4652"
+         style="fill:#ffffff">Tom 1</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text8254"
+       y="1953.4652"
+       x="2244.876"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff"
+         y="1953.4652"
+         x="2244.876"
+         id="tspan8256"
+         sodipodi:role="line">Tom 2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="2244.876"
+       y="2009.4652"
+       id="text8258"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan8260"
+         x="2244.876"
+         y="2009.4652"
+         style="fill:#ffffff">Open Hi-Hat</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text8262"
+       y="2064.4653"
+       x="2244.876"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff"
+         y="2064.4653"
+         x="2244.876"
+         id="tspan8264"
+         sodipodi:role="line">Closed Hat</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="2244.876"
+       y="2119.4653"
+       id="text8266"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan8268"
+         x="2244.876"
+         y="2119.4653"
+         style="fill:#ffffff">Crash</tspan></text>
   </g>
 </svg>

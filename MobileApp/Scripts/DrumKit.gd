@@ -1,5 +1,6 @@
 extends Reference
 
+# Samples to play
 var samples = []
 
 # AudioStreamPlayer2D without parent does not play
@@ -8,14 +9,6 @@ var parentNode
 # Constructor
 func _init(node):
 	parentNode = node
-	samples.append(newStream("rock-crash.wav"))
-	samples.append(newStream("rock-tom1.wav"))
-	samples.append(newStream("rock-tom2.wav"))
-	samples.append(newStream("rock-tom3.wav"))
-	samples.append(newStream("rock-hhopen.wav"))
-	samples.append(newStream("rock-hhclosed.wav"))
-	samples.append(newStream("rock-kick.wav"))
-	samples.append(newStream("rock-snare.wav"))
 	
 func newStream(name):
 	var nstream = AudioStreamPlayer.new()
@@ -31,3 +24,24 @@ func play(pattern):
 		var need = pattern[i]
 		if need:
 			samples[i].play()
+
+# Remove drum kit and all nodes
+func remove():
+	for sample in samples:
+		sample.remove()
+
+# Get kit list from disk
+func getKitList():
+	pass
+
+# Load kit from disk
+func loadKit(name):
+	# TODO: load from kit file
+	samples.append(newStream("rock-crash.wav"))
+	samples.append(newStream("rock-tom1.wav"))
+	samples.append(newStream("rock-tom2.wav"))
+	samples.append(newStream("rock-tom3.wav"))
+	samples.append(newStream("rock-hhopen.wav"))
+	samples.append(newStream("rock-hhclosed.wav"))
+	samples.append(newStream("rock-kick.wav"))
+	samples.append(newStream("rock-snare.wav"))

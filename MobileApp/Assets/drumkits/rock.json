@@ -1,0 +1,13 @@
+{
+    "Id" : "Rock",
+    "Samples" : {
+        "Crash" : "crash.wav",
+        "Tom1" : "tom1.wav",
+        "Tom2" : "tom2.wav",
+        "Tom3" : "tom3.wav",
+        "Open Hat" : "openhat.wav",
+        "Closed Hat" : "closedhat.wav",
+        "Snare" : "snare.wav",
+        "Kick" : "kick.wav"
+    }
+}
