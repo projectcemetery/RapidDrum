@@ -1,6 +1,11 @@
 # Default drum kit on start
 const DEFAULT_DRUMKIT_NAME = "Rock"
 
+# Path to assets dir
+const ASSETS_PATH = "assets"
+const DRUMKITS_PATH = "drumkits"
+const SAMPLES_PATH = "samples"
+
 # Pad column count
 const PAD_COL_COUNT = 16
 # Pad rows count
