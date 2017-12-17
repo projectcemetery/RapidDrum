@@ -16,22 +16,9 @@ var description = ""
 #var parentNode
 
 # Constructor
-func _init(node):
+func _init():
 	pass
 	#parentNode = node
-
-func _getKitFilePath(id):
-	"""
-	Get drum kit full path name
-	
-	@param id - drum kit id
-	@return full path
-	
-	Example:
-		var fileName = _getKitFilePath("Rock")
-	"""
-	
-	return "%s/%s.json" % [constants.ASSETS_PATH, constants.DRUMKITS_PATH]
 	
 #func newStream(name):
 #	var nstream = AudioStreamPlayer.new()
@@ -54,8 +41,8 @@ func getKitList():
 
 # Load kit from disk
 func loadKit(name):
-	assetManager.loadFile(name)
-	pass
+	var kitFile = assetManager.loadFile(_getKitFilePath(name))
+	
 #	samples.append(newStream("rock-crash.wav"))
 #	samples.append(newStream("rock-tom1.wav"))
 #	samples.append(newStream("rock-tom2.wav"))

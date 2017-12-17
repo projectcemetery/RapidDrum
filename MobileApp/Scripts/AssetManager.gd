@@ -21,6 +21,9 @@ static func loadFile(path, isRes = false):
 	@param path - path to file
 	@param isRes - load from res:// or user://
 	@return file as string or null if file not exists
+	
+	Example:
+		loadFile("sample.wav", true)
 	"""
 	
 	var fullPath = _getFullFilePath(path, isRes)
