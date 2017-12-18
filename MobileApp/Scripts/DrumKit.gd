@@ -41,7 +41,8 @@ func getKitList():
 
 # Load kit from disk
 func loadKit(name):
-	var kitFile = assetManager.loadFile(_getKitFilePath(name))
+	#var kitFile = assetManager.loadFile(_getKitFilePath(name))
+	pass
 	
 #	samples.append(newStream("rock-crash.wav"))
 #	samples.append(newStream("rock-tom1.wav"))

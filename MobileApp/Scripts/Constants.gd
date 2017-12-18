@@ -2,7 +2,7 @@
 const DEFAULT_DRUMKIT_NAME = "Rock"
 
 # Path to assets dir
-const ASSETS_PATH = "assets"
+const ASSETS_PATH = "Assets"
 const DRUMKITS_PATH = "drumkits"
 const SAMPLES_PATH = "samples"
 

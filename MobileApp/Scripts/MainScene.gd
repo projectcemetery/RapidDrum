@@ -1,6 +1,7 @@
 extends Node2D
 
 var constants = preload("res://Scripts/Constants.gd")
+var startManagerClass = load("res://Scripts/StartManager.gd")
 var padCollectionClass = preload("res://Scripts/PadCollection.gd")
 var trackClass = preload("res://Scripts/Track.gd")
 var kitClass = preload("res://Scripts/DrumKit.gd")
@@ -30,8 +31,14 @@ var saveDialog
 
 # On ready
 func _ready():
+	#var playr = get_node("AudioStreamPlayer")
+	#playr.stream = load("user://Assets/snare.wav")
+	#playr.play()	
+	
+	startManagerClass.prepareContent()
+	
 	track = trackClass.new()
-	drumKit = kitClass.new(self)
+	drumKit = kitClass.new()
 	drumKit.loadKit(constants.DEFAULT_DRUMKIT_NAME)
 	
 	var padColl = padCollectionClass.new()

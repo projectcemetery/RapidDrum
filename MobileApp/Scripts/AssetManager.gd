@@ -1,20 +1,38 @@
 extends Reference
 
-static func _getFullFilePath(path, isRes = false):
+func getFullPath(path, isRes = false):
 	"""
 	Get file name
 	
-	@param name - path to file without storage type
-	@param isRes - load from res:// or user://
-	@return full path to file
+	@param String path - path to file without storage type
+	@param Bool isRes - load from res:// or user://
+	@return String full path to file
 	"""
 	
 	if isRes:
 		return "res://%s" % path
 	else:
 		return "user://%s" % path
+		
+func getFullPathFromArray(pathArray, isRes = false):
+	"""
+	Get file name
+	
+	@param String Array<String> - path to file
+	@param Bool isRes - load from res:// or user://
+	@return String full path to file
+	"""
+	
+	var res = ""
+	
+	for n in pathArray:
+		res += n + "/"
+	
+	res.erase(len(res) - 1, 1)
+	
+	return getFullPath(res, isRes)
 
-static func loadFile(path, isRes = false):
+func loadFile(path, isRes = false):
 	"""
 	Load file from res or user space
 	
@@ -26,7 +44,7 @@ static func loadFile(path, isRes = false):
 		loadFile("sample.wav", true)
 	"""
 	
-	var fullPath = _getFullFilePath(path, isRes)
+	var fullPath = getFullFilePath(path, isRes)
 	
 	var file = File.new()
 	if not file.file_exists(fullPath):
@@ -35,7 +53,7 @@ static func loadFile(path, isRes = false):
 	file.open(fullPath, file.READ)
 	return file.get_as_text()
 	
-static func saveFile(path, data):
+func saveFile(path, data):
 	"""
 	Save file to user://
 	
@@ -44,7 +62,7 @@ static func saveFile(path, data):
 	@return void
 	"""
 	
-	var fullPath = _getFullFilePath(path)
+	var fullPath = getFullFilePath(path)
 	
 	var file = File.new()
 	file.open(fullPath, file.WRITE)

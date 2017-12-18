@@ -2,15 +2,13 @@ extends Reference
 
 const PRESET_LIST_FILE = "presets";
 
-# Constructor
-func _init():
-	var dict = readDict(PRESET_LIST_FILE)
-	if dict == null:
-		initPresets()
-
 # Init presets
 func initPresets():
-	var dict = readDict(PRESET_LIST_FILE, true)
+	var dict = readDict(PRESET_LIST_FILE)
+	if dict != null:
+		return
+	
+	dict = readDict(PRESET_LIST_FILE, true)
 	
 	if dict == null:
 		return
