@@ -68,3 +68,69 @@ func saveFile(path, data):
 	file.open(fullPath, file.WRITE)
 	file.store_string(data)
 	file.close()
+	
+func getDirectoryFiles(path):
+	"""
+	List directory files and another directory
+	
+	@param String path - path of directory
+	@return Array<String> - file name array
+	"""
+	
+	var dir = Directory.new()
+	if not dir.dir_exists(path):
+		return null
+		
+	dir.open(path)
+	dir.list_dir_begin(true, true)
+	var name = dir.get_next()	
+	var res = []
+	while(name != ""):
+		var spath = "%s/%s" % [path, name]
+		res.append(spath)
+		name = dir.get_next()
+		
+	return res;
+	
+func getBaseFileName(path):
+	"""
+	Get base file name
+	@param String path - path to file
+	@return String - base file name
+	Example:
+		print(getBaseFileName("user://assets/myfile.json"))
+		>> myfile
+	"""
+	
+	if (path == null) or (path == ""):
+		return null
+		
+	pass
+	
+func copyDirectory(src, dst):
+	"""
+	Copy directory recursive
+	
+	@param String src - path of source directory
+	@param String dst - path of destination directory
+	@return void
+	"""
+	
+	var dir = Directory.new()
+	if dir.dir_exists(dst):
+		return
+	
+	if dir.make_dir_recursive(dst) != 0:
+		return
+	
+	dir.open(src)
+	dir.list_dir_begin(true, true)
+	var name = dir.get_next()
+	while(name != ""):
+		var spath = "%s/%s" % [src, name]
+		var dpath = "%s/%s" % [dst, name]
+		if dir.file_exists(spath):
+			dir.copy(spath, dpath)
+		elif dir.dir_exists(spath):
+			copyDirectory(spath, dpath)
+		name = dir.get_next()

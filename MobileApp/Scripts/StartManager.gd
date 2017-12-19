@@ -1,16 +1,15 @@
 extends Reference
 
-static func prepareContent():
+var constants = preload("res://Scripts/Constants.gd")
+var assetManager = preload("res://Scripts/AssetManager.gd").new()
+
+func prepareContent():
 	"""
 	Prepare content for first use
 	Copy built-in drum kits
 	Copy presets
+	
+	@return void
 	"""
 	
-	var presetManagerClass = load("res://Scripts/PresetManager.gd")
-	var presetManager = presetManagerClass.new()
-	presetManager.initPresets()
-	
-	var drumKitManagerClass = load("res://Scripts/DrumKitManager.gd")
-	var drumKitManager = drumKitManagerClass.new()
-	drumKitManager.initDrumkits()
+	assetManager.copyDirectory(constants.BUILT_IN_ASSETS, constants.USER_ASSETS)

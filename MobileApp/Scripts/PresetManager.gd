@@ -1,34 +1,23 @@
 extends Reference
 
-const PRESET_LIST_FILE = "presets";
-
-# Init presets
-func initPresets():
-	var dict = readDict(PRESET_LIST_FILE)
-	if dict != null:
-		return
-	
-	dict = readDict(PRESET_LIST_FILE, true)
-	
-	if dict == null:
-		return
-	
-	var dir = Directory.new()
-	for d in dict.keys():
-		dir.copy(getFileName(d, true), getFileName(d))
-	
-	dir.copy(getFileName(PRESET_LIST_FILE, true), getFileName(PRESET_LIST_FILE))
+var constants = preload("res://Scripts/Constants.gd")
+var assetManager = preload("res://Scripts/AssetManager.gd").new()
 
 # Get file name from resources or user
-func getFileName(name, isRes = False):
-	if isRes:
-		return "res://Assets/%s.json" % name
-	else:
-		return "user://%s.json" % name
+func getFileName(name):
+	"""
+	Get drum kit full name
+	
+	@param String name - drum kit file full path
+	@return String - full path to file
+	"""
+	
+	return "user://%s/%s/%s.json" % [constants.ASSETS_PATH, constants.PAD_PRESETS_PATH, name]
 
 # Read preset dictionary
 func readDict(name, isRes = False):
-	var fileName = getFileName(name, isRes)
+	var fileName = getFileName(name)
+	print(fileName)
 
 	var file = File.new()
 	if not file.file_exists(fileName):
@@ -50,19 +39,19 @@ func saveDict(name, dict):
 
 # Get preset list
 func getList():
-	var dict = readDict(PRESET_LIST_FILE)
-	return dict.keys()
+	var files = assetManager.getDirectoryFiles("user://assets/pad_presets")
+	var res = []
+	for f in files:
+		var fn = f.get_file().get_basename()
+		res.append(fn)
+		
+	return res
 
 # Save track
 func saveTrack(name, track):
 	if name == "":
 		return
-	
-	var dict = readDict(PRESET_LIST_FILE)
-	if dict == null:
-		dict = {}
-	dict[name] = true
-	saveDict(PRESET_LIST_FILE, dict)
+		
 	var data = track.toDict()
 	saveDict(name, data)
 
@@ -72,12 +61,6 @@ func loadTrack(name):
 
 # Delete track
 func deleteTrack(name):
-	var dict = readDict(PRESET_LIST_FILE)
-	if dict == null:
-		return
-	
-	dict.erase(name)
-	saveDict(PRESET_LIST_FILE, dict)
 	var dir = Directory.new()
 	dir.remove(getFileName(name))
 	

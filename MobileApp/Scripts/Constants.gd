@@ -1,8 +1,12 @@
 # Default drum kit on start
 const DEFAULT_DRUMKIT_NAME = "Rock"
 
-# Path to assets dir
-const ASSETS_PATH = "Assets"
+# Paths
+const BUILT_IN_ASSETS = "res://Assets/install"
+const USER_ASSETS = "user://assets"
+
+const ASSETS_PATH = "assets"
+const PAD_PRESETS_PATH = "pad_presets"
 const DRUMKITS_PATH = "drumkits"
 const SAMPLES_PATH = "samples"
 
