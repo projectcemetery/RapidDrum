@@ -15,11 +15,6 @@ var description = ""
 # AudioStreamPlayer2D without parent does not play
 #var parentNode
 
-# Constructor
-func _init():
-	pass
-	#parentNode = node
-	
 #func newStream(name):
 #	var nstream = AudioStreamPlayer.new()
 #	var path = "res://Assets/%s" % name
@@ -34,15 +29,6 @@ func _init():
 #		var need = pattern[i]
 #		if need:
 #			samples[i].play()
-
-# Get kit list from disk
-func getKitList():
-	pass
-
-# Load kit from disk
-func loadKit(name):
-	#var kitFile = assetManager.loadFile(_getKitFilePath(name))
-	pass
 	
 #	samples.append(newStream("rock-crash.wav"))
 #	samples.append(newStream("rock-tom1.wav"))
@@ -52,3 +38,6 @@ func loadKit(name):
 #	samples.append(newStream("rock-hhclosed.wav"))
 #	samples.append(newStream("rock-kick.wav"))
 #	samples.append(newStream("rock-snare.wav"))
+
+func fromDict(data):
+	pass

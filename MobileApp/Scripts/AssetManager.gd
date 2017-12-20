@@ -32,25 +32,22 @@ func getFullPathFromArray(pathArray, isRes = false):
 	
 	return getFullPath(res, isRes)
 
-func loadFile(path, isRes = false):
+func loadFile(path):
 	"""
 	Load file from res or user space
 	
-	@param path - path to file
-	@param isRes - load from res:// or user://
+	@param path - full path to file	
 	@return file as string or null if file not exists
 	
 	Example:
-		loadFile("sample.wav", true)
+		loadFile("user://sample.wav")
 	"""
 	
-	var fullPath = getFullFilePath(path, isRes)
-	
 	var file = File.new()
-	if not file.file_exists(fullPath):
+	if not file.file_exists(path):
 		return null
 	
-	file.open(fullPath, file.READ)
+	file.open(path, file.READ)
 	return file.get_as_text()
 	
 func saveFile(path, data):
@@ -62,58 +59,58 @@ func saveFile(path, data):
 	@return void
 	"""
 	
-	var fullPath = getFullFilePath(path)
+	var fullPath = getFullPath(path)
 	
 	var file = File.new()
 	file.open(fullPath, file.WRITE)
 	file.store_string(data)
 	file.close()
 	
-func getDirectoryFiles(path):
+func getDirectoryFiles(path, fileOnly = true):
 	"""
-	List directory files and another directory
+	List directory files and another directory from user://
 	
 	@param String path - path of directory
+	@param Bool fileOnly - only files without directories
 	@return Array<String> - file name array
+	
+	Example:
+		print(getDirectoryFiles("assets/samles"))
+		out: ["file1.wav", "file2.wav"]
 	"""
 	
+	var fullPath = getFullPath(path)
+	
 	var dir = Directory.new()
-	if not dir.dir_exists(path):
+	if not dir.dir_exists(fullPath):
 		return null
 		
-	dir.open(path)
+	dir.open(fullPath)
 	dir.list_dir_begin(true, true)
 	var name = dir.get_next()	
 	var res = []
 	while(name != ""):
-		var spath = "%s/%s" % [path, name]
+		var spath = "%s/%s" % [fullPath, name]
+		if fileOnly and dir.dir_exists(spath):
+			name = dir.get_next()
+			continue
+		
 		res.append(spath)
 		name = dir.get_next()
 		
 	return res;
 	
-func getBaseFileName(path):
-	"""
-	Get base file name
-	@param String path - path to file
-	@return String - base file name
-	Example:
-		print(getBaseFileName("user://assets/myfile.json"))
-		>> myfile
-	"""
-	
-	if (path == null) or (path == ""):
-		return null
-		
-	pass
-	
+
 func copyDirectory(src, dst):
 	"""
 	Copy directory recursive
 	
-	@param String src - path of source directory
-	@param String dst - path of destination directory
+	@param String src - full path of source directory
+	@param String dst - full path of destination directory	
 	@return void
+	
+	Example:
+		copyDirectory("res://assets", "user://assets/samples")
 	"""
 	
 	var dir = Directory.new()

@@ -9,6 +9,7 @@ func _ready():
 
 # On select kit button pressed
 func _on_SelectKitButton_pressed():
+	drumKitDialog.fillLoaded()
 	drumKitDialog.show_modal()
 
 # On select cancel pressed
